@@ -136,15 +136,15 @@ The 75 most important algorithms to understand when preparing for a FAANGMULA ty
 
 In week 1, we will warm up by doing a mix of easy and medium questions on arrays and strings. Arrays and strings are the most common types of questions to be found in interviews; gaining familiarity with them will help in building strong fundamentals to better handle tougher questions.
 
-| Question                                                                | Difficulty | [NeetCode](https://neetcode.io/) | Solution                                            | Time |
-| ----------------------------------------------------------------------- | ---------- | -------------------------------- | --------------------------------------------------- | ---- |
-| [Two Sum](https://leetcode.com/problems/two-sum/)                       | Easy       | https://youtu.be/KLlXCFG5TnA     | [TwoSummer.cs](./Blind75CSharp/Week01/TwoSummer.cs) | 9m   |
-| [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Easy       | https://youtu.be/3OamzN90kPg     |                                                     |      |
-| Best Time to Buy and Sell Stock                                         | Easy       |                                  |                                                     |      |
-| Valid Anagram                                                           | Easy       |                                  |                                                     |      |
-| Valid Parentheses                                                       | Easy       |                                  |                                                     |      |
-| Maximum Subarray                                                        | Easy       |                                  |                                                     |      |
-| Product of Array Except Self                                            | Medium     |                                  |                                                     |      |
-| 3Sum                                                                    | Medium     |                                  |                                                     |      |
-| Merge Intervals                                                         | Medium     |                                  |                                                     |      |
-| Group Anagrams                                                          | Medium     |                                  |                                                     |      |
+| Question                                                                                          | Difficulty | [NeetCode](https://neetcode.io/) | Solution                                                              | Category         |
+| ------------------------------------------------------------------------------------------------- | ---------- | -------------------------------- | --------------------------------------------------------------------- | ---------------- |
+| [Two Sum](https://leetcode.com/problems/two-sum/)                                                 | Easy       | https://youtu.be/KLlXCFG5TnA     | [TwoSummer.cs](./Blind75CSharp/Week01/TwoSummer.cs)                   | Arrays & Hashing |
+| [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                           | Easy       | https://youtu.be/3OamzN90kPg     | [ContainsDuplicater.cs](./Blind75CSharp/Week01/ContainsDuplicater.cs) | Arrays & Hashing |
+| [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy       | https://youtu.be/1pkOgXD63yU     | [BuySellStock.cs](./Blind75CSharp/Week01/BuySellStock.cs)             | Sliding Window   |
+| Valid Anagram                                                                                     | Easy       |                                  |                                                                       |                  |
+| Valid Parentheses                                                                                 | Easy       |                                  |                                                                       |                  |
+| Maximum Subarray                                                                                  | Easy       |                                  |                                                                       |                  |
+| Product of Array Except Self                                                                      | Medium     |                                  |                                                                       |                  |
+| 3Sum                                                                                              | Medium     |                                  |                                                                       |                  |
+| Merge Intervals                                                                                   | Medium     |                                  |                                                                       |                  |
+| Group Anagrams                                                                                    | Medium     |                                  |                                                                       |                  |
