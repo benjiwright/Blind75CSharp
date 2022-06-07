@@ -9,14 +9,14 @@ The 75 most important algorithms to understand when preparing for a FAANGMULA ty
 ### Array
 
 - [Two Sum](https://leetcode.com/problems/two-sum/)
-- Best Time to Buy and Sell Stock - https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+- [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 - [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
 - Product of Array Except Self - https://leetcode.com/problems/product-of-array-except-self/
 - Maximum Subarray - https://leetcode.com/problems/maximum-subarray/
 - Maximum Product Subarray - https://leetcode.com/problems/maximum-product-subarray/
 - Find Minimum in Rotated Sorted Array - https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
 - Search in Rotated Sorted Array - https://leetcode.com/problems/search-in-rotated-sorted-array/
-- 3Sum - https://leetcode.com/problems/3sum/
+- [3Sum](https://leetcode.com/problems/3sum/)
 - Container With Most Water - https://leetcode.com/problems/container-with-most-water/
 
 ---
@@ -95,7 +95,7 @@ The 75 most important algorithms to understand when preparing for a FAANGMULA ty
 - Longest Substring Without Repeating Characters - https://leetcode.com/problems/longest-substring-without-repeating-characters/
 - Longest Repeating Character Replacement - https://leetcode.com/problems/longest-repeating-character-replacement/
 - Minimum Window Substring - https://leetcode.com/problems/minimum-window-substring/
-- Valid Anagram - https://leetcode.com/problems/valid-anagram/
+- [Valid Anagram](https://leetcode.com/problems/valid-anagram/)
 - Group Anagrams - https://leetcode.com/problems/group-anagrams/
 - Valid Parentheses - https://leetcode.com/problems/valid-parentheses/
 - Valid Palindrome - https://leetcode.com/problems/valid-palindrome/
@@ -141,10 +141,14 @@ In week 1, we will warm up by doing a mix of easy and medium questions on arrays
 | [Two Sum](https://leetcode.com/problems/two-sum/)                                                 | Easy       | https://youtu.be/KLlXCFG5TnA     | [TwoSummer.cs](./Blind75CSharp/Week01/TwoSummer.cs)                   | Arrays & Hashing |
 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                           | Easy       | https://youtu.be/3OamzN90kPg     | [ContainsDuplicater.cs](./Blind75CSharp/Week01/ContainsDuplicater.cs) | Arrays & Hashing |
 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy       | https://youtu.be/1pkOgXD63yU     | [BuySellStock.cs](./Blind75CSharp/Week01/BuySellStock.cs)             | Sliding Window   |
-| Valid Anagram                                                                                     | Easy       |                                  |                                                                       |                  |
+| [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                     | Easy       | https://youtu.be/9UtInBqnCgA     | [Anagram.cs](./Blind75CSharp/Week01/Anagram.cs)                       | Arrays & Hashing |
 | Valid Parentheses                                                                                 | Easy       |                                  |                                                                       |                  |
 | Maximum Subarray                                                                                  | Easy       |                                  |                                                                       |                  |
-| Product of Array Except Self                                                                      | Medium     |                                  |                                                                       |                  |
-| 3Sum                                                                                              | Medium     |                                  |                                                                       |                  |
+| [Product of Array Except Self](https://leetcode.com/problems/maximum-product-subarray/)           | Medium     | https://youtu.be/bNvIQI2wAjk     |                                                                       | Arrays & Hashing |
+| [3Sum](https://leetcode.com/problems/3sum/)                                                       | Medium     | https://youtu.be/jzZsG8n2R9A     | [3Summer.cs](./Blind75CSharp/Week01/ThreeSummer.cs)                   | Arrays & Hashing |
 | Merge Intervals                                                                                   | Medium     |                                  |                                                                       |                  |
 | Group Anagrams                                                                                    | Medium     |                                  |                                                                       |                  |
+| **BONUS**                                                                                         | **-**      | **-**                            | **-**                                                                 | **-**            |
+| Maximum Product Subarray                                                                          | Medium     | Link                             |                                                                       |                  |
+| Search in Rotated Sorted Array                                                                    | Medium     | Link                             |                                                                       |                  |
+| [Two Sum II - Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)            | Medium     | n/a                              | [TwoSummer.cs](./Blind75CSharp/Week01/TwoSummer.cs)                   | Double Pointers  |
