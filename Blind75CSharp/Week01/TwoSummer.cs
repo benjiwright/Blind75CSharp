@@ -18,6 +18,27 @@ public class TwoSummer
       // assume that each input would have exactly one solution
       return Array.Empty<int>();
    }
+
+   // BONUS: what if the input array is sorted
+   // https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+   public int[] TwoSumSorted(int[] numbers, int target)
+   {
+      var left = 0;
+      var right = numbers.Length - 1;
+
+      while (left < right)
+      {
+         var sum = numbers[left] + numbers[right];
+         if (target == sum) return new int[] {left + 1, right + 1};
+
+         if (target < sum)
+            right--;
+         else
+            left++;
+      }
+
+      return Array.Empty<int>();
+   }
 }
 
 // Runtime: 230 ms, faster than 39.82% of C# online submissions for Two Sum.
