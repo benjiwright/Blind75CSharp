@@ -1,19 +1,21 @@
-﻿# Blind75CSharp
+﻿# Blind Top 75 Leetcode Problems - in CSharp
 
-Originally posted [here](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU) titled "New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time"
+Originally posted [here](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU) entitled "*New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Tim*e"
 
-The 75 most important algorithms to understand when preparing for a FAANGMULA type interview.
+The 75 most important algorithms to understand when preparing for a FAANGMULA type interview (according to some...)
 
 ## Top 75
+
+By topic category
 
 ### Array
 
 - [Two Sum](https://leetcode.com/problems/two-sum/)
 - [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 - [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
-- Product of Array Except Self - https://leetcode.com/problems/product-of-array-except-self/
-- Maximum Subarray - https://leetcode.com/problems/maximum-subarray/
-- Maximum Product Subarray - https://leetcode.com/problems/maximum-product-subarray/
+- [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
+- [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
+- [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)
 - Find Minimum in Rotated Sorted Array - https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
 - Search in Rotated Sorted Array - https://leetcode.com/problems/search-in-rotated-sorted-array/
 - [3Sum](https://leetcode.com/problems/3sum/)
@@ -130,25 +132,47 @@ The 75 most important algorithms to understand when preparing for a FAANGMULA ty
 - Top K Frequent Elements - https://leetcode.com/problems/top-k-frequent-elements/
 - Find Median from Data Stream - https://leetcode.com/problems/find-median-from-data-stream/
 
+---
+
 ## Approach
 
 ### Week 1 - Sequences
 
 In week 1, we will warm up by doing a mix of easy and medium questions on arrays and strings. Arrays and strings are the most common types of questions to be found in interviews; gaining familiarity with them will help in building strong fundamentals to better handle tougher questions.
 
-| Question                                                                                          | Difficulty | [NeetCode](https://neetcode.io/) | Solution                                                              | Category         |
-| ------------------------------------------------------------------------------------------------- | ---------- | -------------------------------- | --------------------------------------------------------------------- | ---------------- |
-| [Two Sum](https://leetcode.com/problems/two-sum/)                                                 | Easy       | https://youtu.be/KLlXCFG5TnA     | [TwoSummer.cs](./Blind75CSharp/Week01/TwoSummer.cs)                   | Arrays & Hashing |
-| [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                           | Easy       | https://youtu.be/3OamzN90kPg     | [ContainsDuplicater.cs](./Blind75CSharp/Week01/ContainsDuplicater.cs) | Arrays & Hashing |
-| [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy       | https://youtu.be/1pkOgXD63yU     | [BuySellStock.cs](./Blind75CSharp/Week01/BuySellStock.cs)             | Sliding Window   |
-| [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                     | Easy       | https://youtu.be/9UtInBqnCgA     | [Anagram.cs](./Blind75CSharp/Week01/Anagram.cs)                       | Arrays & Hashing |
-| Valid Parentheses                                                                                 | Easy       |                                  |                                                                       |                  |
-| Maximum Subarray                                                                                  | Easy       |                                  |                                                                       |                  |
-| [Product of Array Except Self](https://leetcode.com/problems/maximum-product-subarray/)           | Medium     | https://youtu.be/bNvIQI2wAjk     |                                                                       | Arrays & Hashing |
-| [3Sum](https://leetcode.com/problems/3sum/)                                                       | Medium     | https://youtu.be/jzZsG8n2R9A     | [3Summer.cs](./Blind75CSharp/Week01/ThreeSummer.cs)                   | Arrays & Hashing |
-| Merge Intervals                                                                                   | Medium     |                                  |                                                                       |                  |
-| Group Anagrams                                                                                    | Medium     |                                  |                                                                       |                  |
-| **BONUS**                                                                                         | **-**      | **-**                            | **-**                                                                 | **-**            |
-| Maximum Product Subarray                                                                          | Medium     | Link                             |                                                                       |                  |
-| Search in Rotated Sorted Array                                                                    | Medium     | Link                             |                                                                       |                  |
-| [Two Sum II - Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)            | Medium     | n/a                              | [TwoSummer.cs](./Blind75CSharp/Week01/TwoSummer.cs)                   | Double Pointers  |
+| Question                                                                                          | Difficulty | [NeetCode](https://neetcode.io/) | Solution                                                                          | Category         | Redo  |
+| ------------------------------------------------------------------------------------------------- | ---------- | -------------------------------- | --------------------------------------------------------------------------------- | ---------------- | :---: |
+| [Two Sum](https://leetcode.com/problems/two-sum/)                                                 | Easy       | https://youtu.be/KLlXCFG5TnA     | [TwoSummer.cs](./Blind75CSharp/Week01/TwoSummer.cs)                               | Arrays & Hashing |       |
+| [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                           | Easy       | https://youtu.be/3OamzN90kPg     | [ContainsDuplicater.cs](./Blind75CSharp/Week01/ContainsDuplicater.cs)             | Arrays & Hashing |       |
+| [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy       | https://youtu.be/1pkOgXD63yU     | [BuySellStock.cs](./Blind75CSharp/Week01/BuySellStock.cs)                         | Sliding Window   |       |
+| [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                     | Easy       | https://youtu.be/9UtInBqnCgA     | [Anagram.cs](./Blind75CSharp/Week01/Anagram.cs)                                   | Arrays & Hashing |       |
+| Valid Parentheses                                                                                 | Easy       |                                  |                                                                                   |                  |       |
+| [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)                               | Easy       |                                  |                                                                                   |                  |       |
+| [Product of Array Except Self](https://leetcode.com/problems/maximum-product-subarray/)           | Medium     | https://youtu.be/bNvIQI2wAjk     | [ProductOfArrayExceptSelf.cs](./Blind75CSharp/Week01/ProductOfArrayExceptSelf.cs) | Arrays & Hashing |   Y   |
+| [3Sum](https://leetcode.com/problems/3sum/)                                                       | Medium     | https://youtu.be/jzZsG8n2R9A     | [3Summer.cs](./Blind75CSharp/Week01/ThreeSummer.cs)                               | Arrays & Hashing |       |
+| Merge Intervals                                                                                   | Medium     |                                  |                                                                                   |                  |       |
+| Group Anagrams                                                                                    | Medium     |                                  |                                                                                   |                  |       |
+| **BONUS**                                                                                         | **-**      | **-**                            | **-**                                                                             | **-**            | **-** |
+| [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)               | Medium     | Link                             |                                                                                   |                  |       |
+| Search in Rotated Sorted Array                                                                    | Medium     | Link                             |                                                                                   |                  |       |
+| [Two Sum II - Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)            | Medium     | https://youtu.be/cQ1Oz4ckceM     | [TwoSummer.cs](./Blind75CSharp/Week01/TwoSummer.cs)                               | Double Pointers  |       |
+
+## Resources
+
+### Graphs
+
+- [Dynamic Programming](https://youtu.be/oBt53YbR9Kk) - Alvinv
+- [Graph Algorithms for Technical Interviews](https://youtu.be/tWVWeAqZ0WU) - Alvin
+- [Topological Sort | Kahn's Algorithm](https://youtu.be/cIBFEhD77b4) | William
+- [Dijkstra's Shortest Path Algorithm](https://youtu.be/pSqmAO-m7Lk) | William
+- [Union Find Introduction](https://youtu.be/ibjEGG7ylHk) | William
+
+### Design
+
+- [Scalability & System Design for Developers](https://www.educative.io/path/scalability-system-design) paid course
+- [System Design Interview](https://www.youtube.com/c/SystemDesignInterview) on YouTube
+- Medium author [Kousik Nath](https://kousiknath.medium.com/)
+
+### Other
+
+- [7 onsites, 7 offers](https://www.teamblind.com/post/7-onsites-7-offers-aAFTykAD) from Netflix alum
