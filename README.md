@@ -136,18 +136,20 @@ By topic category
 
 ## Approach
 
+5 weeks of Leetcode broken into categories: sequences, data structures, non-linear data structures, more data structures, and finally dynamic programming.
+
 ### Week 1 - Sequences
 
 In week 1, we will warm up by doing a mix of easy and medium questions on arrays and strings. Arrays and strings are the most common types of questions to be found in interviews; gaining familiarity with them will help in building strong fundamentals to better handle tougher questions.
 
 | Question                                                                                          | Difficulty | [NeetCode](https://neetcode.io/) | Solution                                                                          | Category         | Redo  |
 | ------------------------------------------------------------------------------------------------- | ---------- | -------------------------------- | --------------------------------------------------------------------------------- | ---------------- | :---: |
-| [Two Sum](https://leetcode.com/problems/two-sum/)                                                 | Easy       | https://youtu.be/KLlXCFG5TnA     | [TwoSummer.cs](./Blind75CSharp/Week01/TwoSummer.cs)                               | Arrays & Hashing |       |
-| [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                           | Easy       | https://youtu.be/3OamzN90kPg     | [ContainsDuplicater.cs](./Blind75CSharp/Week01/ContainsDuplicater.cs)             | Arrays & Hashing |       |
+| [Two Sum](https://leetcode.com/problems/two-sum/)                                                 | Easy       | https://youtu.be/KLlXCFG5TnA     | [TwoSummer.cs](./Blind75CSharp/Week01/TwoSummer.cs)                               | Arrays & Hashing |   N   |
+| [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                           | Easy       | https://youtu.be/3OamzN90kPg     | [ContainsDuplicater.cs](./Blind75CSharp/Week01/ContainsDuplicater.cs)             | Arrays & Hashing |   N   |
 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy       | https://youtu.be/1pkOgXD63yU     | [BuySellStock.cs](./Blind75CSharp/Week01/BuySellStock.cs)                         | Sliding Window   |       |
-| [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                     | Easy       | https://youtu.be/9UtInBqnCgA     | [Anagram.cs](./Blind75CSharp/Week01/Anagram.cs)                                   | Arrays & Hashing |       |
-| Valid Parentheses                                                                                 | Easy       |                                  |                                                                                   |                  |       |
-| [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)                               | Easy       |                                  |                                                                                   |                  |       |
+| [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                     | Easy       | https://youtu.be/9UtInBqnCgA     | [Anagram.cs](./Blind75CSharp/Week01/Anagram.cs)                                   | Arrays & Hashing |   N   |
+| Valid Parentheses                                                                                 | Easy       |                                  |                                                                                   |                  |   N   |
+| [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)                               | Easy       | https://youtu.be/5WZl3MMT0Eg     | [MaxSubArrayFinder.cs](./Blind75CSharp/Week01/MaxSubArrayFinder.cs)               | Sliding Window   |   Y   |
 | [Product of Array Except Self](https://leetcode.com/problems/maximum-product-subarray/)           | Medium     | https://youtu.be/bNvIQI2wAjk     | [ProductOfArrayExceptSelf.cs](./Blind75CSharp/Week01/ProductOfArrayExceptSelf.cs) | Arrays & Hashing |   Y   |
 | [3Sum](https://leetcode.com/problems/3sum/)                                                       | Medium     | https://youtu.be/jzZsG8n2R9A     | [3Summer.cs](./Blind75CSharp/Week01/ThreeSummer.cs)                               | Arrays & Hashing |       |
 | Merge Intervals                                                                                   | Medium     |                                  |                                                                                   |                  |       |
@@ -157,11 +159,29 @@ In week 1, we will warm up by doing a mix of easy and medium questions on arrays
 | Search in Rotated Sorted Array                                                                    | Medium     | Link                             |                                                                                   |                  |       |
 | [Two Sum II - Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)            | Medium     | https://youtu.be/cQ1Oz4ckceM     | [TwoSummer.cs](./Blind75CSharp/Week01/TwoSummer.cs)                               | Double Pointers  |       |
 
+### Week 2 - Data structures
+
+The focus of week 2 is on linked lists, strings and matrix-based questions. The goal is to learn the common routines dealing with linked lists, traversing matrices and sequence analysis (arrays/strings) techniques such as sliding window, linked list traversal and matrix traversal.
+
+| Question                                       | Difficulty | [NeetCode](https://neetcode.io/) | Solution | Category | Redo  |
+| ---------------------------------------------- | ---------- | -------------------------------- | -------- | -------- | :---: |
+| Reverse a Linked List                          | Easy       | Link                             |          |          |       |
+| Detect Cycle in a Linked List                  | Easy       | Link                             |          |          |       |
+| Container With Most Water                      | Medium     | Link                             |          |          |       |
+| Find Minimum in Rotated Sorted Array           | Medium     | Link                             |          |          |       |
+| Longest Repeating Character Replacement        | Medium     | Link                             |          |          |       |
+| Longest Substring Without Repeating Characters | Medium     | Link                             |          |          |       |
+| Number of Islands                              | Medium     | Link                             |          |          |       |
+| Remove Nth Node From End Of List               | Medium     | Link                             |          |          |       |
+| Palindromic Substrings                         | Medium     | Link                             |          |          |       |
+| Pacific Atlantic Water Flow                    | Medium     | Link                             |          |          |       |
+| Minimum Window Substring                       | Hard       | Link                             |          |          |       |
+
 ## Resources
 
 ### Graphs
 
-- [Dynamic Programming](https://youtu.be/oBt53YbR9Kk) - Alvinv
+- [Dynamic Programming](https://youtu.be/oBt53YbR9Kk) - Alvin
 - [Graph Algorithms for Technical Interviews](https://youtu.be/tWVWeAqZ0WU) - Alvin
 - [Topological Sort | Kahn's Algorithm](https://youtu.be/cIBFEhD77b4) | William
 - [Dijkstra's Shortest Path Algorithm](https://youtu.be/pSqmAO-m7Lk) | William
