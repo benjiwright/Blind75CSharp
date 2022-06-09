@@ -99,7 +99,7 @@ Organized by problem category
 - Minimum Window Substring - https://leetcode.com/problems/minimum-window-substring/
 - [Valid Anagram](https://leetcode.com/problems/valid-anagram/)
 - Group Anagrams - https://leetcode.com/problems/group-anagrams/
-- Valid Parentheses - https://leetcode.com/problems/valid-parentheses/
+- [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
 - Valid Palindrome - https://leetcode.com/problems/valid-palindrome/
 - Longest Palindromic Substring - https://leetcode.com/problems/longest-palindromic-substring/
 - Palindromic Substrings - https://leetcode.com/problems/palindromic-substrings/
@@ -148,7 +148,7 @@ In week 1, we will warm up by doing a mix of easy and medium questions on arrays
 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                           | Easy       | https://youtu.be/3OamzN90kPg     | [ContainsDuplicater.cs](./Blind75CSharp/Week01/ContainsDuplicater.cs)             | Arrays & Hashing |    N    |
 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy       | https://youtu.be/1pkOgXD63yU     | [BuySellStock.cs](./Blind75CSharp/Week01/BuySellStock.cs)                         | Sliding Window   |         |
 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                     | Easy       | https://youtu.be/9UtInBqnCgA     | [Anagram.cs](./Blind75CSharp/Week01/Anagram.cs)                                   | Arrays & Hashing |    N    |
-| Valid Parentheses                                                                                 | Easy       |                                  |                                                                                   |                  |    N    |
+| [Valid Parentheses](https://leetcode.com/vproblems/valid-parentheses/)                            | Easy       | n/a                              |                                                                                   |                  |    N    |
 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)                               | Easy       | https://youtu.be/5WZl3MMT0Eg     | [MaxSubArrayFinder.cs](./Blind75CSharp/Week01/MaxSubArrayFinder.cs)               | Sliding Window   |    Y    |
 | [Product of Array Except Self](https://leetcode.com/problems/maximum-product-subarray/)           | Medium     | https://youtu.be/bNvIQI2wAjk     | [ProductOfArrayExceptSelf.cs](./Blind75CSharp/Week01/ProductOfArrayExceptSelf.cs) | Arrays & Hashing |    Y    |
 | [3Sum](https://leetcode.com/problems/3sum/)                                                       | Medium     | https://youtu.be/jzZsG8n2R9A     | [3Summer.cs](./Blind75CSharp/Week01/ThreeSummer.cs)                               | Arrays & Hashing |         |
