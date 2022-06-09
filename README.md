@@ -6,7 +6,7 @@ The 75 most important algorithms to understand when preparing for a FAANGMULA ty
 
 ## Top 75
 
-By topic category
+Organized by problem category
 
 ### Array
 
@@ -64,8 +64,8 @@ By topic category
 
 ### Interval
 
-- Insert Interval - https://leetcode.com/problems/insert-interval/
-- Merge Intervals - https://leetcode.com/problems/merge-intervals/
+- [Insert Interval](https://leetcode.com/problems/insert-interval/)
+- [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
 - Non-overlapping Intervals - https://leetcode.com/problems/non-overlapping-intervals/
 - Meeting Rooms (Leetcode Premium) - https://leetcode.com/problems/meeting-rooms/
 - Meeting Rooms II (Leetcode Premium) - https://leetcode.com/problems/meeting-rooms-ii/
@@ -142,22 +142,23 @@ By topic category
 
 In week 1, we will warm up by doing a mix of easy and medium questions on arrays and strings. Arrays and strings are the most common types of questions to be found in interviews; gaining familiarity with them will help in building strong fundamentals to better handle tougher questions.
 
-| Question                                                                                          | Difficulty | [NeetCode](https://neetcode.io/) | Solution                                                                          | Category         | Redo  |
-| ------------------------------------------------------------------------------------------------- | ---------- | -------------------------------- | --------------------------------------------------------------------------------- | ---------------- | :---: |
-| [Two Sum](https://leetcode.com/problems/two-sum/)                                                 | Easy       | https://youtu.be/KLlXCFG5TnA     | [TwoSummer.cs](./Blind75CSharp/Week01/TwoSummer.cs)                               | Arrays & Hashing |   N   |
-| [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                           | Easy       | https://youtu.be/3OamzN90kPg     | [ContainsDuplicater.cs](./Blind75CSharp/Week01/ContainsDuplicater.cs)             | Arrays & Hashing |   N   |
-| [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy       | https://youtu.be/1pkOgXD63yU     | [BuySellStock.cs](./Blind75CSharp/Week01/BuySellStock.cs)                         | Sliding Window   |       |
-| [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                     | Easy       | https://youtu.be/9UtInBqnCgA     | [Anagram.cs](./Blind75CSharp/Week01/Anagram.cs)                                   | Arrays & Hashing |   N   |
-| Valid Parentheses                                                                                 | Easy       |                                  |                                                                                   |                  |   N   |
-| [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)                               | Easy       | https://youtu.be/5WZl3MMT0Eg     | [MaxSubArrayFinder.cs](./Blind75CSharp/Week01/MaxSubArrayFinder.cs)               | Sliding Window   |   Y   |
-| [Product of Array Except Self](https://leetcode.com/problems/maximum-product-subarray/)           | Medium     | https://youtu.be/bNvIQI2wAjk     | [ProductOfArrayExceptSelf.cs](./Blind75CSharp/Week01/ProductOfArrayExceptSelf.cs) | Arrays & Hashing |   Y   |
-| [3Sum](https://leetcode.com/problems/3sum/)                                                       | Medium     | https://youtu.be/jzZsG8n2R9A     | [3Summer.cs](./Blind75CSharp/Week01/ThreeSummer.cs)                               | Arrays & Hashing |       |
-| Merge Intervals                                                                                   | Medium     |                                  |                                                                                   |                  |       |
-| Group Anagrams                                                                                    | Medium     |                                  |                                                                                   |                  |       |
-| **BONUS**                                                                                         | **-**      | **-**                            | **-**                                                                             | **-**            | **-** |
-| [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)               | Medium     | Link                             |                                                                                   |                  |       |
-| Search in Rotated Sorted Array                                                                    | Medium     | Link                             |                                                                                   |                  |       |
-| [Two Sum II - Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)            | Medium     | https://youtu.be/cQ1Oz4ckceM     | [TwoSummer.cs](./Blind75CSharp/Week01/TwoSummer.cs)                               | Double Pointers  |       |
+| Question                                                                                          | Difficulty | [NeetCode](https://neetcode.io/) | Solution                                                                          | Category         | Revisit |
+| ------------------------------------------------------------------------------------------------- | ---------- | -------------------------------- | --------------------------------------------------------------------------------- | ---------------- | :-----: |
+| [Two Sum](https://leetcode.com/problems/two-sum/)                                                 | Easy       | https://youtu.be/KLlXCFG5TnA     | [TwoSummer.cs](./Blind75CSharp/Week01/TwoSummer.cs)                               | Arrays & Hashing |    N    |
+| [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                           | Easy       | https://youtu.be/3OamzN90kPg     | [ContainsDuplicater.cs](./Blind75CSharp/Week01/ContainsDuplicater.cs)             | Arrays & Hashing |    N    |
+| [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy       | https://youtu.be/1pkOgXD63yU     | [BuySellStock.cs](./Blind75CSharp/Week01/BuySellStock.cs)                         | Sliding Window   |         |
+| [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                     | Easy       | https://youtu.be/9UtInBqnCgA     | [Anagram.cs](./Blind75CSharp/Week01/Anagram.cs)                                   | Arrays & Hashing |    N    |
+| Valid Parentheses                                                                                 | Easy       |                                  |                                                                                   |                  |    N    |
+| [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)                               | Easy       | https://youtu.be/5WZl3MMT0Eg     | [MaxSubArrayFinder.cs](./Blind75CSharp/Week01/MaxSubArrayFinder.cs)               | Sliding Window   |    Y    |
+| [Product of Array Except Self](https://leetcode.com/problems/maximum-product-subarray/)           | Medium     | https://youtu.be/bNvIQI2wAjk     | [ProductOfArrayExceptSelf.cs](./Blind75CSharp/Week01/ProductOfArrayExceptSelf.cs) | Arrays & Hashing |    Y    |
+| [3Sum](https://leetcode.com/problems/3sum/)                                                       | Medium     | https://youtu.be/jzZsG8n2R9A     | [3Summer.cs](./Blind75CSharp/Week01/ThreeSummer.cs)                               | Arrays & Hashing |         |
+| [Merge Intervals](https://leetcode.com/problems/merge-intervals/)                                 | Medium     | https://youtu.be/44H3cEC2fFM     | [Intervals.cs](./Blind75CSharp/Week01/Intervals.cs)                               | Intervals        |         |
+| Group Anagrams                                                                                    | Medium     |                                  |                                                                                   |                  |         |
+| **BONUS**                                                                                         | **---**    | **---**                          | **---**                                                                           | **---**          | **---** |
+| [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)               | Medium     | Link                             |                                                                                   |                  |         |
+| Search in Rotated Sorted Array                                                                    | Medium     | Link                             |                                                                                   |                  |         |
+| [Two Sum II - Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)            | Medium     | https://youtu.be/cQ1Oz4ckceM     | [TwoSummer.cs](./Blind75CSharp/Week01/TwoSummer.cs)                               | Double Pointers  |         |
+| [Insert Interval](https://leetcode.com/problems/insert-interval/)                                 | Medium     | https://youtu.be/A8NUOmlwOlM     | [Intervals.cs](./Blind75CSharp/Week01/Intervals.cs)                               | Intervals        |    Y    |
 
 ### Week 2 - Data structures
 
