@@ -1,6 +1,6 @@
 ﻿# Blind Top 75 Leetcode Problems - in CSharp
 
-Originally posted [here](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU) entitled "*New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Tim*e"
+Originally posted [here](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU) entitled "*New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time*"
 
 The 75 most important algorithms to understand when preparing for a FAANGMULA type interview (according to some...)
 
@@ -74,7 +74,7 @@ Organized by problem category. Problems marked with `*` require LeetCode Premium
 
 ### Linked List
 
-- Reverse a Linked List - https://leetcode.com/problems/reverse-linked-list/
+- [Reverse a Linked List](https://leetcode.com/problems/reverse-linked-list/)
 - Detect Cycle in a Linked List - https://leetcode.com/problems/linked-list-cycle/
 - Merge Two Sorted Lists - https://leetcode.com/problems/merge-two-sorted-lists/
 - Merge K Sorted Lists - https://leetcode.com/problems/merge-k-sorted-lists/
@@ -155,7 +155,7 @@ In week 1, we will warm up by doing a mix of easy and medium questions on arrays
 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/)                                 | Medium     | [🚀](https://youtu.be/44H3cEC2fFM) | [Intervals.cs](./Blind75CSharp/Week01/Intervals.cs)                               | Intervals        |         |
 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/)                                   | Medium     | [🚀](https://youtu.be/vzdNOK2oB2E) | [GroupAnagram.cs](./Blind75CSharp/Week01/GroupAnagram.cs)                         | Strings          |         |
 | **BONUS**                                                                                         | **---**    |              **---**              | **---**                                                                           | **---**          | **---** |
-| [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)               | Medium     |                                   |                                                                                   |                  |         |
+| [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)               | Medium     |                                   | [MaxSubArrayFinder.cs](./Blind75CSharp/Week01/MaxSubArrayFinder.cs)               |                  |         |
 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)   | Medium     | [🚀](https://youtu.be/U8XENwh8Oy8) | [SearchRotatedArray.cs](./Blind75CSharp/Week01/SearchRotatedArray.cs)             | Binary Search    |    Y    |
 | [Two Sum II - Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)            | Medium     | [🚀](https://youtu.be/cQ1Oz4ckceM) | [TwoSummer.cs](./Blind75CSharp/Week01/TwoSummer.cs)                               | Double Pointers  |         |
 | [Insert Interval](https://leetcode.com/problems/insert-interval/)                                 | Medium     | [🚀](https://youtu.be/A8NUOmlwOlM) | [Intervals.cs](./Blind75CSharp/Week01/Intervals.cs)                               | Intervals        |    Y    |
@@ -164,19 +164,29 @@ In week 1, we will warm up by doing a mix of easy and medium questions on arrays
 
 The focus of week 2 is on linked lists, strings and matrix-based questions. The goal is to learn the common routines dealing with linked lists, traversing matrices and sequence analysis (arrays/strings) techniques such as sliding window, linked list traversal and matrix traversal.
 
-| Question                                       | Difficulty | [NeetCode](https://neetcode.io/) | Solution | Category | Redo  |
-| ---------------------------------------------- | ---------- | -------------------------------- | -------- | -------- | :---: |
-| Reverse a Linked List                          | Easy       | Link                             |          |          |       |
-| Detect Cycle in a Linked List                  | Easy       | Link                             |          |          |       |
-| Container With Most Water                      | Medium     | Link                             |          |          |       |
-| Find Minimum in Rotated Sorted Array           | Medium     | Link                             |          |          |       |
-| Longest Repeating Character Replacement        | Medium     | Link                             |          |          |       |
-| Longest Substring Without Repeating Characters | Medium     | Link                             |          |          |       |
-| Number of Islands                              | Medium     | Link                             |          |          |       |
-| Remove Nth Node From End Of List               | Medium     | Link                             |          |          |       |
-| Palindromic Substrings                         | Medium     | Link                             |          |          |       |
-| Pacific Atlantic Water Flow                    | Medium     | Link                             |          |          |       |
-| Minimum Window Substring                       | Hard       | Link                             |          |          |       |
+| Question                                                                    | Difficulty | [NeetCode](https://neetcode.io/) | Solution | Category | Redo  |
+| --------------------------------------------------------------------------- | ---------- | -------------------------------- | -------- | -------- | :---: |
+| [Reverse a Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy       | [🚀]                              |          |          |       |
+| Detect Cycle in a Linked List                                               | Easy       | Link                             |          |          |       |
+| Container With Most Water                                                   | Medium     | Link                             |          |          |       |
+| Find Minimum in Rotated Sorted Array                                        | Medium     | Link                             |          |          |       |
+| Longest Repeating Character Replacement                                     | Medium     | Link                             |          |          |       |
+| Longest Substring Without Repeating Characters                              | Medium     | Link                             |          |          |       |
+| Number of Islands                                                           | Medium     | Link                             |          |          |       |
+| Remove Nth Node From End Of List                                            | Medium     | Link                             |          |          |       |
+| Palindromic Substrings                                                      | Medium     | Link                             |          |          |       |
+| Pacific Atlantic Water Flow                                                 | Medium     | Link                             |          |          |       |
+| Minimum Window Substring                                                    | Hard       | Link                             |          |          |       |
+
+
+### Bonus Week & Weekend
+
+After the week's problems are done, let's focus in the Top 100 most frequently asked questions at [Google](https://leetcode.com/problem-list/top-google-questions/?sorting=W3sic29ydE9yZGVyIjoiREVTQ0VORElORyIsIm9yZGVyQnkiOiJGUkVRVUVOQ1kifV0%3D).
+
+
+| Question                                                                               | Solution | Difficulty | Frequency |
+| -------------------------------------------------------------------------------------- | -------- | ---------- | --------- |
+| 528. [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/) |          | Medium     | 94%       |
 
 ## Resources
 
