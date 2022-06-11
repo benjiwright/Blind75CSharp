@@ -32,4 +32,25 @@ public class Solution
 
       return previous;
    }
+   // Runtime: 130 ms, faster than 28.43% of C# online submissions for Reverse Linked List.
+   // Memory Usage: 37.8 MB, less than 66.70% of C# online submissions for Reverse Linked List.
+
+   public bool HasCycle(ListNode head)
+   {
+      if (head is null) return false; // dirty to make leetcode happy
+
+      var slow = head;
+      var fast = head.next;
+      while (slow != fast)
+      {
+         if (fast is null || fast.next is null) return false;
+
+         slow = slow.next;
+         fast = fast.next.next;
+      }
+
+      return true;
+   }
+   // Runtime: 135 ms, faster than 49.80% of C# online submissions for Linked List Cycle.
+   // Memory Usage: 41.4 MB, less than 65.52% of C# online submissions for Linked List Cycle.
 }

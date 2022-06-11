@@ -75,7 +75,7 @@ Organized by problem category. Problems marked with `*` require LeetCode Premium
 ### Linked List
 
 - [Reverse a Linked List](https://leetcode.com/problems/reverse-linked-list/)
-- Detect Cycle in a Linked List - https://leetcode.com/problems/linked-list-cycle/
+- [Detect Cycle in a Linked List](https://leetcode.com/problems/linked-list-cycle/)
 - Merge Two Sorted Lists - https://leetcode.com/problems/merge-two-sorted-lists/
 - Merge K Sorted Lists - https://leetcode.com/problems/merge-k-sorted-lists/
 - Remove Nth Node From End Of List - https://leetcode.com/problems/remove-nth-node-from-end-of-list/
@@ -164,19 +164,19 @@ In week 1, we will warm up by doing a mix of easy and medium questions on arrays
 
 The focus of week 2 is on linked lists, strings and matrix-based questions. The goal is to learn the common routines dealing with linked lists, traversing matrices and sequence analysis (arrays/strings) techniques such as sliding window, linked list traversal and matrix traversal.
 
-| Question                                                                    | Difficulty | [NeetCode](https://neetcode.io/) | Solution | Category | Redo  |
-| --------------------------------------------------------------------------- | ---------- | -------------------------------- | -------- | -------- | :---: |
-| [Reverse a Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy       | [🚀]                              |          |          |       |
-| Detect Cycle in a Linked List                                               | Easy       | Link                             |          |          |       |
-| Container With Most Water                                                   | Medium     | Link                             |          |          |       |
-| Find Minimum in Rotated Sorted Array                                        | Medium     | Link                             |          |          |       |
-| Longest Repeating Character Replacement                                     | Medium     | Link                             |          |          |       |
-| Longest Substring Without Repeating Characters                              | Medium     | Link                             |          |          |       |
-| Number of Islands                                                           | Medium     | Link                             |          |          |       |
-| Remove Nth Node From End Of List                                            | Medium     | Link                             |          |          |       |
-| Palindromic Substrings                                                      | Medium     | Link                             |          |          |       |
-| Pacific Atlantic Water Flow                                                 | Medium     | Link                             |          |          |       |
-| Minimum Window Substring                                                    | Hard       | Link                             |          |          |       |
+| Question                                                                          | Difficulty | [NeetCode](https://neetcode.io/) | Solution                                                        | Category     | Redo  |
+| --------------------------------------------------------------------------------- | ---------- | -------------------------------- | --------------------------------------------------------------- | ------------ | :---: |
+| [Reverse a Linked List](https://leetcode.com/problems/reverse-linked-list/)       | Easy       | [🚀]                              | [Solution.cs](./Blind75CSharp/Week02/Solution.cs)/ReverseList() | Linked Lists |       |
+| [Detect Cycle in a Linked List](https://leetcode.com/problems/linked-list-cycle/) | Easy       | [🚀]                              | [Solution.cs](./Blind75CSharp/Week02/Solution.cs)/HasCycle()    |              |       |
+| Container With Most Water                                                         | Medium     | Link                             |                                                                 |              |       |
+| Find Minimum in Rotated Sorted Array                                              | Medium     | Link                             |                                                                 |              |       |
+| Longest Repeating Character Replacement                                           | Medium     | Link                             |                                                                 |              |       |
+| Longest Substring Without Repeating Characters                                    | Medium     | Link                             |                                                                 |              |       |
+| Number of Islands                                                                 | Medium     | Link                             |                                                                 |              |       |
+| Remove Nth Node From End Of List                                                  | Medium     | Link                             |                                                                 |              |       |
+| Palindromic Substrings                                                            | Medium     | Link                             |                                                                 |              |       |
+| Pacific Atlantic Water Flow                                                       | Medium     | Link                             |                                                                 |              |       |
+| Minimum Window Substring                                                          | Hard       | Link                             |                                                                 |              |       |
 
 
 ### Bonus Week & Weekend
