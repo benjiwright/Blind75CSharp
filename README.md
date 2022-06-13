@@ -164,25 +164,25 @@ In week 1, we will warm up by doing a mix of easy and medium questions on arrays
 
 The focus of week 2 is on linked lists, strings and matrix-based questions. The goal is to learn the common routines dealing with linked lists, traversing matrices and sequence analysis (arrays/strings) techniques such as sliding window, linked list traversal and matrix traversal.
 
-| Question                                                                              | Difficulty | [NeetCode](https://neetcode.io/)  | Solution                                                      | Category        | Redo  |
-| ------------------------------------------------------------------------------------- | ---------- | --------------------------------- | ------------------------------------------------------------- | --------------- | :---: |
-| [Reverse a Linked List](https://leetcode.com/problems/reverse-linked-list/)           | Easy       | [🚀]                               | [Solution.cs](./Blind75CSharp/Week02/Solution.cs)/ReverseList | Linked Lists    |       |
-| [Detect Cycle in a Linked List](https://leetcode.com/problems/linked-list-cycle/)     | Easy       | [🚀]                               | [Solution.cs](./Blind75CSharp/Week02/Solution.cs)/HasCycle    | Linked Lists    |       |
-| Find Minimum in Rotated Sorted Array                                                  | Medium     | [🚀]                               | TODO                                                          |                 |       |
-| [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | Medium     | [🚀]                               | [Solution.cs](./Blind75CSharp/Week02/Solution.cs)/MaxArea     | Double Pointers |       |
-| Longest Repeating Character Replacement                                               | Medium     | [🚀](https://youtu.be/UuiTKBwPgAo) |                                                               |                 |       |
-| Longest Substring Without Repeating Characters                                        | Medium     | [🚀]                               |                                                               |                 |       |
-| Number of Islands                                                                     | Medium     | [🚀]                               |                                                               |                 |       |
-| Remove Nth Node From End Of List                                                      | Medium     | [🚀]                               |                                                               |                 |       |
-| Palindromic Substrings                                                                | Medium     | [🚀]                               |                                                               |                 |       |
-| Pacific Atlantic Water Flow                                                           | Medium     | [🚀]                               |                                                               |                 |       |
-| Minimum Window Substring                                                              | Hard       | [🚀]                               |                                                               |                 |       |
-
+| Question                                                                                    | Difficulty | [NeetCode](https://neetcode.io/)                | Solution                                                      | Category        |  Redo   |
+| ------------------------------------------------------------------------------------------- | ---------- | ----------------------------------------------- | ------------------------------------------------------------- | --------------- | :-----: |
+| [Reverse a Linked List](https://leetcode.com/problems/reverse-linked-list/)                 | Easy       | [🚀]                                             | [Solution.cs](./Blind75CSharp/Week02/Solution.cs)/ReverseList | Linked Lists    |         |
+| [Detect Cycle in a Linked List](https://leetcode.com/problems/linked-list-cycle/)           | Easy       | [🚀]                                             | [Solution.cs](./Blind75CSharp/Week02/Solution.cs)/HasCycle    | Linked Lists    |         |
+| Find Minimum in Rotated Sorted Array                                                        | Medium     | [🚀]                                             | TODO                                                          |                 |         |
+| [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)       | Medium     | [🚀](https://youtu.be/UuiTKBwPgAo)               | [Solution.cs](./Blind75CSharp/Week02/Solution.cs)/MaxArea     | Double Pointers |         |
+| Longest Repeating Character Replacement                                                     | Medium     | [🚀]                                             |                                                               |                 |         |
+| Longest Substring Without Repeating Characters                                              | Medium     | [🚀]                                             |                                                               |                 |         |
+| Number of Islands                                                                           | Medium     | [🚀]                                             |                                                               |                 |         |
+| Remove Nth Node From End Of List                                                            | Medium     | [🚀]                                             |                                                               |                 |         |
+| Palindromic Substrings                                                                      | Medium     | [🚀]                                             |                                                               |                 |         |
+| Pacific Atlantic Water Flow                                                                 | Medium     | [🚀]                                             |                                                               |                 |         |
+| Minimum Window Substring                                                                    | Hard       | [🚀]                                             |                                                               |                 |         |
+| **BONUS**                                                                                   | **---**    | **---**                                         | **---**                                                       | **---**         | **---** |
+| [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) | Hard       | [🚀](https://www.youtube.com/watch?v=itmhHWaHupI | [MedianFinder.cs](./Blind75CSharp/Week02/MedianFinder.cs)     | Data Structures |         |
 
 ### Bonus Week & Weekend
 
 After the week's problems are done, let's focus in the Top 100 most frequently asked questions at [Google](https://leetcode.com/problem-list/top-google-questions/?sorting=W3sic29ydE9yZGVyIjoiREVTQ0VORElORyIsIm9yZGVyQnkiOiJGUkVRVUVOQ1kifV0%3D).
-
 
 | Question                                                                               | Solution | Difficulty | Frequency |
 | -------------------------------------------------------------------------------------- | -------- | ---------- | --------- |
