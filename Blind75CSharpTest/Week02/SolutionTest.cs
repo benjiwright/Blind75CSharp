@@ -1,4 +1,6 @@
-﻿using Blind75CSharp.Week02;
+﻿using System;
+using System.Linq;
+using Blind75CSharp.Week02;
 using FluentAssertions;
 using Xunit;
 
@@ -50,5 +52,19 @@ public class SolutionTest
       }
 
       return head;
+   }
+
+
+   [Fact]
+   private void PriorityQueue()
+   {
+      var input = new int[] {3, 6, 1, 8, 2, 0, -11, 23, 3, 5, 3, 2,};
+      var testObject = new Solution();
+
+      var actual = testObject.PriorityQueue(input);
+      var (min, max) = actual;
+
+      min.Should().Be(input.Min());
+      max.Should().Be(input.Max());
    }
 }

@@ -87,4 +87,26 @@ public class Solution
    }
    // Runtime: 187 ms, faster than 88.70% of C# online submissions for Container With Most Water.
    // Memory Usage: 50.5 MB, less than 19.07% of C# online submissions for Container With Most Water.   
+
+
+   public Tuple<int, int> PriorityQueue(int[] nums)
+   {
+      var minHeap = new PriorityQueue<int, int>();
+      var ghettoMaxHeap = new PriorityQueue<int, int>();
+      var maxHeap = new PriorityQueue<int, IntMaxCompare>();
+
+      // build heaps
+      foreach (var num in nums)
+      {
+         minHeap.Enqueue(num, num);
+         ghettoMaxHeap.Enqueue(num, -1 * num);
+      }
+
+      return new Tuple<int, int>(minHeap.Dequeue(), ghettoMaxHeap.Dequeue());
+   }
+
+   private class IntMaxCompare : IComparer<int>
+   {
+      public int Compare(int x, int y) => y.CompareTo(x); // invert the logic
+   }
 }
