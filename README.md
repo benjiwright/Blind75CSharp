@@ -78,7 +78,7 @@ Organized by problem category. Problems marked with `*` require LeetCode Premium
 - [Detect Cycle in a Linked List](https://leetcode.com/problems/linked-list-cycle/)
 - Merge Two Sorted Lists - https://leetcode.com/problems/merge-two-sorted-lists/
 - Merge K Sorted Lists - https://leetcode.com/problems/merge-k-sorted-lists/
-- Remove Nth Node From End Of List - https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+- [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
 - Reorder List - https://leetcode.com/problems/reorder-list/
 
 ---
@@ -173,7 +173,7 @@ The focus of week 2 is on linked lists, strings and matrix-based questions. The 
 | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | Medium     | [🚀](https://youtu.be/gqXU1UyA8pk)               | [CharacterReplacement.cs](./Blind75CSharp/Week02/LetterReplacement.cs) | Double Pointers |         |
 | Longest Substring Without Repeating Characters                                                                    | Medium     | [🚀]                                             |                                                                        |                 |         |
 | Number of Islands                                                                                                 | Medium     | [🚀]                                             |                                                                        |                 |         |
-| Remove Nth Node From End Of List                                                                                  | Medium     | [🚀]                                             |                                                                        |                 |         |
+| [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)               | Medium     | [🚀]                                             |                                                                        |                 |         |
 | Palindromic Substrings                                                                                            | Medium     | [🚀]                                             |                                                                        |                 |         |
 | Pacific Atlantic Water Flow                                                                                       | Medium     | [🚀]                                             |                                                                        |                 |         |
 | Minimum Window Substring                                                                                          | Hard       | [🚀]                                             |                                                                        |                 |         |

@@ -29,6 +29,144 @@ public class SolutionTest
       }
    }
 
+   [Fact]
+   public void PriorityQueue()
+   {
+      var input = new int[] {3, 6, 1, 8, 2, 0, -11, 23, 3, 5, 3, 2,};
+      var testObject = new Solution();
+
+      var actual = testObject.PriorityQueue(input);
+      var (min, max) = actual;
+
+      min.Should().Be(input.Min());
+      max.Should().Be(input.Max());
+   }
+
+   [Fact]
+   public void LinkedListRemoveNthNode_When_Middle()
+   {
+      var input = new int[] {1, 2, 3, 4, 5};
+      var head = BuildLinkedList(input);
+
+      var testObject = new Solution();
+      var actual = testObject.LinkedListRemoveNthNode(head, 2);
+
+
+      var idx = 0;
+      var expected = new int[] {1, 2, 4, 5};
+      var current = actual;
+      while (current is not null)
+      {
+         current.val.Should().Be(expected[idx]);
+         current = current.next;
+         idx++;
+      }
+   }
+
+   [Fact]
+   public void LinkedListRemoveNthNode_When_Head()
+   {
+      var input = new int[] {1, 2, 3, 4, 5};
+      var head = BuildLinkedList(input);
+
+      var testObject = new Solution();
+      var actual = testObject.LinkedListRemoveNthNode(head, 0);
+
+
+      var idx = 0;
+      var expected = new int[] {2, 3, 4, 5};
+      var current = actual;
+      while (current is not null)
+      {
+         current.val.Should().Be(expected[idx]);
+         current = current.next;
+         idx++;
+      }
+   }
+
+   [Fact]
+   public void LinkedListRemoveNthNode_When_Tail()
+   {
+      var input = new int[] {1, 2, 3, 4, 5};
+      var head = BuildLinkedList(input);
+
+      var testObject = new Solution();
+      var actual = testObject.LinkedListRemoveNthNode(head, 4);
+
+      var idx = 0;
+      var expected = new int[] {1, 2, 3, 4};
+      var current = actual;
+      while (current is not null)
+      {
+         current.val.Should().Be(expected[idx]);
+         current = current.next;
+         idx++;
+      }
+   }
+
+   [Fact]
+   public void RemoveNthFromEnd_When_Middle()
+   {
+      var input = new int[] {1, 2, 3, 4, 5};
+      var head = BuildLinkedList(input);
+
+      var testObject = new Solution();
+      var actual = testObject.RemoveNthFromEnd(head, 2);
+
+      var idx = 0;
+      var expected = new int[] {1, 2, 3, 5};
+      var current = actual;
+      while (current is not null)
+      {
+         current.val.Should().Be(expected[idx]);
+         current = current.next;
+         idx++;
+      }
+   }
+   
+   [Fact]
+   public void RemoveNthFromEnd_When_Last()
+   {
+      var input = new int[] {1, 2, 3, 4, 5};
+      var head = BuildLinkedList(input);
+
+      var testObject = new Solution();
+      var actual = testObject.RemoveNthFromEnd(head, 1);
+
+      var idx = 0;
+      var expected = new int[] {1, 2, 3, 4};
+      var current = actual;
+      while (current is not null)
+      {
+         current.val.Should().Be(expected[idx]);
+         current = current.next;
+         idx++;
+      }
+   }
+   
+   [Fact]
+   public void RemoveNthFromEnd_When_First()
+   {
+      var input = new int[] {1, 2, 3, 4, 5};
+      var head = BuildLinkedList(input);
+
+      var testObject = new Solution();
+      var actual = testObject.RemoveNthFromEnd(head, 5);
+
+      var idx = 0;
+      var expected = new int[] { 2, 3, 4,5};
+      var current = actual;
+      while (current is not null)
+      {
+         current.val.Should().Be(expected[idx]);
+         current = current.next;
+         idx++;
+      }
+   }
+
+
+   #region Helper Methods
+
    private ListNode BuildLinkedList(int[] nums)
    {
       ListNode head = null;
@@ -54,17 +192,5 @@ public class SolutionTest
       return head;
    }
 
-
-   [Fact]
-   private void PriorityQueue()
-   {
-      var input = new int[] {3, 6, 1, 8, 2, 0, -11, 23, 3, 5, 3, 2,};
-      var testObject = new Solution();
-
-      var actual = testObject.PriorityQueue(input);
-      var (min, max) = actual;
-
-      min.Should().Be(input.Min());
-      max.Should().Be(input.Max());
-   }
+   #endregion
 }

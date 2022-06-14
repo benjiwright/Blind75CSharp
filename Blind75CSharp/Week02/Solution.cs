@@ -15,6 +15,57 @@ public sealed class ListNode
 
 public class Solution
 {
+   public ListNode LinkedListRemoveNthNode(ListNode head, int n)
+   {
+      if (n == 0) return head.next;
+
+      var current = head;
+      var previous = head;
+      var idx = 1;
+
+      while (current != null)
+      {
+         current = current.next;
+         if (idx == n)
+         {
+            previous.next = current.next;
+            return head;
+         }
+
+         previous = current;
+         idx++;
+      }
+
+      return head;
+   }
+
+   public ListNode RemoveNthFromEnd(ListNode head, int n)
+   {
+      var temp = new ListNode(0, head);
+      var left = temp;
+      var right = head;
+
+      // walk the right to create a window
+      while (right != null && n > 0)
+      {
+         right = right.next;
+         n--;
+      }
+
+      while (right != null)
+      {
+         left = left.next;
+         right = right.next;
+      }
+
+      // delete node
+      left.next = left.next.next;
+
+      return temp.next;
+   }
+   // Runtime: 125 ms, faster than 33.50% of C# online submissions for Remove Nth Node From End of List.
+   // Memory Usage: 37.7 MB, less than 84.79% of C# online submissions for Remove Nth Node From End of List.
+
    public ListNode ReverseList(ListNode head)
    {
       if (head is null) return null; // this is dirty, but make that test case happy
