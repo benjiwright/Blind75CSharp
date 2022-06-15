@@ -15,6 +15,46 @@ public sealed class ListNode
 
 public class Solution
 {
+   public int NumIslands(char[][] grid)
+   {
+      var visited = new HashSet<string>();
+      var result = 0;
+
+      for (var row = 0; row < grid.GetLength(0); row++)
+      {
+         for (var col = 0; col < grid[0].GetLength(0); col++)
+         {
+            if (VisitLocation(row, col, grid, visited)) result++;
+         }
+      }
+
+      return result;
+   }
+   // Runtime: 277 ms, faster than 6.20% of C# online submissions for Number of Islands.
+   // Memory Usage: 48.2 MB, less than 26.38% of C# online submissions for Number of Islands.
+
+   private bool VisitLocation(int row, int col, char[][] grid, HashSet<string> visited)
+   {
+      // oob checks
+      if (row < 0 || row >= grid.GetLength(0)) return false;
+      if (col < 0 || col >= grid[0].GetLength(0)) return false;
+
+      var location = $"{row}, {col}";
+      if (visited.Contains(location)) return false;
+
+      if (grid[row][col] == '0') return false;
+      
+      // mark visited and explore all neighbors
+      visited.Add(location);
+      VisitLocation(row - 1, col, grid, visited);
+      VisitLocation(row + 1, col, grid, visited);
+      VisitLocation(row, col - 1, grid, visited);
+      VisitLocation(row, col + 1, grid, visited);
+
+      return true;
+   }
+
+
    public ListNode LinkedListRemoveNthNode(ListNode head, int n)
    {
       if (n == 0) return head.next;

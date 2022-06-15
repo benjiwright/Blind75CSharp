@@ -123,7 +123,7 @@ public class SolutionTest
          idx++;
       }
    }
-   
+
    [Fact]
    public void RemoveNthFromEnd_When_Last()
    {
@@ -143,7 +143,7 @@ public class SolutionTest
          idx++;
       }
    }
-   
+
    [Fact]
    public void RemoveNthFromEnd_When_First()
    {
@@ -154,7 +154,7 @@ public class SolutionTest
       var actual = testObject.RemoveNthFromEnd(head, 5);
 
       var idx = 0;
-      var expected = new int[] { 2, 3, 4,5};
+      var expected = new int[] {2, 3, 4, 5};
       var current = actual;
       while (current is not null)
       {
@@ -162,6 +162,38 @@ public class SolutionTest
          current = current.next;
          idx++;
       }
+   }
+
+   [Fact]
+   public void NumIslands_When_OneBigIsland()
+   {
+      var grid = new char[][]
+      {
+         new char[] {'1', '1', '1', '1', '0'},
+         new char[] {'1', '1', '0', '1', '0'},
+         new char[] {'1', '1', '0', '0', '0'},
+         new char[] {'0', '0', '0', '0', '0'}
+      };
+
+      var testObject = new Solution();
+      var actual = testObject.NumIslands(grid);
+      actual.Should().Be(1);
+   }
+
+   [Fact]
+   public void NumIslands_When_ManyIslands()
+   {
+      var grid = new char[][]
+      {
+         new char[] {'1', '1', '0', '0', '0'},
+         new char[] {'1', '1', '0', '0', '0'},
+         new char[] {'0', '0', '1', '0', '0'},
+         new char[] {'0', '0', '0', '1', '1'}
+      };
+
+      var testObject = new Solution();
+      var actual = testObject.NumIslands(grid);
+      actual.Should().Be(3);
    }
 
 

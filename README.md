@@ -55,7 +55,7 @@ Organized by problem category. Problems marked with `*` require LeetCode Premium
 - Course Schedule - https://leetcode.com/problems/course-schedule/
 - Pacific Atlantic Water Flow - https://leetcode.com/problems/pacific-atlantic-water-flow/
 - Number of Islands - https://leetcode.com/problems/number-of-islands/
-- Longest Consecutive Sequence - https://leetcode.com/problems/longest-consecutive-sequence/
+- [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
 - Alien Dictionary (Leetcode Premium) - https://leetcode.com/problems/alien-dictionary/
 - Graph Valid Tree () - https://leetcode.com/problems/graph-valid-tree/
 - Number of Connected Components in an Undirected Graph (Leetcode Premium) - https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/
@@ -172,8 +172,8 @@ The focus of week 2 is on linked lists, strings and matrix-based questions. The 
 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)                             | Medium     | [🚀](https://youtu.be/UuiTKBwPgAo)               | [Solution.cs](./Blind75CSharp/Week02/Solution.cs)/MaxArea              | Double Pointers |         |
 | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | Medium     | [🚀](https://youtu.be/gqXU1UyA8pk)               | [CharacterReplacement.cs](./Blind75CSharp/Week02/LetterReplacement.cs) | Double Pointers |         |
 | Longest Substring Without Repeating Characters                                                                    | Medium     | [🚀]                                             |                                                                        |                 |         |
-| Number of Islands                                                                                                 | Medium     | [🚀]                                             |                                                                        |                 |         |
-| [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)               | Medium     | [🚀]                                             |                                                                        |                 |         |
+| [Number of Islands](https://leetcode.com/problems/longest-consecutive-sequence/)                                  | Medium     | [🚀]                                             |                                                                        |                 |         |
+| [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)               | Medium     | [🚀](https://youtu.be/XVuQxVej6y8)               | [Solution.cs](./Blind75CSharp/Week02/Solution.cs)/RemoveNthFromEnd.cs  | Linked Lists    |         |
 | Palindromic Substrings                                                                                            | Medium     | [🚀]                                             |                                                                        |                 |         |
 | Pacific Atlantic Water Flow                                                                                       | Medium     | [🚀]                                             |                                                                        |                 |         |
 | Minimum Window Substring                                                                                          | Hard       | [🚀]                                             |                                                                        |                 |         |
