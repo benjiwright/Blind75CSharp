@@ -15,6 +15,71 @@ public sealed class ListNode
 
 public class Solution
 {
+   public IList<IList<int>> PacificAtlantic(int[][] heights)
+   {
+      var results = new List<IList<int>>();
+      if (heights == null || heights.Length < 1) return results;
+      
+      
+      var rowSize = heights.Length;
+      var colSize = heights[0].Length;
+      var visitedPacific = new HashSet<string>();
+      var visitedAtlantic = new HashSet<string>();
+
+      // North & South
+      for (var row = 0; row < rowSize; row++)
+      {
+         VisitIsland(row, 0, visitedPacific, heights[row][0], rowSize, colSize, heights); // North
+         VisitIsland(row, colSize - 1, visitedAtlantic, heights[row][colSize - 1], rowSize, colSize, heights); // South
+      }
+
+      // West & East
+      for (var col = 0; col < colSize; col++)
+      {
+         VisitIsland(0, col, visitedPacific, heights[0][col], rowSize, colSize, heights); //West
+         VisitIsland(rowSize - 1, col, visitedAtlantic, heights[rowSize - 1][col], rowSize, colSize, heights); // East
+      }
+
+      // Union
+      for (var row = 0; row < rowSize; row++)
+      {
+         for (var col = 0; col < colSize; col++)
+         {
+            var location = $"{row},{col}";
+            if (visitedAtlantic.Contains(location) && visitedPacific.Contains(location))
+            {
+               results.Add( new List<int>{row,col});
+            }
+         }
+            
+      }
+
+      return results;
+   }
+   // Runtime: 400 ms, faster than 17.08% of C# online submissions for Pacific Atlantic Water Flow.
+   // Memory Usage: 46.3 MB, less than 43.72% of C# online submissions for Pacific Atlantic Water Flow.
+
+   private void VisitIsland(int row, int col, HashSet<string> visited, int previousHeight, int rowSize, int colSize,
+      int[][] heights)
+   {
+      var location = $"{row},{col}";
+      if (visited.Contains(location)) return;
+
+      if (row < 0 || row >= rowSize) return;
+      if (col < 0 || col >= colSize) return;
+
+      var height = heights[row][col];
+      if (height < previousHeight) return;
+
+      visited.Add(location);
+
+      VisitIsland(row + 1, col, visited, height, rowSize, colSize, heights);
+      VisitIsland(row - 1, col, visited, height, rowSize, colSize, heights);
+      VisitIsland(row, col + 1, visited, height, rowSize, colSize, heights);
+      VisitIsland(row, col - 1, visited, height, rowSize, colSize, heights);
+   }
+
+
    public int NumIslands(char[][] grid)
    {
       var visited = new HashSet<string>();
@@ -43,7 +108,7 @@ public class Solution
       if (visited.Contains(location)) return false;
 
       if (grid[row][col] == '0') return false;
-      
+
       // mark visited and explore all neighbors
       visited.Add(location);
       VisitLocation(row - 1, col, grid, visited);
@@ -53,7 +118,6 @@ public class Solution
 
       return true;
    }
-
 
    public ListNode LinkedListRemoveNthNode(ListNode head, int n)
    {

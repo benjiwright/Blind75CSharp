@@ -53,7 +53,7 @@ Organized by problem category. Problems marked with `*` require LeetCode Premium
 
 - Clone Graph - https://leetcode.com/problems/clone-graph/
 - Course Schedule - https://leetcode.com/problems/course-schedule/
-- Pacific Atlantic Water Flow - https://leetcode.com/problems/pacific-atlantic-water-flow/
+- [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)
 - Number of Islands - https://leetcode.com/problems/number-of-islands/
 - [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
 - Alien Dictionary (Leetcode Premium) - https://leetcode.com/problems/alien-dictionary/
@@ -175,7 +175,7 @@ The focus of week 2 is on linked lists, strings and matrix-based questions. The 
 | [Number of Islands](https://leetcode.com/problems/longest-consecutive-sequence/)                                  | Medium     | [🚀]                                             |                                                                        |                 |         |
 | [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)               | Medium     | [🚀](https://youtu.be/XVuQxVej6y8)               | [Solution.cs](./Blind75CSharp/Week02/Solution.cs)/RemoveNthFromEnd.cs  | Linked Lists    |         |
 | Palindromic Substrings                                                                                            | Medium     | [🚀]                                             |                                                                        |                 |         |
-| Pacific Atlantic Water Flow                                                                                       | Medium     | [🚀]                                             |                                                                        |                 |         |
+| [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)                         | Medium     | [🚀]                                             |                                                                        |                 |         |
 | Minimum Window Substring                                                                                          | Hard       | [🚀]                                             |                                                                        |                 |         |
 | **BONUS**                                                                                                         | **---**    | **---**                                         | **---**                                                                | **---**         | **---** |
 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)                       | Hard       | [🚀](https://www.youtube.com/watch?v=itmhHWaHupI | [MedianFinder.cs](./Blind75CSharp/Week02/MedianFinder.cs)              | Data Structures |         |

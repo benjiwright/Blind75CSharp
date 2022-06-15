@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Blind75CSharp.Week02;
 using FluentAssertions;
@@ -194,6 +195,63 @@ public class SolutionTest
       var testObject = new Solution();
       var actual = testObject.NumIslands(grid);
       actual.Should().Be(3);
+   }
+
+   [Fact]
+   public void PacificAtlantic_When_Valid()
+   {
+      var input = new int[][]
+      {
+         new int[] {1, 2, 2, 3, 5},
+         new int[] {3, 2, 3, 4, 4},
+         new int[] {2, 4, 5, 3, 1},
+         new int[] {6, 7, 1, 4, 5},
+         new int[] {5, 1, 1, 2, 4}
+      };
+
+      var testObject = new Solution();
+      var actual = testObject.PacificAtlantic(input);
+
+      var expected = new List<IList<int>>
+      {
+         new List<int> {0, 4},
+         new List<int> {1, 3},
+         new List<int> {1, 4},
+         new List<int> {2, 2},
+         new List<int> {3, 0},
+         new List<int> {3, 1},
+         new List<int> {4, 0}
+      };
+
+      actual.Count.Should().Be(expected.Count);
+      actual.Should().BeEquivalentTo(expected);
+   }
+
+   [Fact]
+   public void PacificAtlantic_When_AllSameHeight()
+   {
+      var input = new int[][]
+      {
+         new int[] {1, 1},
+         new int[] {1, 1},
+         new int[] {1, 1}
+      };
+
+      var testObject = new Solution();
+      var actual = testObject.PacificAtlantic(input);
+
+      var expected = new List<IList<int>>
+      {
+         new List<int> {0, 0},
+         new List<int> {0, 1},
+         new List<int> {1, 0},
+         new List<int> {1, 1},
+         new List<int> {2, 0},
+         new List<int> {2, 1},
+      };
+
+      actual.Count.Should().Be(expected.Count);
+      actual.Should().BeEquivalentTo(expected);
    }
 
 
