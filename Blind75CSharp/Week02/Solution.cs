@@ -15,6 +15,13 @@ public sealed class ListNode
 
 public class Solution
 {
+
+   public int CountSubstrings(string s)
+   {
+      // TODO
+      return -1;
+   }
+
    public IList<IList<int>> PacificAtlantic(int[][] heights)
    {
       var results = new List<IList<int>>();

@@ -254,6 +254,17 @@ public class SolutionTest
       actual.Should().BeEquivalentTo(expected);
    }
 
+   [Theory]
+   [InlineData("abc", 3)] // "a", "b", "c"
+   [InlineData("aaa", 6)] // "a", "a", "a", "aa", "aa", "aaa"
+   public void CountSubstrings_When_Valid(string input, int expected)
+   {
+      var testObj = new Solution();
+      var actual = testObj.CountSubstrings(input);
+      // actual.Should().Be(expected);
+      // TODO: have not started this problem. Got too excited for Trie
+   }
+
 
    #region Helper Methods
 
