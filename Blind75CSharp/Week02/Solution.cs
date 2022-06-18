@@ -15,6 +15,35 @@ public sealed class ListNode
 
 public class Solution
 {
+   public int LengthOfLongestSubstring(string s)
+   {
+      if (s.Length == 0) return 0;
+
+      var result = 0;
+      var right = 0;
+      var left = 0;
+
+      var occurs = new HashSet<char>();
+      while (right < s.Length)
+      {
+         var letter = s[right];
+         while (occurs.Contains(letter))
+         {
+            occurs.Remove(s[left]);
+            left++;
+         }
+
+         occurs.Add(letter);
+         right++;
+         result = Math.Max(result, right - left);
+      }
+
+      return result;
+   }
+   // Runtime: 122 ms, faster than 39.81% of C# online submissions for Longest Substring Without Repeating Characters.
+   // Memory Usage: 37.2 MB, less than 33.15% of C# online submissions for Longest Substring Without Repeating Characters.
+
+
    public int CountSubstrings(string s)
    {
       var results = 0;
@@ -44,7 +73,7 @@ public class Solution
    // Before refactor:
    // Runtime: 101 ms, faster than 47.94% of C# online submissions for Palindromic Substrings.
    // Memory Usage: 34.9 MB, less than 54.45% of C# online submissions for Palindromic Substrings.
-   
+
    // After readability refactor:
    // Runtime: 83 ms, faster than 69.36% of C# online submissions for Palindromic Substrings.
    // Memory Usage: 34.8 MB, less than 63.34% of C# online submissions for Palindromic Substrings.

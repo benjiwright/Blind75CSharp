@@ -9,6 +9,18 @@ namespace Blind75CSharpTest.Week02;
 
 public class SolutionTest
 {
+   [Theory]
+   [InlineData("abcabcbb", 3)]
+   [InlineData("bbbbb", 1)]
+   [InlineData("pwwkew", 3)]
+   public void LengthOfLongestSubstring_When_Valids(string input, int expected)
+   {
+      var testObject = new Solution();
+      var actual = testObject.LengthOfLongestSubstring(input);
+      actual.Should().Be(expected);
+   }
+
+
    [Fact]
    public void ReverseList_When_Valid()
    {
