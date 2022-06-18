@@ -1,4 +1,6 @@
-﻿namespace Blind75CSharp.Week02;
+﻿using System.Text;
+
+namespace Blind75CSharp.Week02;
 
 // Definition for singly-linked list.
 public sealed class ListNode
@@ -15,6 +17,77 @@ public sealed class ListNode
 
 public class Solution
 {
+   public string MinWindow(string s, string t)
+   {
+      var result = string.Empty;
+      if (t.Length > s.Length) return result;
+
+      // build our matches
+      var matchCounts = new Dictionary<char, int>();
+      foreach (var c in t) // O(n)
+      {
+         if (!matchCounts.ContainsKey(c)) matchCounts.Add(c, 0);
+         matchCounts[c]++;
+      }
+
+      var left = 0;
+      var right = 0;
+      var windowCounts = new Dictionary<char, int>();
+      // slide our window
+      while (right < s.Length) // O(n)
+      {
+         // manage the window counts
+         var letter = s[right];
+         if (matchCounts.ContainsKey(letter)) // nested O(n) so O(n^2)
+         {
+            if (!windowCounts.ContainsKey(letter))
+            {
+               windowCounts.Add(letter, 0);
+            }
+
+            windowCounts[letter]++;
+         }
+
+         // move the window
+         while (IsWindowValid(windowCounts, matchCounts)) // also linear
+         {
+            var subString = s.Substring(left, right - left + 1);
+            if (result == string.Empty || result.Length > subString.Length)
+            {
+               result = subString;
+            }
+
+            if (matchCounts.ContainsKey(s[left]))
+            {
+               windowCounts[s[left]]--;
+            }
+
+            left++;
+         }
+
+         right++;
+      }
+
+      return result;
+   }
+   // Runtime: 445 ms, faster than 5.03% of C# online submissions for Minimum Window Substring. 
+   // Memory Usage: 50.4 MB, less than 5.15% of C# online submissions for Minimum Window Substring.
+   // Runtime complexity is the approved solution on LC where it's a sliding window that is optimized to 
+   // not include letter we do not care about.  I am confused my the runtime is slow.
+   
+
+   private bool IsWindowValid(IDictionary<char, int> windowDict, IDictionary<char, int> countsDict)
+   {
+      foreach (var kp in countsDict)
+      {
+         if (!windowDict.ContainsKey(kp.Key)) return false;
+         if (windowDict[kp.Key] < kp.Value) return false;
+      }
+
+      return true;
+   }
+
+
    public int LengthOfLongestSubstring(string s)
    {
       if (s.Length == 0) return 0;
