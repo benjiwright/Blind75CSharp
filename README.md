@@ -54,7 +54,7 @@ Organized by problem category. Problems marked with `*` require LeetCode Premium
 - Clone Graph - https://leetcode.com/problems/clone-graph/
 - Course Schedule - https://leetcode.com/problems/course-schedule/
 - [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)
-- Number of Islands - https://leetcode.com/problems/number-of-islands/
+- [Number of Islands](https://leetcode.com/problems/number-of-islands/)
 - [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
 - Alien Dictionary (Leetcode Premium) - https://leetcode.com/problems/alien-dictionary/
 - Graph Valid Tree () - https://leetcode.com/problems/graph-valid-tree/
@@ -166,15 +166,15 @@ The focus of week 2 is on linked lists, strings and matrix-based questions. The 
 
 | Question                                                                                                          | Difficulty | [NeetCode](https://neetcode.io/)  | Solution                                                            | Category        |  Redo   |
 | ----------------------------------------------------------------------------------------------------------------- | ---------- | --------------------------------- | ------------------------------------------------------------------- | --------------- | :-----: |
-| [Reverse a Linked List](https://leetcode.com/problems/reverse-linked-list/)                                       | Easy       | [🚀]                               | [ReverseList](./Blind75CSharp/Week02/Solution.cs)                   | Linked Lists    |         |
-| [Detect Cycle in a Linked List](https://leetcode.com/problems/linked-list-cycle/)                                 | Easy       | [🚀]                               | [HasCycle](./Blind75CSharp/Week02/Solution.cs)                      | Linked Lists    |         |
-| [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)       | Medium     | [🚀]                               | [SearchRotatedArray](./Blind75CSharp/Week01/SearchRotatedArray.cs)  |                 |         |
+| [Reverse a Linked List](https://leetcode.com/problems/reverse-linked-list/)                                       | Easy       | [🚀](#)                            | [ReverseList](./Blind75CSharp/Week02/Solution.cs)                   | Linked Lists    |         |
+| [Detect Cycle in a Linked List](https://leetcode.com/problems/linked-list-cycle/)                                 | Easy       | [🚀](#)                            | [HasCycle](./Blind75CSharp/Week02/Solution.cs)                      | Linked Lists    |         |
+| [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)       | Medium     | [🚀](#)                            | [SearchRotatedArray](./Blind75CSharp/Week01/SearchRotatedArray.cs)  |                 |         |
 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)                             | Medium     | [🚀](https://youtu.be/UuiTKBwPgAo) | [MaxArea](./Blind75CSharp/Week02/Solution.cs)                       | Double Pointers |         |
 | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | Medium     | [🚀](https://youtu.be/gqXU1UyA8pk) | [CharacterReplacement](./Blind75CSharp/Week02/LetterReplacement.cs) | Double Pointers |         |
 | Longest Substring Without Repeating Characters                                                                    | Medium     | [🚀]                               |                                                                     |                 |         |
-| [Number of Islands](https://leetcode.com/problems/longest-consecutive-sequence/)                                  | Medium     | [🚀]                               |                                                                     |                 |         |
+| [Number of Islands](https://leetcode.com/problems/number-of-islands/)                                             | Medium     | [🚀](#)                            | [NumIslands]((./Blind75CSharp/Week02/Solution.cs)                   | Graph           |         |
 | [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)               | Medium     | [🚀](https://youtu.be/XVuQxVej6y8) | [RemoveNthFromEnd](./Blind75CSharp/Week02/Solution.cs)              | Linked Lists    |         |
-| [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)                                   | Medium     | [🚀]                               |                                                                     |                 |         |
+| [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)                                   | Medium     | [🚀](https://youtu.be/4RACzI5-du8) | [CountSubstrings]((./Blind75CSharp/Week02/Solution.cs)              | Double Pointers |         |
 | [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)                         | Medium     | [🚀](https://youtu.be/s-VkcjHqkGI) | [PacificAtlantic](./Blind75CSharp/Week02/Solution.cs)               | Graph           |         |
 | Minimum Window Substring                                                                                          | Hard       | [🚀]                               |                                                                     |                 |         |
 | **BONUS**                                                                                                         | **---**    | **---**                           | **---**                                                             | **---**         | **---** |
@@ -182,7 +182,7 @@ The focus of week 2 is on linked lists, strings and matrix-based questions. The 
 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)                         | Medium     | [🚀](https://youtu.be/oobqoCJlHA0) | [Trie.cs](./Blind75CSharp/Week02/Trie.cs)                           | Data Structures |         |
 
 ### Bonus Week & Weekend
-
+3
 After the week's problems are done, let's focus in the Top 100 most frequently asked questions at [Google](https://leetcode.com/problem-list/top-google-questions/?sorting=W3sic29ydE9yZGVyIjoiREVTQ0VORElORyIsIm9yZGVyQnkiOiJGUkVRVUVOQ1kifV0%3D).
 
 | Question                                                                               | Solution | Difficulty | Frequency |

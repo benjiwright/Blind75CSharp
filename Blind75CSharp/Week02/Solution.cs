@@ -18,38 +18,36 @@ public class Solution
    public int CountSubstrings(string s)
    {
       var results = 0;
-
-      // odds
       for (var middle = 0; middle < s.Length; middle++)
       {
-         var left = middle;
-         var right = middle;
-         while (left >= 0 && right < s.Length && s[left] == s[right])
-         {
-            results++;
-            left--;
-            right++;
-         }
-      }
-
-      // evens
-      for (var middle = 0; middle + 1 < s.Length; middle++)
-      {
-         var left = middle;
-         var right = middle + 1;
-
-         while (left >= 0 && right < s.Length && (s[left] == s[right]))
-         {
-            results++;
-            left--;
-            right++;
-         }
+         // odd
+         results += CountPalindromes(s, middle, middle);
+         // even
+         results += CountPalindromes(s, middle, middle + 1);
       }
 
       return results;
    }
+
+   private int CountPalindromes(string s, int left, int right)
+   {
+      var results = 0;
+      while (left >= 0 && right < s.Length && s[left] == s[right])
+      {
+         results++;
+         left--;
+         right++;
+      }
+
+      return results;
+   }
+   // Before refactor:
    // Runtime: 101 ms, faster than 47.94% of C# online submissions for Palindromic Substrings.
    // Memory Usage: 34.9 MB, less than 54.45% of C# online submissions for Palindromic Substrings.
+   
+   // After readability refactor:
+   // Runtime: 83 ms, faster than 69.36% of C# online submissions for Palindromic Substrings.
+   // Memory Usage: 34.8 MB, less than 63.34% of C# online submissions for Palindromic Substrings.
 
    public IList<IList<int>> PacificAtlantic(int[][] heights)
    {
