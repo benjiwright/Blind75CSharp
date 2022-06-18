@@ -2,11 +2,11 @@
 
 Originally posted [here](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU) entitled "*New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time*"
 
-The 75 most important algorithms to understand when preparing for a FAANGMULA type interview (according to some...)
+The 75 most important algorithms to understand when preparing for a FAANGMULA type interview according to those that know more than I do.
 
 ## Approach
 
-5 weeks of Leetcode broken into categories: sequences, data structures, non-linear data structures, more data structures, and finally dynamic programming.
+5 weeks of [LeetCode](https://leetcode.com/) questions broken into categories: sequences, data structures, non-linear data structures, more data structures, and finally dynamic programming.
 
 ### Week 1 - Sequences
 
@@ -50,6 +50,22 @@ The focus of week 2 is on linked lists, strings and matrix-based questions. The 
 | **BONUS**                                                                                                                       | **---**    | **---**                           | **---**                                                             | **---**         | **---** |
 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)                                     | Hard       | [🚀](https://youtu.be/itmhHWaHupI) | [MedianFinder.cs](./Blind75CSharp/Week02/MedianFinder.cs)           | Data Structures |         |
 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)                                       | Medium     | [🚀](https://youtu.be/oobqoCJlHA0) | [Trie.cs](./Blind75CSharp/Week02/Trie.cs)                           | Data Structures |         |
+
+### Week 3 - Non-linear data structures
+
+The focus of week 3 is on non-linear data structures like trees, graphs and heaps. You should be familiar with the various tree traversal (in-order, pre-order, post-order) algorithms and graph traversal algorithms such as breadth-first search and depth-first search. In my experience, using more advanced graph algorithms (Dijkstra's and Floyd-Warshall) is quite rare and usually not necessary.
+
+| Question                                                                     | Difficulty | [NeetCode](https://neetcode.io/) | Solution | Category | Redo  |
+| ---------------------------------------------------------------------------- | ---------- | -------------------------------- | -------- | -------- | :---: |
+| [Invert/Flip Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | Easy       | Link                             |          |          |       |
+| Validate Binary Search Tree                                                  | Medium     | Link                             |          |          |       |
+| Non-overlapping Intervals                                                    | Medium     | Link                             |          |          |       |
+| Construct Binary Tree from Preorder and Inorder Traversal                    | Medium     | Link                             |          |          |       |
+| Top K Frequent Elements                                                      | Medium     | Link                             |          |          |       |
+| Clone Graph                                                                  | Medium     | Link                             |          |          |       |
+| Course Schedule                                                              | Medium     | Link                             |          |          |       |
+| Serialize and Deserialize Binary Tree                                        | Hard       | Link                             |          |          |       |
+| Binary Tree Maximum Path Sum                                                 | Hard       | Link                             |          |          |       |
 
 ### Bonus Week & Weekend
 
@@ -166,7 +182,7 @@ Organized by problem category. Problems marked with `*` require LeetCode Premium
 
 - Maximum Depth of Binary Tree - https://leetcode.com/problems/maximum-depth-of-binary-tree/
 - Same Tree - https://leetcode.com/problems/same-tree/
-- Invert/Flip Binary Tree - https://leetcode.com/problems/invert-binary-tree/
+- [Invert/Flip Binary Tree](https://leetcode.com/problems/invert-binary-tree/)
 - Binary Tree Maximum Path Sum - https://leetcode.com/problems/binary-tree-maximum-path-sum/
 - Binary Tree Level Order Traversal - https://leetcode.com/problems/binary-tree-level-order-traversal/
 - Serialize and Deserialize Binary Tree - https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
