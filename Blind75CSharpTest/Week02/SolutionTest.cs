@@ -257,11 +257,12 @@ public class SolutionTest
    [Theory]
    [InlineData("abc", 3)] // "a", "b", "c"
    [InlineData("aaa", 6)] // "a", "a", "a", "aa", "aa", "aaa"
+   [InlineData("abcdcba", 10)]
    public void CountSubstrings_When_Valid(string input, int expected)
    {
       var testObj = new Solution();
       var actual = testObj.CountSubstrings(input);
-      // actual.Should().Be(expected);
+      actual.Should().Be(expected);
       // TODO: have not started this problem. Got too excited for Trie
    }
 

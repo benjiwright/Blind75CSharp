@@ -15,19 +15,48 @@ public sealed class ListNode
 
 public class Solution
 {
-
    public int CountSubstrings(string s)
    {
-      // TODO
-      return -1;
+      var results = 0;
+
+      // odds
+      for (var middle = 0; middle < s.Length; middle++)
+      {
+         var left = middle;
+         var right = middle;
+         while (left >= 0 && right < s.Length && s[left] == s[right])
+         {
+            results++;
+            left--;
+            right++;
+         }
+      }
+
+      // evens
+      for (var middle = 0; middle + 1 < s.Length; middle++)
+      {
+         var left = middle;
+         var right = middle + 1;
+
+         while (left >= 0 && right < s.Length && (s[left] == s[right]))
+         {
+            results++;
+            left--;
+            right++;
+         }
+      }
+
+      return results;
    }
+   // Runtime: 101 ms, faster than 47.94% of C# online submissions for Palindromic Substrings.
+   // Memory Usage: 34.9 MB, less than 54.45% of C# online submissions for Palindromic Substrings.
 
    public IList<IList<int>> PacificAtlantic(int[][] heights)
    {
       var results = new List<IList<int>>();
       if (heights == null || heights.Length < 1) return results;
-      
-      
+
+
       var rowSize = heights.Length;
       var colSize = heights[0].Length;
       var visitedPacific = new HashSet<string>();
@@ -55,10 +84,9 @@ public class Solution
             var location = $"{row},{col}";
             if (visitedAtlantic.Contains(location) && visitedPacific.Contains(location))
             {
-               results.Add( new List<int>{row,col});
+               results.Add(new List<int> {row, col});
             }
          }
-            
       }
 
       return results;
