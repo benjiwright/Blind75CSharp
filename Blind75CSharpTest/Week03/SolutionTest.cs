@@ -8,6 +8,48 @@ namespace Blind75CSharpTest.Week03;
 public class SolutionTest
 {
    [Fact]
+   public void EraseOverlapIntervals_When_Valid()
+   {
+      var intervals = new[]
+      {
+         new[] {0, 2}, new[] {1, 3}, new[] {2, 4}, new[] {3, 5}, new[] {4, 6}
+      };
+
+      var testObj = new Solution();
+      testObj.EraseOverlapIntervals(intervals).Should().Be(2);
+   }
+
+   [Fact]
+   public void EraseOverlapIntervals_When_AllTheSameValue()
+   {
+      var intervals = new int[][]
+      {
+         new int[] {1, 2},
+         new int[] {1, 2},
+         new int[] {1, 2},
+      };
+
+      var testObj = new Solution();
+      testObj.EraseOverlapIntervals(intervals).Should().Be(2);
+   }
+
+   [Fact]
+   public void EraseOverlapIntervals_When_NegativeValue()
+   {
+      var intervals = new int[][]
+      {
+         new int[] {1, 2},
+         new int[] {2, 3},
+         new int[] {3, 4},
+         new int[] {-100, -2},
+         new int[] {5, 7},
+      };
+
+      var testObj = new Solution();
+      testObj.EraseOverlapIntervals(intervals).Should().Be(2);
+   }
+
+   [Fact]
    public void InvertTree()
    {
       var nodes = new int[] {4, 2, 7, 1, 3, 6, 9};
@@ -37,9 +79,9 @@ public class SolutionTest
       var edges = new int[][]
       {
          new int[] {0, 1},
-         new int[] {1, 2}, 
-         new int[] {2, 3}, 
-         new int[] {1, 3}, 
+         new int[] {1, 2},
+         new int[] {2, 3},
+         new int[] {1, 3},
          new int[] {1, 4}
       };
       var nodes = 5;

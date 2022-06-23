@@ -59,7 +59,7 @@ The focus of week 3 is on non-linear data structures like trees, graphs and heap
 | ----------------------------------------------------------------------------------------- | ---------- | --------------------------------- | ----------------------------------------------- | -------- | :-----: |
 | [Invert/Flip Binary Tree](https://leetcode.com/problems/invert-binary-tree/)              | Easy       | Link                              |                                                 |          |         |
 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | Medium     | Link                              |                                                 |          |         |
-| Non-overlapping Intervals                                                                 | Medium     | Link                              |                                                 |          |         |
+| [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)     | Medium     | Link                              |                                                 |          |         |
 | Construct Binary Tree from Preorder and Inorder Traversal                                 | Medium     | Link                              |                                                 |          |         |
 | Top K Frequent Elements                                                                   | Medium     | Link                              |                                                 |          |         |
 | Clone Graph                                                                               | Medium     | Link                              |                                                 |          |         |
@@ -143,7 +143,7 @@ Organized by problem category. Problems marked with `*` require LeetCode Premium
 
 - ✅[Insert Interval](https://leetcode.com/problems/insert-interval/)
 - ✅[Merge Intervals](https://leetcode.com/problems/merge-intervals/)
-- Non-overlapping Intervals - https://leetcode.com/problems/non-overlapping-intervals/
+- [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)
 - Meeting Rooms `*` - https://leetcode.com/problems/meeting-rooms/
 - Meeting Rooms `*` (Leetcode Premium) - https://leetcode.com/problems/meeting-rooms-ii/
 

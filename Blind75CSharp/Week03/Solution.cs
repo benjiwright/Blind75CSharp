@@ -2,6 +2,37 @@
 
 public class Solution
 {
+   public int EraseOverlapIntervals(int[][] intervals)
+   {
+      if (intervals.Length < 1) return 0;
+
+      // assume not sorted? That was correct
+      var sorted = intervals.OrderBy(x => x[0]).ToList();
+      var ends = sorted[0][1];
+      var result = 0;
+
+      for (var i = 1; i < intervals.GetLength(0); i++)
+      {
+         var interval = sorted[i];
+
+         if (ends > interval[0])
+         {
+            // throw out bigger interval
+            ends = Math.Min(ends, interval[1]);
+            result++;
+         }
+         else
+         {
+            ends = interval[1];
+         }
+      }
+
+      return result;
+   }
+   // Runtime: 655 ms, faster than 30.38% of C# online submissions for Non-overlapping Intervals.
+   // Memory Usage: 64.9 MB, less than 26.79% of C# online submissions for Non-overlapping Intervals.
+
+
    public bool IsValidBST(TreeNode root)
    {
       return IsValidSubTree(root, long.MinValue, long.MaxValue);
@@ -15,7 +46,7 @@ public class Solution
 
       return IsValidSubTree(node.left, min, node.val) && IsValidSubTree(node.right, node.val, max);
    }
-   //Runtime: 151 ms, faster than 38.90% of C# online submissions for Validate Binary Search Tree.
+   // Runtime: 151 ms, faster than 38.90% of C# online submissions for Validate Binary Search Tree.
    // Memory Usage: 40.4 MB, less than 71.49% of C# online submissions for Validate Binary Search Tree.
 
 
