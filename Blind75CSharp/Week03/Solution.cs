@@ -93,8 +93,7 @@ public class Solution
       return true;
    }
 
-
-   public TreeNode InvertTree(TreeNode root)
+   public TreeNode InvertTreeIterative(TreeNode root)
    {
       if (root is null) return new TreeNode();
 
@@ -121,6 +120,18 @@ public class Solution
    }
    // Runtime: 126 ms, faster than 37.22% of C# online submissions for Invert Binary Tree.
    // Memory Usage: 36.9 MB, less than 53.89% of C# online submissions for Invert Binary Tree.
+
+   public TreeNode? InvertTreeRecursive(TreeNode? root)
+   {
+      if (root == null) return null;
+      var right = InvertTreeRecursive(root.right);
+      var left = InvertTreeRecursive(root.left);
+      root.left = right;
+      root.right = left;
+      return root;
+   }
+   // Runtime: 91 ms, faster than 87.25% of C# online submissions for Invert Binary Tree.
+   // Memory Usage: 38.3 MB, less than 6.89% of C# online submissions for Invert Binary Tree.
 }
 
 #region "Helper Classes"
