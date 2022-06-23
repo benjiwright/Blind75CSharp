@@ -2,6 +2,23 @@
 
 public class Solution
 {
+   public bool IsValidBST(TreeNode root)
+   {
+      return IsValidSubTree(root, long.MinValue, long.MaxValue);
+   }
+
+   private bool IsValidSubTree(TreeNode? node, long min, long max)
+   {
+      if (node is null) return true;
+
+      if (node.val >= max || node.val <= min) return false;
+
+      return IsValidSubTree(node.left, min, node.val) && IsValidSubTree(node.right, node.val, max);
+   }
+   //Runtime: 151 ms, faster than 38.90% of C# online submissions for Validate Binary Search Tree.
+   // Memory Usage: 40.4 MB, less than 71.49% of C# online submissions for Validate Binary Search Tree.
+
+
    public bool ValidTree(int n, int[][] edges)
    {
       if (n == 0) return true;
@@ -32,11 +49,11 @@ public class Solution
       if (visited.Contains(node)) return false;
 
       visited.Add(node);
-      
+
       // visit neighbors
       foreach (var neighbor in adjacencyList[node])
       {
-         if(neighbor == previous) continue;
+         if (neighbor == previous) continue;
 
          var result = DfsValidTree(neighbor, adjacencyList, visited, node);
          if (!result) return false;
