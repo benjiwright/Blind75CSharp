@@ -61,8 +61,8 @@ The focus of week 3 is on non-linear data structures like trees, graphs and heap
 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)                                                             | Medium     | Link                              | [IsValidBST](./Blind75CSharp/Week03/Solution.cs)            |          |         |
 | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)                                                                 | Medium     | Link                              | [EraseOverlapIntervals](./Blind75CSharp/Week03/Solution.cs) |          |         |
 | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium     | Link                              | [TODO](./Blind75CSharp/Week03/Solution.cs)                  |          |         |
-| [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)                                                                     | Medium     | Link                              | [TopKFrequentUsingLinq](./Blind75CSharp/Week03/Solution.cs) |          |         |
-| Clone Graph                                                                                                                                           | Medium     | Link                              |                                                             |          |         |
+| [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)                                                                     | Medium     | Link                              | [TopKFrequentUsingHeap](./Blind75CSharp/Week03/Solution.cs) |          |         |
+| [Clone Graph](https://leetcode.com/problems/clone-graph/)                                                                                             | Medium     | Link                              | [CloneGraph.cs](./Blind75CSharp/Week03/CloneGraph.cs)       |          |         |
 | Course Schedule                                                                                                                                       | Medium     | Link                              |                                                             |          |         |
 | Serialize and Deserialize Binary Tree                                                                                                                 | Hard       | Link                              |                                                             |          |         |
 | Binary Tree Maximum Path Sum                                                                                                                          | Hard       | Link                              |                                                             |          |         |
@@ -128,7 +128,7 @@ Organized by problem category. Problems marked with `*` require LeetCode Premium
 
 ### Graph
 
-- Clone Graph - https://leetcode.com/problems/clone-graph/
+- [Clone Graph](https://leetcode.com/problems/clone-graph/) 
 - Course Schedule - https://leetcode.com/problems/course-schedule/
 - ✅[Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)
 - ✅[Number of Islands](https://leetcode.com/problems/number-of-islands/)
