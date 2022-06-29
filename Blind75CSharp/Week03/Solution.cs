@@ -23,6 +23,40 @@ public class Solution
    // Memory Usage: 44.4 MB, less than 89.49% of C# online submissions for Top K Frequent Elements.
 
 
+   public int[] TopKFrequentUsingHeap(int[] nums, int k)
+   {
+      // O(n)
+      var freq = new Dictionary<int, int>();
+      foreach (var num in nums)
+      {
+         if (!freq.ContainsKey(num))
+         {
+            freq.Add(num, 0);
+         }
+
+         freq[num]++;
+      }
+
+      // O(n) - Insert is cheap!
+      var maxHeap = new PriorityQueue<int, int>();
+      foreach (var kp in freq)
+      {
+         maxHeap.Enqueue(kp.Key, kp.Value * -1);
+      }
+
+      // O(k)
+      var result = new int[k];
+      for (var i = 0; i < k; i++)
+      {
+         result[i] = maxHeap.Dequeue();
+      }
+      
+      return result;
+   }
+   // Runtime: 209 ms, faster than 57.55% of C# online submissions for Top K Frequent Elements. ** Much better! **
+   // Memory Usage: 44.7 MB, less than 57.97% of C# online submissions for Top K Frequent Elements.
+
+
    public TreeNode BuildTree(int[] preorder, int[] inorder)
    {
       var root = new TreeNode();

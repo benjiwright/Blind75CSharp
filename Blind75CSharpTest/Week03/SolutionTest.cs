@@ -10,10 +10,19 @@ public class SolutionTest
    [Theory]
    [InlineData(new int[] {1, 1, 1, 2, 2, 3}, 2, new int[] {1, 2})]
    [InlineData(new int[] {-1, -1}, 1, new int[] {-1})]
-   public void TopKFrequent_When_Valids(int[] nums, int k, int[] expected)
+   public void TopKFrequent_When_Valid_Lambda(int[] nums, int k, int[] expected)
    {
       var testObject = new Solution();
       testObject.TopKFrequentUsingLinq(nums, k).Should().BeEquivalentTo(expected);
+   }
+   
+   [Theory]
+   [InlineData(new int[] {1, 1, 1, 2, 2, 3}, 2, new int[] {1, 2})]
+   [InlineData(new int[] {-1, -1}, 1, new int[] {-1})]
+   public void TopKFrequent_When_Valid_Heap(int[] nums, int k, int[] expected)
+   {
+      var testObject = new Solution();
+      testObject.TopKFrequentUsingHeap(nums, k).Should().BeEquivalentTo(expected);
    }
 
    [Fact]
