@@ -55,19 +55,19 @@ The focus of week 2 is on linked lists, strings and matrix-based questions. The 
 
 The focus of week 3 is on non-linear data structures like trees, graphs and heaps. You should be familiar with the various tree traversal (in-order, pre-order, post-order) algorithms and graph traversal algorithms such as breadth-first search and depth-first search. In my experience, using more advanced graph algorithms (Dijkstra's and Floyd-Warshall) is quite rare and usually not necessary.
 
-| Question                                                                                  | Difficulty | [NeetCode](https://neetcode.io/)  | Solution                                        | Category |  Redo   |
-| ----------------------------------------------------------------------------------------- | ---------- | --------------------------------- | ----------------------------------------------- | -------- | :-----: |
-| [Invert/Flip Binary Tree](https://leetcode.com/problems/invert-binary-tree/)              | Easy       | Link                              |                                                 |          |         |
-| [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | Medium     | Link                              |                                                 |          |         |
-| [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)     | Medium     | Link                              |                                                 |          |         |
-| Construct Binary Tree from Preorder and Inorder Traversal                                 | Medium     | Link                              |                                                 |          |         |
-| Top K Frequent Elements                                                                   | Medium     | Link                              |                                                 |          |         |
-| Clone Graph                                                                               | Medium     | Link                              |                                                 |          |         |
-| Course Schedule                                                                           | Medium     | Link                              |                                                 |          |         |
-| Serialize and Deserialize Binary Tree                                                     | Hard       | Link                              |                                                 |          |         |
-| Binary Tree Maximum Path Sum                                                              | Hard       | Link                              |                                                 |          |         |
-| **BONUS**                                                                                 | **---**    | **---**                           | **---**                                         | **---**  | **---** |
-| [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)                       | Medium     | [🚀](https://youtu.be/bXsUuownnoQ) | [ValidTree](./Blind75CSharp/Week03/Solution.cs) | Graph    |         |
+| Question                                                                                                                                              | Difficulty | [NeetCode](https://neetcode.io/)  | Solution                                                    | Category |  Redo   |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------------------------- | ----------------------------------------------------------- | -------- | :-----: |
+| [Invert/Flip Binary Tree](https://leetcode.com/problems/invert-binary-tree/)                                                                          | Easy       | Link                              | [InvertTree](./Blind75CSharp/Week03/Solution.cs)            |          |         |
+| [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)                                                             | Medium     | Link                              | [IsValidBST](./Blind75CSharp/Week03/Solution.cs)            |          |         |
+| [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)                                                                 | Medium     | Link                              | [EraseOverlapIntervals](./Blind75CSharp/Week03/Solution.cs) |          |         |
+| [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium     | Link                              | [TODO](./Blind75CSharp/Week03/Solution.cs)                  |          |         |
+| [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)                                                                     | Medium     | Link                              | [TopKFrequentUsingLinq](./Blind75CSharp/Week03/Solution.cs) |          |         |
+| Clone Graph                                                                                                                                           | Medium     | Link                              |                                                             |          |         |
+| Course Schedule                                                                                                                                       | Medium     | Link                              |                                                             |          |         |
+| Serialize and Deserialize Binary Tree                                                                                                                 | Hard       | Link                              |                                                             |          |         |
+| Binary Tree Maximum Path Sum                                                                                                                          | Hard       | Link                              |                                                             |          |         |
+| **BONUS**                                                                                                                                             | **---**    | **---**                           | **---**                                                     | **---**  | **---** |
+| [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)                                                                                   | Medium     | [🚀](https://youtu.be/bXsUuownnoQ) | [ValidTree](./Blind75CSharp/Week03/Solution.cs)             | Graph    |         |
 
 
 
@@ -193,7 +193,7 @@ Organized by problem category. Problems marked with `*` require LeetCode Premium
 - Binary Tree Level Order Traversal - https://leetcode.com/problems/binary-tree-level-order-traversal/
 - Serialize and Deserialize Binary Tree - https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
 - Subtree of Another Tree - https://leetcode.com/problems/subtree-of-another-tree/
-- Construct Binary Tree from Preorder and Inorder Traversal - https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
+- [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
 - [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
 - Kth Smallest Element in a BST - https://leetcode.com/problems/kth-smallest-element-in-a-bst/
 - Lowest Common Ancestor of BST - https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
@@ -206,7 +206,7 @@ Organized by problem category. Problems marked with `*` require LeetCode Premium
 ### Heap
 
 - Merge K Sorted Lists - https://leetcode.com/problems/merge-k-sorted-lists/
-- Top K Frequent Elements - https://leetcode.com/problems/top-k-frequent-elements/
+- [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)
 - Find Median from Data Stream - https://leetcode.com/problems/find-median-from-data-stream/
 
 ---

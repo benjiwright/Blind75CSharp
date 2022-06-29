@@ -7,6 +7,15 @@ namespace Blind75CSharpTest.Week03;
 
 public class SolutionTest
 {
+   [Theory]
+   [InlineData(new int[] {1, 1, 1, 2, 2, 3}, 2, new int[] {1, 2})]
+   [InlineData(new int[] {-1, -1}, 1, new int[] {-1})]
+   public void TopKFrequent_When_Valids(int[] nums, int k, int[] expected)
+   {
+      var testObject = new Solution();
+      testObject.TopKFrequentUsingLinq(nums, k).Should().BeEquivalentTo(expected);
+   }
+
    [Fact]
    public void EraseOverlapIntervals_When_Valid()
    {
@@ -46,7 +55,7 @@ public class SolutionTest
       };
 
       var testObj = new Solution();
-      testObj.EraseOverlapIntervals(intervals).Should().Be(2);
+      testObj.EraseOverlapIntervals(intervals).Should().Be(0);
    }
 
    [Fact]

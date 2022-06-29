@@ -2,6 +2,35 @@
 
 public class Solution
 {
+   public int[] TopKFrequentUsingLinq(int[] nums, int k)
+   {
+      var freq = new Dictionary<int, int>();
+      // O(n)
+      foreach (var num in nums)
+      {
+         if (!freq.ContainsKey(num))
+         {
+            freq.Add(num, 0);
+         }
+
+         freq[num]++;
+      }
+
+      // O(n log n) for sorting
+      return freq.OrderByDescending(kp => kp.Value).Take(k).Select(x => x.Key).ToArray();
+   }
+   // Runtime: 273 ms, faster than 16.55% of C# online submissions for Top K Frequent Elements.
+   // Memory Usage: 44.4 MB, less than 89.49% of C# online submissions for Top K Frequent Elements.
+
+
+   public TreeNode BuildTree(int[] preorder, int[] inorder)
+   {
+      var root = new TreeNode();
+      // TODO: I'm going to come back to this one. If seen in an interview, you are being weeded out.
+
+      return root;
+   }
+
    public int EraseOverlapIntervals(int[][] intervals)
    {
       if (intervals.Length < 1) return 0;
@@ -32,7 +61,6 @@ public class Solution
    // Runtime: 655 ms, faster than 30.38% of C# online submissions for Non-overlapping Intervals.
    // Memory Usage: 64.9 MB, less than 26.79% of C# online submissions for Non-overlapping Intervals.
 
-
    public bool IsValidBST(TreeNode root)
    {
       return IsValidSubTree(root, long.MinValue, long.MaxValue);
@@ -48,7 +76,6 @@ public class Solution
    }
    // Runtime: 151 ms, faster than 38.90% of C# online submissions for Validate Binary Search Tree.
    // Memory Usage: 40.4 MB, less than 71.49% of C# online submissions for Validate Binary Search Tree.
-
 
    public bool ValidTree(int n, int[][] edges)
    {
