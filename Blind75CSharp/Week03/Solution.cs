@@ -2,6 +2,53 @@
 
 public class Solution
 {
+   public int ClimbStairs(int n)
+   {
+      var one = 1;
+      var two = 1;
+
+      for (var i = 0; i < n - 1; i++)
+      {
+         var temp = one;
+         one = one + two;
+         two = temp;
+      }
+
+      return one;
+   }
+   // Runtime: 39 ms, faster than 31.73% of C# online submissions for Climbing Stairs.
+   // Memory Usage: 25.1 MB, less than 67.06% of C# online submissions for Climbing Stairs.
+
+
+   public bool CanPartition(int[] nums)
+   {
+      if (nums.Length == 0) return true;
+      var target = nums.Sum();
+      if (target % 2 == 1) return false;
+      target /= 2;
+
+      var set = new HashSet<int> {0};
+
+      for (var i = 0; i < nums.Length; i++)
+      {
+         var tmpSet = new HashSet<int>(set);
+
+         foreach (var num in set)
+         {
+            var newNum = nums[i] + num;
+            if (newNum == target) return true;
+            tmpSet.Add(newNum);
+         }
+
+         set = new HashSet<int>(tmpSet);
+      }
+
+      return false;
+   }
+   // Runtime: 203 ms, faster than 43.33% of C# online submissions for Partition Equal Subset Sum.
+   // Memory Usage: 43.3 MB, less than 44.10% of C# online submissions for Partition Equal Subset Sum.
+
+
    public int[] TopKFrequentUsingLinq(int[] nums, int k)
    {
       var freq = new Dictionary<int, int>();
@@ -50,7 +97,7 @@ public class Solution
       {
          result[i] = maxHeap.Dequeue();
       }
-      
+
       return result;
    }
    // Runtime: 209 ms, faster than 57.55% of C# online submissions for Top K Frequent Elements. ** Much better! **

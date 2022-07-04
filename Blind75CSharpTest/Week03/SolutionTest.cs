@@ -8,6 +8,15 @@ namespace Blind75CSharpTest.Week03;
 public class SolutionTest
 {
    [Theory]
+   [InlineData(new int[] {1,5,11,5}, true)]
+   [InlineData(new int[] {1, 2, 5}, false)]
+   public void CanPartition_When_Gucci(int [] input, bool expected)
+   {
+      var testObj = new Solution();
+      testObj.CanPartition(input).Should().Be(expected);
+   }
+
+   [Theory]
    [InlineData(new int[] {1, 1, 1, 2, 2, 3}, 2, new int[] {1, 2})]
    [InlineData(new int[] {-1, -1}, 1, new int[] {-1})]
    public void TopKFrequent_When_Valid_Lambda(int[] nums, int k, int[] expected)
@@ -15,7 +24,7 @@ public class SolutionTest
       var testObject = new Solution();
       testObject.TopKFrequentUsingLinq(nums, k).Should().BeEquivalentTo(expected);
    }
-   
+
    [Theory]
    [InlineData(new int[] {1, 1, 1, 2, 2, 3}, 2, new int[] {1, 2})]
    [InlineData(new int[] {-1, -1}, 1, new int[] {-1})]

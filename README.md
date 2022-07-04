@@ -68,10 +68,7 @@ The focus of week 3 is on non-linear data structures like trees, graphs and heap
 | Binary Tree Maximum Path Sum                                                                                                                          | Hard       | Link                               |                                                               |          |         |
 | **BONUS**                                                                                                                                             | **---**    | **---**                            | **---**                                                       | **---**  | **---** |
 | [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)                                                                                   | Medium     | [🚀](https://youtu.be/bXsUuownnoQ)  | [ValidTree](./Blind75CSharp/Week03/Solution.cs)               | Graph    |         |
-| [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)                                                               | Medium     | [🚀](https://youtu.be/IsvocB5BJhw ) | TODO                                                          | Meta     |         |
-
-
-
+| [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)                                                               | Medium     | [🚀](https://youtu.be/IsvocB5BJhw ) | [CanPartition](./Blind75CSharp/Week03/Solution.cs)            | Meta     |         |
 
 ### Bonus Week & Weekend
 
