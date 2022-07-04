@@ -78,6 +78,23 @@ After the week's problems are done, let's focus in the Top 100 most frequently a
 | -------------------------------------------------------------------------------------- | -------- | ---------- | --------- |
 | 528. [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/) |          | Medium     | 94%       |
 
+### Week 5 - Dynamic programming
+
+Week 5 focuses on Dynamic Programming (DP) questions. Personally as an interviewer, I'm not a fan of DP questions as they are not really applicable to practical scenarios and frankly if I were made to do the tough DP questions during my interviews I'd not have gotten the job. However, companies like Google still ask DP questions and if joining Google is your dream, DP is unavoidable.
+
+DP questions can be hard to master and the best way to get better at them is... you guessed it - practice! Be familiar with the concepts of memoization and backtracking.
+
+Practically speaking the return of investment (ROI) on studying and practicing for DP questions is very low. Hence DP questions are less important/optional and you should only do them if you have time to spare and you're very keen to have all bases covered (and interviewing with Google).
+
+| Question                                                          | Difficulty | [NeetCode](https://neetcode.io/) | Solution    | Category |
+| ----------------------------------------------------------------- | ---------- | -------------------------------- | ----------- | -------- |
+| [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | EZ         | ?                                | ClimbStairs | DP       |
+|                                                                   |            |                                  |             |          |
+|                                                                   |            |                                  |             |          |
+|                                                                   |            |                                  |             |          |
+|                                                                   |            |                                  |             |          |
+|                                                                   |            |                                  |             |          |
+
 ## Entire Blind Top 75
 
 Organized by problem category. Problems marked with `*` require LeetCode Premium.
@@ -109,7 +126,7 @@ Organized by problem category. Problems marked with `*` require LeetCode Premium
 
 ### Dynamic Programming
 
-- Climbing Stairs - https://leetcode.com/problems/climbing-stairs/
+- ✅[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
 - Coin Change - https://leetcode.com/problems/coin-change/
 - Longest Increasing Subsequence - https://leetcode.com/problems/longest-increasing-subsequence/
 - Longest Common Subsequence -
@@ -125,8 +142,8 @@ Organized by problem category. Problems marked with `*` require LeetCode Premium
 
 ### Graph
 
-- [Clone Graph](https://leetcode.com/problems/clone-graph/) 
-- [Course Schedule](https://leetcode.com/problems/course-schedule/)
+- ✅[Clone Graph](https://leetcode.com/problems/clone-graph/)
+- ✅[Course Schedule](https://leetcode.com/problems/course-schedule/)
 - ✅[Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)
 - ✅[Number of Islands](https://leetcode.com/problems/number-of-islands/)
 - ✅[Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
@@ -185,13 +202,13 @@ Organized by problem category. Problems marked with `*` require LeetCode Premium
 
 - Maximum Depth of Binary Tree - https://leetcode.com/problems/maximum-depth-of-binary-tree/
 - Same Tree - https://leetcode.com/problems/same-tree/
-- [Invert/Flip Binary Tree](https://leetcode.com/problems/invert-binary-tree/)
+- ✅[Invert/Flip Binary Tree](https://leetcode.com/problems/invert-binary-tree/)
 - Binary Tree Maximum Path Sum - https://leetcode.com/problems/binary-tree-maximum-path-sum/
 - Binary Tree Level Order Traversal - https://leetcode.com/problems/binary-tree-level-order-traversal/
 - Serialize and Deserialize Binary Tree - https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
 - Subtree of Another Tree - https://leetcode.com/problems/subtree-of-another-tree/
-- [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
-- [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
+- ✅[Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
+- ✅[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
 - Kth Smallest Element in a BST - https://leetcode.com/problems/kth-smallest-element-in-a-bst/
 - Lowest Common Ancestor of BST - https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
 - Implement Trie (Prefix Tree) - https://leetcode.com/problems/implement-trie-prefix-tree/
@@ -203,7 +220,7 @@ Organized by problem category. Problems marked with `*` require LeetCode Premium
 ### Heap
 
 - Merge K Sorted Lists - https://leetcode.com/problems/merge-k-sorted-lists/
-- [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)
+- ✅[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)
 - Find Median from Data Stream - https://leetcode.com/problems/find-median-from-data-stream/
 
 ---
