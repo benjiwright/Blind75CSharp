@@ -71,4 +71,31 @@ public class DynamicProgrammer
       memo[target] = null;
       return null;
    }
+
+   public int FibTabualtion(int num)
+   {
+      // 00 edge case(s)
+      if (num == 0) return 0;
+      if (num == 1) return 1;
+
+      // 01 create table
+      var tab = new int[num + 2]; // always bigger
+      Array.Fill(tab, 0); // init tab with a smart starting value
+      tab[1] = 1;
+
+      // 02 add current position to next two positions
+      for (var i = 0; i < num; i++)
+      {
+         var current = tab[i];
+         tab[i + 1] += current;
+         tab[i + 2] += current;
+      }
+
+      return tab[num];
+   }
+
+   public int GridTravelerTabulation()
+   {
+      return -1;
+   }
 }

@@ -39,4 +39,12 @@ public class DynamicProgrammerTest
       _testObject.HowSum(7, new[] {2, 4}).Should().BeNull();
       _testObject.HowSum(300, new[] {7, 14}).Should().BeNull();
    }
+
+   [Theory]
+   [InlineData(5, 5)]
+   [InlineData(6, 8)]
+   public void FibTabualtion_When_Valid(int num, int expected)
+   {
+      _testObject.FibTabualtion(num).Should().Be(expected);
+   }
 }
