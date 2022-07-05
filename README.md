@@ -70,13 +70,28 @@ The focus of week 3 is on non-linear data structures like trees, graphs and heap
 | [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)                                                                                   | Medium     | [🚀](https://youtu.be/bXsUuownnoQ)  | [ValidTree](./Blind75CSharp/Week03/Solution.cs)               | Graph    |         |
 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)                                                               | Medium     | [🚀](https://youtu.be/IsvocB5BJhw ) | [CanPartition](./Blind75CSharp/Week03/Solution.cs)            | Meta     |         |
 
-### Bonus Week & Weekend
+### Week 4 - More data structures
 
-After the week's problems are done, let's focus in the Top 100 most frequently asked questions at [Google](https://leetcode.com/problem-list/top-google-questions/?sorting=W3sic29ydE9yZGVyIjoiREVTQ0VORElORyIsIm9yZGVyQnkiOiJGUkVRVUVOQ1kifV0%3D).
+Week 4 builds up on knowledge from previous weeks but questions are of increased difficulty. Expect to see such level of questions during interviews. You get more practice on more advanced data structures such as (but not exclusively limited to) heaps and tries which are less common but are still asked.
 
-| Question                                                                               | Solution | Difficulty | Frequency |
-| -------------------------------------------------------------------------------------- | -------- | ---------- | --------- |
-| 528. [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/) |          | Medium     | 94%       |
+| Question                                                                                                       | Difficulty | [NeetCode](https://neetcode.io/)  | Solution                                        | Category        |
+| -------------------------------------------------------------------------------------------------------------- | ---------- | --------------------------------- | ----------------------------------------------- | --------------- |
+| [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)                              | Easy       | [🚀](#)                            | [IsSubtree](./Blind75CSharp/week04/Solution.cs) | BST             |
+| [Lowest Common Ancestor of BST](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | Easy       | [🚀](#)                            |                                                 | BST             |
+| [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)                      | Medium     | [🚀](https://youtu.be/oobqoCJlHA0) | [Trie.cs](./Blind75CSharp/Week02/Trie.cs)       | Data Structures |
+| Add and Search Word                                                                                            | Medium     | [🚀](#)                            |                                                 |                 |
+| Kth Smallest Element in a BST                                                                                  | Medium     | [🚀](#)                            |                                                 |                 |
+| Merge K Sorted Lists                                                                                           | Hard       | [🚀](#)                            |                                                 |                 |
+| Find Median from Data Stream                                                                                   | Hard       | [🚀](#)                            |                                                 |                 |
+| Insert Interval                                                                                                | Medium     | [🚀](#)                            |                                                 |                 |
+| Longest Consecutive Sequence                                                                                   | Medium     | [🚀](#)                            |                                                 |                 |
+| Word Search II                                                                                                 | Hard       | [🚀](#)                            |                                                 |                 |
+| **BONUS**                                                                                                      | **---**    | **---**                           | **---**                                         | **---**         |
+| *Meeting Rooms                                                                                                 | Easy       | [🚀](#)                            |                                                 |                 |
+| Meeting Rooms II                                                                                               | Medium     | [🚀](#)                            |                                                 |                 |
+| Graph Valid Tree                                                                                               | Medium     | [🚀](#)                            |                                                 |                 |
+| Number of Connected Components in an Undirected Graph                                                          | Medium     | [🚀](#)                            |                                                 |                 |
+| Alien Dictionary                                                                                               | Hard       | [🚀](#)                            |                                                 |                 |
 
 ### Week 5 - Dynamic programming
 
@@ -86,18 +101,18 @@ DP questions can be hard to master and the best way to get better at them is... 
 
 Practically speaking the return of investment (ROI) on studying and practicing for DP questions is very low. Hence DP questions are less important/optional and you should only do them if you have time to spare and you're very keen to have all bases covered (and interviewing with Google).
 
-| Question                                                          | Difficulty | [NeetCode](https://neetcode.io/) | Solution                                          | Category |
-| ----------------------------------------------------------------- | ---------- | -------------------------------- | ------------------------------------------------- | -------- |
-| [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | Easy       |                                  | [ClimbStairs](./Blind75CSharp/Week05/Solution.cs) | DP       |
-| [Coin Change](https://leetcode.com/problems/coin-change/)         | Medium     |                                  | [CoinChange](./Blind75CSharp/Week05/Solution.cs)  | DP       |
-| Longest Increasing Subsequence                                    | Medium     |                                  |                                                   |          |
-| Combination Sum                                                   | Medium     |                                  |                                                   |          |
-| House Robber                                                      | Medium     |                                  |                                                   |          |
-| House Robber II                                                   | Medium     |                                  |                                                   |          |
-| Decode Ways                                                       | Medium     |                                  |                                                   |          |
-| Unique Paths                                                      | Medium     |                                  |                                                   |          |
-| Jump Game                                                         | Medium     |                                  |                                                   |          |
-| Word Break                                                        | Medium     |                                  |                                                   |          |
+| Question                                                          | Difficulty | [NeetCode](https://neetcode.io/)  | Solution                                          | Category |
+| ----------------------------------------------------------------- | ---------- | --------------------------------- | ------------------------------------------------- | -------- |
+| [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | Easy       |                                   | [ClimbStairs](./Blind75CSharp/Week05/Solution.cs) | DP       |
+| [Coin Change](https://leetcode.com/problems/coin-change/)         | Medium     | [🚀](https://youtu.be/H9bfqozjoqs) | [CoinChange](./Blind75CSharp/Week05/Solution.cs)  | DP       |
+| Longest Increasing Subsequence                                    | Medium     |                                   |                                                   |          |
+| Combination Sum                                                   | Medium     |                                   |                                                   |          |
+| House Robber                                                      | Medium     |                                   |                                                   |          |
+| House Robber II                                                   | Medium     |                                   |                                                   |          |
+| Decode Ways                                                       | Medium     |                                   |                                                   |          |
+| Unique Paths                                                      | Medium     |                                   |                                                   |          |
+| Jump Game                                                         | Medium     |                                   |                                                   |          |
+| Word Break                                                        | Medium     |                                   |                                                   |          |
 
 ## Entire Blind Top 75
 
@@ -152,7 +167,7 @@ Organized by problem category. Problems marked with `*` require LeetCode Premium
 - ✅[Number of Islands](https://leetcode.com/problems/number-of-islands/)
 - ✅[Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
 - Alien Dictionary `*` - https://leetcode.com/problems/alien-dictionary/
-- Graph Valid Tree - https://leetcode.com/problems/graph-valid-tree/
+- ✅[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)
 - Number of Connected Components in an Undirected Graph* - https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/
 
 ---
@@ -161,7 +176,7 @@ Organized by problem category. Problems marked with `*` require LeetCode Premium
 
 - ✅[Insert Interval](https://leetcode.com/problems/insert-interval/)
 - ✅[Merge Intervals](https://leetcode.com/problems/merge-intervals/)
-- [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)
+- ✅[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)
 - Meeting Rooms `*` - https://leetcode.com/problems/meeting-rooms/
 - Meeting Rooms `*` (Leetcode Premium) - https://leetcode.com/problems/meeting-rooms-ii/
 
@@ -210,11 +225,11 @@ Organized by problem category. Problems marked with `*` require LeetCode Premium
 - Binary Tree Maximum Path Sum - https://leetcode.com/problems/binary-tree-maximum-path-sum/
 - Binary Tree Level Order Traversal - https://leetcode.com/problems/binary-tree-level-order-traversal/
 - Serialize and Deserialize Binary Tree - https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
-- Subtree of Another Tree - https://leetcode.com/problems/subtree-of-another-tree/
+- [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)
 - ✅[Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
 - ✅[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
 - Kth Smallest Element in a BST - https://leetcode.com/problems/kth-smallest-element-in-a-bst/
-- Lowest Common Ancestor of BST - https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
+- [Lowest Common Ancestor of BST](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
 - Implement Trie (Prefix Tree) - https://leetcode.com/problems/implement-trie-prefix-tree/
 - Add and Search Word - https://leetcode.com/problems/add-and-search-word-data-structure-design/
 - Word Search II - https://leetcode.com/problems/word-search-ii/
