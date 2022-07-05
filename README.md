@@ -86,14 +86,18 @@ DP questions can be hard to master and the best way to get better at them is... 
 
 Practically speaking the return of investment (ROI) on studying and practicing for DP questions is very low. Hence DP questions are less important/optional and you should only do them if you have time to spare and you're very keen to have all bases covered (and interviewing with Google).
 
-| Question                                                          | Difficulty | [NeetCode](https://neetcode.io/) | Solution    | Category |
-| ----------------------------------------------------------------- | ---------- | -------------------------------- | ----------- | -------- |
-| [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | EZ         | ?                                | ClimbStairs | DP       |
-|                                                                   |            |                                  |             |          |
-|                                                                   |            |                                  |             |          |
-|                                                                   |            |                                  |             |          |
-|                                                                   |            |                                  |             |          |
-|                                                                   |            |                                  |             |          |
+| Question                                                          | Difficulty | [NeetCode](https://neetcode.io/) | Solution                                          | Category |
+| ----------------------------------------------------------------- | ---------- | -------------------------------- | ------------------------------------------------- | -------- |
+| [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | Easy       |                                  | [ClimbStairs](./Blind75CSharp/Week05/Solution.cs) | DP       |
+| [Coin Change](https://leetcode.com/problems/coin-change/)         | Medium     |                                  | [CoinChange](./Blind75CSharp/Week05/Solution.cs)  | DP       |
+| Longest Increasing Subsequence                                    | Medium     |                                  |                                                   |          |
+| Combination Sum                                                   | Medium     |                                  |                                                   |          |
+| House Robber                                                      | Medium     |                                  |                                                   |          |
+| House Robber II                                                   | Medium     |                                  |                                                   |          |
+| Decode Ways                                                       | Medium     |                                  |                                                   |          |
+| Unique Paths                                                      | Medium     |                                  |                                                   |          |
+| Jump Game                                                         | Medium     |                                  |                                                   |          |
+| Word Break                                                        | Medium     |                                  |                                                   |          |
 
 ## Entire Blind Top 75
 
@@ -127,7 +131,7 @@ Organized by problem category. Problems marked with `*` require LeetCode Premium
 ### Dynamic Programming
 
 - ✅[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
-- Coin Change - https://leetcode.com/problems/coin-change/
+- ✅[Coin Change](https://leetcode.com/problems/coin-change/)
 - Longest Increasing Subsequence - https://leetcode.com/problems/longest-increasing-subsequence/
 - Longest Common Subsequence -
 - Word Break Problem - https://leetcode.com/problems/word-break/
