@@ -1,4 +1,6 @@
-﻿namespace Blind75CSharp.Week04;
+﻿using System.Text;
+
+namespace Blind75CSharp.Week04;
 
 public class Solution
 {
@@ -22,8 +24,42 @@ public class Solution
 
       return AreSame(root.left, subRoot.left) && AreSame(root.right, subRoot.right);
    }
-}
 
+
+   public bool IsPalindrome(string s)
+   {
+      var sb = new StringBuilder();
+
+      foreach (var letter in s)
+      {
+         if (Char.IsLetterOrDigit(letter))
+         {
+            sb.Append(letter.ToString().ToLower());
+         }
+      }
+
+      var left = sb.Length / 2;
+      var right = sb.Length / 2;
+
+      if (sb.Length % 2 == 0) // even
+      {
+         left -= 1;
+      }
+
+      for (; right < sb.Length; right++)
+      {
+         if (sb[right] != sb[left]) return false;
+         left--;
+      }
+
+      return true;
+   }
+   // Runtime: 118 ms, faster than 50.29% of C# online submissions for Valid Palindrome.
+   // Memory Usage: 39.4 MB, less than 49.64% of C# online submissions for Valid Palindrome.
+   
+   
+   
+}
 
 public class TreeNode
 {

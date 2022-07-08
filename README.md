@@ -92,6 +92,8 @@ Week 4 builds up on knowledge from previous weeks but questions are of increased
 | Graph Valid Tree                                                                                               | Medium     | [🚀](#)                            |                                                 |                 |
 | Number of Connected Components in an Undirected Graph                                                          | Medium     | [🚀](#)                            |                                                 |                 |
 | Alien Dictionary                                                                                               | Hard       | [🚀](#)                            |                                                 |                 |
+| [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)                                            | Easy       |                                   |                                                 |                 |
+| [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)                  | Medium     |                                   |                                                 |                 |
 
 ### Week 5 - Dynamic programming
 
@@ -210,8 +212,8 @@ Organized by problem category. Problems marked with `*` require LeetCode Premium
 - ✅[Valid Anagram](https://leetcode.com/problems/valid-anagram/)
 - ✅[Group Anagrams](https://leetcode.com/problems/group-anagrams/)
 - ✅[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
-- Valid Palindrome - https://leetcode.com/problems/valid-palindrome/
-- Longest Palindromic Substring - https://leetcode.com/problems/longest-palindromic-substring/
+- ✅[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
+- ✅[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
 - ✅[Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
 - Encode and Decode Strings (Leetcode Premium) - https://leetcode.com/problems/encode-and-decode-strings/
 
