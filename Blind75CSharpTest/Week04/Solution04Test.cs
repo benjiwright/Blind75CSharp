@@ -6,7 +6,7 @@ namespace Blind75CSharpTest.Week04;
 
 public class Solution04Test
 {
-   private readonly Solution _testObj = new Solution();
+   private readonly Solution04 _testObj = new Solution04();
 
    [Theory]
    [InlineData("A man, a plan, a canal: Panama", true)]
@@ -36,5 +36,12 @@ public class Solution04Test
       root.right = new TreeNode(4);
 
       _testObj.KthSmallest(root, 1).Should().Be(1);
+   }
+
+   [Fact]
+   public void Insert_Intervals()
+   {
+      int[][] input = {new[] {1, 5}};
+      var actual = _testObj.Insert(input, new[] {6, 8});
    }
 }

@@ -2,15 +2,45 @@
 
 namespace Blind75CSharp.Week04;
 
-public class Solution
+public class Solution04
 {
    public int[][] Insert(int[][] intervals, int[] newInterval)
    {
-      // n (log n) to sort
-      var sorted = intervals.OrderBy(x => x[0]).ToArray();
+      if (intervals.Length == 0) return new List<int[]> {newInterval}.ToArray();
+
+      // dang it, already sorted
+      // intervals = intervals.OrderBy(x => x[0]).ToArray();
       
-      return null;
+      var results = new List<int[]>();
+      var idx = 0;
+      while (idx < intervals.Length && intervals[idx][1] < newInterval[0])
+      {
+         results.Add(intervals[idx]);
+         idx++;
+      }
+
+      var start = newInterval[0];
+      var end = newInterval[1];
+      while (idx < intervals.Length && intervals[idx][0] <= end)
+      {
+         start = Math.Min(start, intervals[idx][0]);
+         end = Math.Max(end, intervals[idx][1]);
+         idx++;
+      }
+
+      // merge done, add the interval
+      results.Add(new [] {start, end});
+
+      // add any remaining intervals that do not require merging
+      while (idx < intervals.Length)
+      {
+         results.Add(intervals[idx++]);
+      }
+
+      return results.ToArray();
    }
+   // Runtime: 212 ms, faster than 53.74% of C# online submissions for Insert Interval.
+   // Memory Usage: 44.4 MB, less than 91.49% of C# online submissions for Insert Interval.
 
 
    // Constraint: TreeNode is a BST
