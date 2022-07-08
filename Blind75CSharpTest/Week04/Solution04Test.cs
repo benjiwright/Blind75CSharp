@@ -11,10 +11,18 @@ public class Solution04Test
    [Theory]
    [InlineData("A man, a plan, a canal: Panama", true)]
    [InlineData("race a car", false)]
-   [InlineData(" ",true)]
-   [InlineData("canac",true)]
+   [InlineData(" ", true)]
+   [InlineData("canac", true)]
    public void IsPalindrome_When_Valid(string input, bool expected)
    {
       _testObj.IsPalindrome(input).Should().Be(expected);
+   }
+
+   [Theory]
+   [InlineData("babad", "bab")]
+   [InlineData("abb", "bb")]
+   public void LongestPalindrome_When_Valid(string input, string expected)
+   {
+      _testObj.LongestPalindrome(input).Should().Be(expected);
    }
 }

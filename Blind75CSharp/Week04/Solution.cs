@@ -56,9 +56,51 @@ public class Solution
    }
    // Runtime: 118 ms, faster than 50.29% of C# online submissions for Valid Palindrome.
    // Memory Usage: 39.4 MB, less than 49.64% of C# online submissions for Valid Palindrome.
-   
-   
-   
+
+   public string LongestPalindrome(string s)
+   {
+      if (string.IsNullOrEmpty(s)) return "";
+
+      var result = s[0].ToString();
+
+      // O(n)
+      for (var i = 0; i < s.Length; i++)
+      {
+         var left = i;
+         var right = i;
+
+         // O(n/2) aka O(n)
+         // odds
+         while (left >= 0 && right < s.Length && s[left] == s[right])
+         {
+            if (right - left + 1 > result.Length)
+            {
+               result = s.Substring(left, right - left + 1);
+            }
+
+            left--;
+            right++;
+         }
+
+         // even
+         left = i;
+         right = i + 1;
+         while (left >= 0 && right < s.Length && s[left] == s[right])
+         {
+            if (right - left + 1 > result.Length)
+            {
+               result = s.Substring(left, right - left + 1);
+            }
+
+            left--;
+            right++;
+         }
+      }
+
+      return result;
+   }
+   // Runtime: 144 ms, faster than 60.40% of C# online submissions for Longest Palindromic Substring.
+   // Memory Usage: 37.7 MB, less than 51.08% of C# online submissions for Longest Palindromic Substring.
 }
 
 public class TreeNode
