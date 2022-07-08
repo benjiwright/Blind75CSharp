@@ -25,4 +25,16 @@ public class Solution04Test
    {
       _testObj.LongestPalindrome(input).Should().Be(expected);
    }
+
+   [Fact]
+   public void KthSmallest_When_Basic()
+   {
+      var root = new TreeNode(3);
+      var one = new TreeNode(1);
+      one.right = new TreeNode(2);
+      root.left = one;
+      root.right = new TreeNode(4);
+
+      _testObj.KthSmallest(root, 1).Should().Be(1);
+   }
 }
