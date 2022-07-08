@@ -5,14 +5,14 @@ using Xunit;
 
 namespace Blind75CSharpTest.Week03;
 
-public class SolutionTest
+public class Solution03Test
 {
    [Theory]
    [InlineData(new int[] {1,5,11,5}, true)]
    [InlineData(new int[] {1, 2, 5}, false)]
    public void CanPartition_When_Gucci(int [] input, bool expected)
    {
-      var testObj = new Solution();
+      var testObj = new Solution03();
       testObj.CanPartition(input).Should().Be(expected);
    }
 
@@ -21,7 +21,7 @@ public class SolutionTest
    [InlineData(new int[] {-1, -1}, 1, new int[] {-1})]
    public void TopKFrequent_When_Valid_Lambda(int[] nums, int k, int[] expected)
    {
-      var testObject = new Solution();
+      var testObject = new Solution03();
       testObject.TopKFrequentUsingLinq(nums, k).Should().BeEquivalentTo(expected);
    }
 
@@ -30,7 +30,7 @@ public class SolutionTest
    [InlineData(new int[] {-1, -1}, 1, new int[] {-1})]
    public void TopKFrequent_When_Valid_Heap(int[] nums, int k, int[] expected)
    {
-      var testObject = new Solution();
+      var testObject = new Solution03();
       testObject.TopKFrequentUsingHeap(nums, k).Should().BeEquivalentTo(expected);
    }
 
@@ -42,7 +42,7 @@ public class SolutionTest
          new[] {0, 2}, new[] {1, 3}, new[] {2, 4}, new[] {3, 5}, new[] {4, 6}
       };
 
-      var testObj = new Solution();
+      var testObj = new Solution03();
       testObj.EraseOverlapIntervals(intervals).Should().Be(2);
    }
 
@@ -56,7 +56,7 @@ public class SolutionTest
          new int[] {1, 2},
       };
 
-      var testObj = new Solution();
+      var testObj = new Solution03();
       testObj.EraseOverlapIntervals(intervals).Should().Be(2);
    }
 
@@ -72,7 +72,7 @@ public class SolutionTest
          new int[] {5, 7},
       };
 
-      var testObj = new Solution();
+      var testObj = new Solution03();
       testObj.EraseOverlapIntervals(intervals).Should().Be(0);
    }
 
@@ -94,7 +94,7 @@ public class SolutionTest
          new int[] {1, 4}
       };
       var nodes = 5;
-      var testObj = new Solution();
+      var testObj = new Solution03();
       var actual = testObj.ValidTree(nodes, edges);
 
       actual.Should().BeTrue();
@@ -112,7 +112,7 @@ public class SolutionTest
          new int[] {1, 4}
       };
       var nodes = 5;
-      var testObj = new Solution();
+      var testObj = new Solution03();
       var actual = testObj.ValidTree(nodes, edges);
 
       actual.Should().BeFalse();

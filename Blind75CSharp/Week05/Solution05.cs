@@ -1,6 +1,6 @@
 ﻿namespace Blind75CSharp.Week05;
 
-public class Solution
+public class Solution05
 {
    public int ClimbStairsDp(int n)
    {

@@ -1,6 +1,4 @@
-﻿using System.Text;
-
-namespace Blind75CSharp.Week02;
+﻿namespace Blind75CSharp.Week02;
 
 // Definition for singly-linked list.
 public sealed class ListNode
@@ -15,7 +13,7 @@ public sealed class ListNode
    }
 }
 
-public class Solution
+public class Solution02
 {
    public string MinWindow(string s, string t)
    {

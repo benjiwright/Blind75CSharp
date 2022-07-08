@@ -1,6 +1,6 @@
 ﻿namespace Blind75CSharp.Week03;
 
-public class Solution
+public class Solution03
 {
    public bool CanPartition(int[] nums)
    {

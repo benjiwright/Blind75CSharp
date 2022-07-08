@@ -7,7 +7,7 @@ using Xunit;
 
 namespace Blind75CSharpTest.Week02;
 
-public class SolutionTest
+public class Solution02Test
 {
    [Theory]
    [InlineData("ADOBECODEBANC", "ABC", "BANC")]
@@ -16,7 +16,7 @@ public class SolutionTest
    [InlineData("cabwefgewcwaefgcf", "cae", "cwae")]
    public void MinWindow_When_Valids(string s1, string s2, string expected)
    {
-      var testObj = new Solution();
+      var testObj = new Solution02();
       var actual = testObj.MinWindow(s1, s2);
       actual.Should().Be(expected);
    }
@@ -28,7 +28,7 @@ public class SolutionTest
    [InlineData("pwwkew", 3)]
    public void LengthOfLongestSubstring_When_Valids(string input, int expected)
    {
-      var testObject = new Solution();
+      var testObject = new Solution02();
       var actual = testObject.LengthOfLongestSubstring(input);
       actual.Should().Be(expected);
    }
@@ -40,7 +40,7 @@ public class SolutionTest
       var input = new int[] {1, 2, 3, 4, 5};
       var head = BuildLinkedList(input);
 
-      var testObject = new Solution();
+      var testObject = new Solution02();
       var newHead = testObject.ReverseList(head);
 
       var expected = new int[] {5, 4, 3, 2, 1};
@@ -59,7 +59,7 @@ public class SolutionTest
    public void PriorityQueue()
    {
       var input = new int[] {3, 6, 1, 8, 2, 0, -11, 23, 3, 5, 3, 2,};
-      var testObject = new Solution();
+      var testObject = new Solution02();
 
       var actual = testObject.PriorityQueue(input);
       var (min, max) = actual;
@@ -74,7 +74,7 @@ public class SolutionTest
       var input = new int[] {1, 2, 3, 4, 5};
       var head = BuildLinkedList(input);
 
-      var testObject = new Solution();
+      var testObject = new Solution02();
       var actual = testObject.LinkedListRemoveNthNode(head, 2);
 
 
@@ -95,7 +95,7 @@ public class SolutionTest
       var input = new int[] {1, 2, 3, 4, 5};
       var head = BuildLinkedList(input);
 
-      var testObject = new Solution();
+      var testObject = new Solution02();
       var actual = testObject.LinkedListRemoveNthNode(head, 0);
 
 
@@ -116,7 +116,7 @@ public class SolutionTest
       var input = new int[] {1, 2, 3, 4, 5};
       var head = BuildLinkedList(input);
 
-      var testObject = new Solution();
+      var testObject = new Solution02();
       var actual = testObject.LinkedListRemoveNthNode(head, 4);
 
       var idx = 0;
@@ -136,7 +136,7 @@ public class SolutionTest
       var input = new int[] {1, 2, 3, 4, 5};
       var head = BuildLinkedList(input);
 
-      var testObject = new Solution();
+      var testObject = new Solution02();
       var actual = testObject.RemoveNthFromEnd(head, 2);
 
       var idx = 0;
@@ -156,7 +156,7 @@ public class SolutionTest
       var input = new int[] {1, 2, 3, 4, 5};
       var head = BuildLinkedList(input);
 
-      var testObject = new Solution();
+      var testObject = new Solution02();
       var actual = testObject.RemoveNthFromEnd(head, 1);
 
       var idx = 0;
@@ -176,7 +176,7 @@ public class SolutionTest
       var input = new int[] {1, 2, 3, 4, 5};
       var head = BuildLinkedList(input);
 
-      var testObject = new Solution();
+      var testObject = new Solution02();
       var actual = testObject.RemoveNthFromEnd(head, 5);
 
       var idx = 0;
@@ -201,7 +201,7 @@ public class SolutionTest
          new char[] {'0', '0', '0', '0', '0'}
       };
 
-      var testObject = new Solution();
+      var testObject = new Solution02();
       var actual = testObject.NumIslands(grid);
       actual.Should().Be(1);
    }
@@ -217,7 +217,7 @@ public class SolutionTest
          new char[] {'0', '0', '0', '1', '1'}
       };
 
-      var testObject = new Solution();
+      var testObject = new Solution02();
       var actual = testObject.NumIslands(grid);
       actual.Should().Be(3);
    }
@@ -234,7 +234,7 @@ public class SolutionTest
          new int[] {5, 1, 1, 2, 4}
       };
 
-      var testObject = new Solution();
+      var testObject = new Solution02();
       var actual = testObject.PacificAtlantic(input);
 
       var expected = new List<IList<int>>
@@ -262,7 +262,7 @@ public class SolutionTest
          new int[] {1, 1}
       };
 
-      var testObject = new Solution();
+      var testObject = new Solution02();
       var actual = testObject.PacificAtlantic(input);
 
       var expected = new List<IList<int>>
@@ -285,7 +285,7 @@ public class SolutionTest
    [InlineData("abcdcba", 10)]
    public void CountSubstrings_When_Valid(string input, int expected)
    {
-      var testObj = new Solution();
+      var testObj = new Solution02();
       var actual = testObj.CountSubstrings(input);
       actual.Should().Be(expected);
       // TODO: have not started this problem. Got too excited for Trie

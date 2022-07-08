@@ -1,8 +1,8 @@
 ﻿namespace Blind75CSharp.GoogleTop100;
 
-public class Solution
+public class Google
 {
-   public Solution(int[] w)
+   public Google(int[] w)
    {
    }
 
