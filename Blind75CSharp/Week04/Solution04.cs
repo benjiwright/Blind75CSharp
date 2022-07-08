@@ -4,7 +4,14 @@ namespace Blind75CSharp.Week04;
 
 public class Solution
 {
-   
+   public int[][] Insert(int[][] intervals, int[] newInterval)
+   {
+      // n (log n) to sort
+      var sorted = intervals.OrderBy(x => x[0]).ToArray();
+      
+      return null;
+   }
+
 
    // Constraint: TreeNode is a BST
    public int KthSmallest(TreeNode root, int k)
@@ -12,7 +19,7 @@ public class Solution
       // BST implies "inOrder" traversal
       var results = new List<int>();
       InOrderTraversal(root, results);
-      return results[k-1];
+      return results[k - 1];
    }
    // Runtime: 118 ms, faster than 71.84% of C# online submissions for Kth Smallest Element in a BST.
    // Memory Usage: 40.8 MB, less than 51.72% of C# online submissions for Kth Smallest Element in a BST.
@@ -20,13 +27,13 @@ public class Solution
    private void InOrderTraversal(TreeNode? node, ICollection<int> results)
    {
       if (node is null) return;
-      
+
       InOrderTraversal(node.left, results);
       results.Add(node.val);
-      InOrderTraversal(node.right,results);
+      InOrderTraversal(node.right, results);
    }
-   
-   
+
+
    public bool IsSubtree(TreeNode root, TreeNode subRoot)
    {
       if (root is null) return false;
