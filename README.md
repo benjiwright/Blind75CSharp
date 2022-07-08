@@ -74,26 +74,26 @@ The focus of week 3 is on non-linear data structures like trees, graphs and heap
 
 Week 4 builds up on knowledge from previous weeks but questions are of increased difficulty. Expect to see such level of questions during interviews. You get more practice on more advanced data structures such as (but not exclusively limited to) heaps and tries which are less common but are still asked.
 
-| Question                                                                                                       | Difficulty | [NeetCode](https://neetcode.io/)  | Solution                                                      | Category        |
-| -------------------------------------------------------------------------------------------------------------- | ---------- | --------------------------------- | ------------------------------------------------------------- | --------------- |
-| [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)                              | Easy       | [🚀](#)                            | [IsSubtree](./Blind75CSharp/week04/Solution.cs)               | BST             |
-| [Lowest Common Ancestor of BST](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | Easy       | [🚀](#)                            | Skipped?                                                      | BST             |
-| [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)                      | Medium     | [🚀](https://youtu.be/oobqoCJlHA0) | [Trie.cs](./Blind75CSharp/Week02/Trie.cs)                     | Data Structures |
-| [Add and Search Word](https://leetcode.com/problems/add-and-search-word-data-structure-design/)                | Medium     | [🚀](#)                            | [WordDictionary.cs](./Blind75CSharp/Week04/WordDictionary.cs) | Trie + DFS      |
-| [Kth Smallest Element in a BST]((https://leetcode.com/problems/kth-smallest-element-in-a-bst/))                | Medium     | [🚀](#)                            | [KthSmallest](./Blind75CSharp/week04/Solution.cs)             | Tree            |
-| Merge K Sorted Lists                                                                                           | Hard       | [🚀](#)                            | Skip                                                          |                 |
-| Find Median from Data Stream                                                                                   | Hard       | [🚀](#)                            | Skip                                                          |                 |
-| [Insert Interval](https://leetcode.com/problems/insert-interval/)                                              | Medium     | [🚀](#)                            | [Insert](./Blind75CSharp/week04/Solution.cs)                  |                 |
-| Longest Consecutive Sequence                                                                                   | Medium     | [🚀](#)                            |                                                               |                 |
-| Word Search II                                                                                                 | Hard       | [🚀](#)                            |                                                               |                 |
-| **BONUS**                                                                                                      | **---**    | **---**                           | **---**                                                       | **---**         |
-| *Meeting Rooms                                                                                                 | Easy       | [🚀](#)                            |                                                               |                 |
-| Meeting Rooms II                                                                                               | Medium     | [🚀](#)                            |                                                               |                 |
-| Graph Valid Tree                                                                                               | Medium     | [🚀](#)                            |                                                               |                 |
-| Number of Connected Components in an Undirected Graph                                                          | Medium     | [🚀](#)                            |                                                               |                 |
-| Alien Dictionary                                                                                               | Hard       | [🚀](#)                            |                                                               |                 |
-| [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)                                            | Easy       |                                   |                                                               |                 |
-| [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)                  | Medium     |                                   |                                                               |                 |
+| Question                                                                                                       | Difficulty | [NeetCode](https://neetcode.io/)  | Solution                                                      | Category        |         |
+| -------------------------------------------------------------------------------------------------------------- | ---------- | --------------------------------- | ------------------------------------------------------------- | --------------- | ------- |
+| [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)                              | Easy       | [🚀](#)                            | [IsSubtree](./Blind75CSharp/week04/Solution.cs)               | BST             |         |
+| [Lowest Common Ancestor of BST](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | Easy       | [🚀](#)                            | Skipped?                                                      | BST             |         |
+| [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)                      | Medium     | [🚀](https://youtu.be/oobqoCJlHA0) | [Trie.cs](./Blind75CSharp/Week02/Trie.cs)                     | Data Structures |         |
+| [Add and Search Word](https://leetcode.com/problems/add-and-search-word-data-structure-design/)                | Medium     | [🚀](#)                            | [WordDictionary.cs](./Blind75CSharp/Week04/WordDictionary.cs) | Trie + DFS      |         |
+| [Kth Smallest Element in a BST]((https://leetcode.com/problems/kth-smallest-element-in-a-bst/))                | Medium     | [🚀](#)                            | [KthSmallest](./Blind75CSharp/week04/Solution.cs)             | Tree            |         |
+| Merge K Sorted Lists                                                                                           | Hard       | [🚀](#)                            | Skip                                                          |                 |         |
+| Find Median from Data Stream                                                                                   | Hard       | [🚀](#)                            | Skip                                                          |                 |         |
+| [Insert Interval](https://leetcode.com/problems/insert-interval/)                                              | Medium     | [🚀](#)                            | [Insert](./Blind75CSharp/week04/Solution.cs)                  |                 |         |
+| Longest Consecutive Sequence                                                                                   | Medium     | [🚀](#)                            |                                                               |                 |         |
+| Word Search II                                                                                                 | Hard       | [🚀](#)                            |                                                               |                 |         |
+| **BONUS**                                                                                                      | **---**    | **---**                           | **---**                                                       | **---**         | **---** |
+| [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/)`*`                                               | Easy       | [🚀](#)                            | [CanAttendMeetings](./Blind75CSharp/week04/Solution.cs)       | Intervals       |         |
+| [Meeting Rooms 2](https://leetcode.com/problems/meeting-rooms-ii/)`*`                                          | Medium     | [🚀](#)                            | [MinMeetingRooms](./Blind75CSharp/week04/Solution.cs)         | Intervals       | REDO    |
+| Graph Valid Tree                                                                                               | Medium     | [🚀](#)                            |                                                               |                 |         |
+| Number of Connected Components in an Undirected Graph                                                          | Medium     | [🚀](#)                            |                                                               |                 |         |
+| Alien Dictionary                                                                                               | Hard       | [🚀](#)                            |                                                               |                 |         |
+| [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)                                            | Easy       |                                   |                                                               |                 |         |
+| [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)                  | Medium     |                                   |                                                               |                 |         |
 
 ### Week 5 - Dynamic programming
 
@@ -179,8 +179,8 @@ Organized by problem category. Problems marked with `*` require LeetCode Premium
 - ✅[Insert Interval](https://leetcode.com/problems/insert-interval/)
 - ✅[Merge Intervals](https://leetcode.com/problems/merge-intervals/)
 - ✅[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)
-- Meeting Rooms `*` - https://leetcode.com/problems/meeting-rooms/
-- Meeting Rooms `*` (Leetcode Premium) - https://leetcode.com/problems/meeting-rooms-ii/
+- [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/)`*`
+- [Meeting Rooms 2](https://leetcode.com/problems/meeting-rooms-ii/)`*`
 
 ---
 

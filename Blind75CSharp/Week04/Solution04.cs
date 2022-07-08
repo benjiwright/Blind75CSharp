@@ -4,13 +4,64 @@ namespace Blind75CSharp.Week04;
 
 public class Solution04
 {
+   
+   public int MinMeetingRooms(int[][] intervals)
+   {
+      if (intervals.Length ==0 ) return 0;
+
+      var startTimes = intervals.OrderBy(x => x[0]).Select(x => x[0]).ToArray();
+      var endTimes = intervals.OrderBy(x => x[1]).Select(x => x[1]).ToArray();
+
+      var currentMeetingsHappening = 0;
+      var maxCount = 0;
+
+      var end = 0;
+      var start = 0;
+      while(start< startTimes.Length)
+      {
+         if (startTimes[start] < endTimes[end])
+         {
+            currentMeetingsHappening++;
+            start++;
+            maxCount = Math.Max(currentMeetingsHappening, maxCount);
+         }
+         else
+         {
+            currentMeetingsHappening--;
+            end++;
+         }
+      }
+      
+      return maxCount;
+   }
+   // Runtime: 169 ms, faster than 25.26% of C# online submissions for Meeting Rooms II.
+   // Memory Usage: 39.4 MB, less than 65.03% of C# online submissions for Meeting Rooms II.
+   
+   public bool CanAttendMeetings(int[][] intervals)
+   {
+      intervals = intervals.OrderBy(x => x[0]).ToArray();
+
+      for (var i = 0; i < intervals.Length-1; i++)
+      {
+         var endCurrent = intervals[i][1];
+         var startNext = intervals[i + 1][0];
+
+         if (endCurrent > startNext) return false;
+      }
+
+      return true;
+   }
+   // Runtime: 148 ms, faster than 53.16% of C# online submissions for Meeting Rooms.
+   // Memory Usage: 41.8 MB, less than 24.71% of C# online submissions for Meeting Rooms.
+
+
    public int[][] Insert(int[][] intervals, int[] newInterval)
    {
       if (intervals.Length == 0) return new List<int[]> {newInterval}.ToArray();
 
       // dang it, already sorted
       // intervals = intervals.OrderBy(x => x[0]).ToArray();
-      
+
       var results = new List<int[]>();
       var idx = 0;
       while (idx < intervals.Length && intervals[idx][1] < newInterval[0])
@@ -29,7 +80,7 @@ public class Solution04
       }
 
       // merge done, add the interval
-      results.Add(new [] {start, end});
+      results.Add(new[] {start, end});
 
       // add any remaining intervals that do not require merging
       while (idx < intervals.Length)
