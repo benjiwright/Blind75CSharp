@@ -117,6 +117,11 @@ Practically speaking the return of investment (ROI) on studying and practicing f
 
 ## Favorite Resources
 
+### Understanding Solutions
+
+- [LeetCode website](https://neetcode.io/)
+- [YouTube](https://www.youtube.com/c/NeetCode)
+
 ### Graphs
 
 - [Dynamic Programming](https://youtu.be/oBt53YbR9Kk) | Alvin
