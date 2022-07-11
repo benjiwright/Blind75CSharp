@@ -9,6 +9,15 @@ public class Solution04Test
    private readonly Solution04 _testObj = new Solution04();
 
    [Theory]
+   [InlineData(new int[] {100, 4, 200, 1, 3, 2}, 4)] // 1,2,3,4
+   [InlineData(new int[] {0, 3, 7, 2, 5, 8, 4, 6, 0, 1}, 9)]
+   public void LongestConsecutive_When_Valid(int[] nums, int expected)
+   {
+      _testObj.LongestConsecutive(nums).Should().Be(expected);
+   }
+
+
+   [Theory]
    [InlineData("A man, a plan, a canal: Panama", true)]
    [InlineData("race a car", false)]
    [InlineData(" ", true)]

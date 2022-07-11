@@ -4,10 +4,41 @@ namespace Blind75CSharp.Week04;
 
 public class Solution04
 {
-   
+   public int LongestConsecutive(int[] nums)
+   {
+      // Array.Sort(nums); You wish. O(n log n)
+      // use a mix/max heap? O(log n)
+      // use tree? O(log n)
+      // sets are always good
+
+      var result = 0;
+      var set = new HashSet<int>(nums);
+      // 0) main loop
+      foreach (var num in nums)
+      {
+         // 1) find the starts of all the sequences O(n)
+         var currentLength = 1;
+         if (!set.Contains(num - 1))
+         {
+            // 2 how big is this interval?
+            while (set.Contains(num + currentLength))
+            {
+               currentLength++;
+            }
+
+            result = Math.Max(currentLength, result);
+         }
+      }
+
+      return result;
+   }
+   // Runtime: 397 ms, faster than 30.60% of C# online submissions for Longest Consecutive Sequence.
+   // Memory Usage: 45.9 MB, less than 73.77% of C# online submissions for Longest Consecutive Sequence.
+
+
    public int MinMeetingRooms(int[][] intervals)
    {
-      if (intervals.Length ==0 ) return 0;
+      if (intervals.Length == 0) return 0;
 
       var startTimes = intervals.OrderBy(x => x[0]).Select(x => x[0]).ToArray();
       var endTimes = intervals.OrderBy(x => x[1]).Select(x => x[1]).ToArray();
@@ -17,7 +48,7 @@ public class Solution04
 
       var end = 0;
       var start = 0;
-      while(start< startTimes.Length)
+      while (start < startTimes.Length)
       {
          if (startTimes[start] < endTimes[end])
          {
@@ -31,17 +62,17 @@ public class Solution04
             end++;
          }
       }
-      
+
       return maxCount;
    }
    // Runtime: 169 ms, faster than 25.26% of C# online submissions for Meeting Rooms II.
    // Memory Usage: 39.4 MB, less than 65.03% of C# online submissions for Meeting Rooms II.
-   
+
    public bool CanAttendMeetings(int[][] intervals)
    {
       intervals = intervals.OrderBy(x => x[0]).ToArray();
 
-      for (var i = 0; i < intervals.Length-1; i++)
+      for (var i = 0; i < intervals.Length - 1; i++)
       {
          var endCurrent = intervals[i][1];
          var startNext = intervals[i + 1][0];
