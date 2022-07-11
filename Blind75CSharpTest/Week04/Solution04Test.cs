@@ -8,6 +8,28 @@ public class Solution04Test
 {
    private readonly Solution04 _testObj = new Solution04();
 
+   [Fact]
+   public void CountComponents_When_SoloIslands()
+   {
+      var input = new int[][]
+      {
+         new int[] {0, 1}, new int[] {1, 2}, new int[] {3, 4}
+      };
+      _testObj.CountComponents(5, input).Should().Be(2);
+   }
+
+   [Fact]
+   public void CountComponents_When_MultipleIslands()
+   {
+      var input = new int[][]
+      {
+         new int[] {0, 1},
+         new int[] {1, 2},
+         new int[] {3, 4},
+      };
+      _testObj.CountComponents(5, input).Should().Be(2);
+   }
+
    [Theory]
    [InlineData(new int[] {100, 4, 200, 1, 3, 2}, 4)] // 1,2,3,4
    [InlineData(new int[] {0, 3, 7, 2, 5, 8, 4, 6, 0, 1}, 9)]

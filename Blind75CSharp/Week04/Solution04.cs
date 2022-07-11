@@ -4,6 +4,52 @@ namespace Blind75CSharp.Week04;
 
 public class Solution04
 {
+   public int CountComponents(int n, int[][] edges)
+   {
+      if (n < 2) return n;
+
+      // build adj list
+      var adjList = new Dictionary<int, List<int>>();
+      for (var i = 0; i < n; i++)
+      {
+         adjList.Add(i, new List<int>());
+      }
+
+      foreach (var edge in edges)
+      {
+         adjList[edge[0]].Add(edge[1]);
+         adjList[edge[1]].Add(edge[0]);
+      }
+
+      // traverse
+      var visited = new HashSet<int>();
+      var count = 0;
+      foreach (var node in adjList.Keys)
+      {
+         if (!visited.Contains(node))
+         {
+            count++;
+            DfsComponentCounter(adjList, visited, node);
+         }
+      }
+
+      return count;
+   }
+   // Runtime: 85 ms, faster than 100.00% of C# online submissions for Number of Connected Components in an Undirected Graph.
+   // Memory Usage: 44.3 MB, less than 5.09% of C# online submissions for Number of Connected Components in an Undirected Graph.
+
+   private void DfsComponentCounter(Dictionary<int, List<int>> adjList, HashSet<int> visited, int node)
+   {
+      if (visited.Contains(node)) return;
+
+      visited.Add(node);
+      foreach (var neighbor in adjList[node])
+      {
+         DfsComponentCounter(adjList, visited, neighbor);
+      }
+   }
+
+
    public int LongestConsecutive(int[] nums)
    {
       // Array.Sort(nums); You wish. O(n log n)
