@@ -4,6 +4,81 @@ namespace Blind75CSharp.Week04;
 
 public class Solution04
 {
+   public string AlienOrder(string[] words)
+   {
+      var adjList = new Dictionary<char, HashSet<char>>();
+      var degrees = new Dictionary<char, int>();
+
+      // get all the nodes for adj list & incoming dep count
+      // O(n*m)  where n=words, m=letters
+      foreach (var word in words)
+      {
+         foreach (var letter in word)
+         {
+            if (!adjList.ContainsKey(letter)) adjList.Add(letter, new HashSet<char>());
+            if (!degrees.ContainsKey(letter)) degrees.Add(letter, 0);
+         }
+      }
+
+      // build adj list
+      for (var i = 0; i < words.Length - 1; i++)
+      {
+         var wordAhead = words[i + 1];
+         var word = words[i];
+
+         var found = false;
+         for (var j = 0; j < Math.Min(word.Length, wordAhead.Length); j++)
+         {
+            if (word[j] != wordAhead[j])
+            {
+               found = true;
+               adjList[word[j]].Add(wordAhead[j]);
+               break;
+            }
+         }
+
+         // LeetCode bugfix on incorrect description  
+         if (!found && wordAhead.Length < word.Length) return "";
+      }
+
+      // build dep count
+      var queue = new Queue<char>();
+      foreach (var kp in adjList)
+      {
+         foreach (var incoming in kp.Value)
+         {
+            degrees[incoming]++;
+         }
+      }
+
+      // load initial queue
+      foreach (var kp in degrees)
+      {
+         if (kp.Value == 0)
+         {
+            queue.Enqueue(kp.Key);
+         }
+      }
+
+      var result = new StringBuilder();
+      while (queue.Count > 0)
+      {
+         var current = queue.Dequeue();
+         result.Append(current);
+
+         foreach (var dep in adjList[current])
+         {
+            degrees[dep]--;
+            if (degrees[dep] == 0) queue.Enqueue(dep);
+         }
+      }
+
+      return result.Length == adjList.Keys.Count ? result.ToString() : string.Empty;
+   }
+   // Runtime: 132 ms, faster than 67.24% of C# online submissions for Alien Dictionary.
+   // Memory Usage: 38.7 MB, less than 77.21% of C# online submissions for Alien Dictionary.
+
+
    public int CountComponents(int n, int[][] edges)
    {
       if (n < 2) return n;

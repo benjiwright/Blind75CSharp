@@ -1,4 +1,5 @@
-﻿using Blind75CSharp.Week04;
+﻿using System;
+using Blind75CSharp.Week04;
 using FluentAssertions;
 using Xunit;
 
@@ -7,6 +8,31 @@ namespace Blind75CSharpTest.Week04;
 public class Solution04Test
 {
    private readonly Solution04 _testObj = new Solution04();
+
+
+   [Fact]
+   public void AlienDictionary_When_BadLeetCodeTestCaseBugfixInDescription()
+   {
+      var input = new[] {"qb", "qts", "qs", "qa", "s"};
+      _testObj.AlienOrder(input).Should().Be("qbtsa");
+   }
+
+   [Fact]
+   public void AlienOrder_When_Valid()
+   {
+      _testObj.AlienOrder(new string[] {"wrt", "wrf", "er", "ett", "rftt"}).Should().Be("wertf");
+   }
+
+   [Fact]
+   public void AlienOrder_When_TruncatingWordAddressingLeetCodeBug()
+   {
+      // Description: A string s is lexicographically smaller than a string t if at the first letter where they differ,
+      // the letter in s comes before the letter in t in the alien language. If the first min(s.length, t.length)
+      // letters are the same, then s is smaller if and only if s.length < t.length.
+      // **sigh** 
+      _testObj.AlienOrder(new string[] {"abc", "ab"}).Should().Be(string.Empty);
+   }
+
 
    [Fact]
    public void CountComponents_When_SoloIslands()
