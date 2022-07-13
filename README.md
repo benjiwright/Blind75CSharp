@@ -99,21 +99,21 @@ DP questions can be hard to master and the best way to get better at them is... 
 
 Practically speaking the return of investment (ROI) on studying and practicing for DP questions is very low. Hence DP questions are less important/optional and you should only do them if you have time to spare and you're very keen to have all bases covered (and interviewing with Google).
 
-| Question                                                                                        | Difficulty | [NeetCode](https://neetcode.io/)  | Solution                                            | Category |
-| ----------------------------------------------------------------------------------------------- | ---------- | :-------------------------------: | --------------------------------------------------- | -------- |
-| [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)                               | Easy       |                                   | [ClimbStairs](./Blind75CSharp/Week05/Solution05.cs) | DP       |
-| [Coin Change](https://leetcode.com/problems/coin-change/)                                       | Medium     | [🚀](https://youtu.be/H9bfqozjoqs) | [CoinChange](./Blind75CSharp/Week05/Solution05.cs)  | DP       |
-| [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Medium     |                                   |                                                     |          |
-| [Combination Sum](https://leetcode.com/problems/combination-sum-iv/)                            | Medium     |                                   |                                                     |          |
-| [House Robber](https://leetcode.com/problems/house-robber/)                                     | Medium     |                                   |                                                     |          |
-| [House Robber II](https://leetcode.com/problems/house-robber-ii/)                               | Medium     |                                   |                                                     |          |
-| [Decode Ways](https://leetcode.com/problems/decode-ways/)                                       | Medium     |                                   |                                                     |          |
-| [Unique Paths](https://leetcode.com/problems/unique-paths/)                                     | Medium     |                                   |                                                     |          |
-| [Jump Game](https://leetcode.com/problems/jump-game/)                                           | Medium     |                                   |                                                     |          |
-| [Word Break](https://leetcode.com/problems/word-break/)                                         | Medium     |                                   |                                                     |          |
-| **BONUS**                                                                                       | **---**    |              **---**              | **---**                                             | **---**  |
-| [Swim in Rising Water](https://leetcode.com/problems/swim-in-rising-water/)                     | Hard       | [🚀](https://youtu.be/amvrKlMLuGY) |                                                     | Dj       |
-| [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/) | Med        | [🚀](https://youtu.be/f7JOBJIC-NA) |                                                     | Prim     |
+| Question                                                                                        | Difficulty | [NeetCode](https://neetcode.io/)  | Solution                                                | Category |
+| ----------------------------------------------------------------------------------------------- | ---------- | :-------------------------------: | ------------------------------------------------------- | -------- |
+| [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)                               | Easy       |                                   | [ClimbStairs](./Blind75CSharp/Week05/Solution05.cs)     | DP       |
+| [Coin Change](https://leetcode.com/problems/coin-change/)                                       | Medium     | [🚀](https://youtu.be/H9bfqozjoqs) | [CoinChange](./Blind75CSharp/Week05/Solution05.cs)      | DP       |
+| [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Medium     |                                   |                                                         |          |
+| [Combination Sum](https://leetcode.com/problems/combination-sum-iv/)                            | Medium     |                                   |                                                         |          |
+| [House Robber](https://leetcode.com/problems/house-robber/)                                     | Medium     | [🚀](https://youtu.be/73r3KWiEvyk) | [HouseRobber.cs](./Blind75CSharp/Week05/HouseRobber.cs) | DP       |
+| [House Robber II](https://leetcode.com/problems/house-robber-ii/)                               | Medium     |                                   |                                                         |          |
+| [Decode Ways](https://leetcode.com/problems/decode-ways/)                                       | Medium     |                                   |                                                         |          |
+| [Unique Paths](https://leetcode.com/problems/unique-paths/)                                     | Medium     |                                   |                                                         |          |
+| [Jump Game](https://leetcode.com/problems/jump-game/)                                           | Medium     |                                   |                                                         |          |
+| [Word Break](https://leetcode.com/problems/word-break/)                                         | Medium     |                                   |                                                         |          |
+| **BONUS**                                                                                       | **---**    |              **---**              | **---**                                                 | **---**  |
+| [Swim in Rising Water](https://leetcode.com/problems/swim-in-rising-water/)                     | Hard       | [🚀](https://youtu.be/amvrKlMLuGY) |                                                         | Dj       |
+| [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/) | Medium     | [🚀](https://youtu.be/f7JOBJIC-NA) |                                                         | Prim     |
 ---
 
 ## Favorite Resources
