@@ -7,7 +7,7 @@ namespace Blind75CSharpTest.Week04;
 
 public class Solution04Test
 {
-   private readonly Solution04 _testObj = new Solution04();
+   private readonly Solution04 _testObj = new();
 
 
    [Fact]

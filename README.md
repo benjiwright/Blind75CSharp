@@ -114,6 +114,7 @@ Practically speaking the return of investment (ROI) on studying and practicing f
 | **BONUS**                                                                                       | **---**    |              **---**              | **---**                                                 | **---**  |
 | [Swim in Rising Water](https://leetcode.com/problems/swim-in-rising-water/)                     | Hard       | [🚀](https://youtu.be/amvrKlMLuGY) |                                                         | Dj       |
 | [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/) | Medium     | [🚀](https://youtu.be/f7JOBJIC-NA) |                                                         | Prim     |
+| [The Maze](https://leetcode.com/problems/the-maze/)                                             | Medium     |                n/a                | [SlidingMaze.cs](./Blind75CSharp/Week05/SlidingMaze.cs) | SquareUp |
 ---
 
 ## Favorite Resources
