@@ -2,22 +2,19 @@
 
 public class Solution05
 {
-
    public int LengthOfLIS(int[] nums)
    {
-
       var memo = new int[nums.Length];
       Array.Fill(memo, 1);
-      
-      for(var i=0; i<nums.Length; i++)
+
+      for (var i = 0; i < nums.Length; i++)
       {
          var startNum = nums[i];
-         for (var j=0; j<i; j++)
+         for (var j = 0; j < i; j++)
          {
             if (startNum > nums[j])
                memo[i] = Math.Max(memo[i], memo[j] + 1);
-         }         
-         
+         }
       }
 
       return memo.Max();
@@ -25,7 +22,7 @@ public class Solution05
    // Runtime: 175 ms, faster than 59.79% of C# online submissions for Longest Increasing Subsequence.
    // Memory Usage: 38 MB, less than 55.58% of C# online submissions for Longest Increasing Subsequence.
 
-   public int ClimbStairsDp(int n)
+   public int ClimbStairsDpMinimumMemory(int n)
    {
       var one = 1;
       var two = 1;
@@ -42,20 +39,41 @@ public class Solution05
    // Runtime: 39 ms, faster than 31.73% of C# online submissions for Climbing Stairs.
    // Memory Usage: 25.1 MB, less than 67.06% of C# online submissions for Climbing Stairs.
 
+   public int ClimbStairsTabulation(int numOfStairs)
+   {
+      if (numOfStairs == 1)
+      {
+         return 1;
+      }
+
+      var dp = new int[numOfStairs + 1];
+      dp[1] = 1;
+      dp[2] = 2;
+      for (var i = 3; i <= numOfStairs; i++)
+      {
+         dp[i] = dp[i - 1] + dp[i - 2];
+      }
+
+      return dp[numOfStairs];
+   }
+
    public int ClimbStairsRecursive(int n)
    {
-      return RecurseStairs(0, n, new int[n + 1]);
+      return RecurseStairs(0, n, new int[n]);
    }
    // Runtime: 41 ms, faster than 25.57% of C# online submissions for Climbing Stairs.
    // Memory Usage: 25.3 MB, less than 40.31% of C# online submissions for Climbing Stairs.
 
-   private int RecurseStairs(int i, int n, int[] memo)
+   private int RecurseStairs(int currentStair, int numOfStairs, int[] memo)
    {
-      if (i > n) return 0;
-      if (i == n) return 1;
-      if (memo[i] > 0) return memo[i];
+      if (currentStair > numOfStairs) return 0;
+      if (currentStair == numOfStairs) return 1;
+      if (memo[currentStair] > 0) return memo[currentStair];
 
-      return memo[i] = RecurseStairs(i + 1, n, memo) + RecurseStairs(i + 2, n, memo);
+      var result = RecurseStairs(currentStair + 1, numOfStairs, memo)
+                   + RecurseStairs(currentStair + 2, numOfStairs, memo);
+      memo[currentStair] = result;
+      return result;
    }
 
    public int CoinChange(int[] coins, int amount)
