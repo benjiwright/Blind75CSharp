@@ -116,6 +116,7 @@ Practically speaking the return of investment (ROI) on studying and practicing f
 | [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/) | Medium     | [🚀](https://youtu.be/f7JOBJIC-NA) |                                                         | Prim     |
 | [The Maze](https://leetcode.com/problems/the-maze/)                                             | Medium     |                 🤷🏻‍♂️                 | [SlidingMaze.cs](./Blind75CSharp/Week05/SlidingMaze.cs) | SquareUp |
 | [LRU Cache](https://leetcode.com/problems/lru-cache/)                                           | Medium     |                 🤷🏻‍♂️                 | [LRUCache](./Blind75CSharp/week05/LRUCache.cs)          | LinkList |
+| [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/)               | Medium     |                 🤷🏻‍♂️                 | [RandomPick.cs](./Blind75CSharp/Week05/RandomPick.cs)   | Google   |
 ---
 
 ## Favorite Resources
