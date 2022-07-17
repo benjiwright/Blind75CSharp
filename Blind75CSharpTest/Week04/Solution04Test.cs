@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Blind75CSharp.Week04;
 using FluentAssertions;
 using Xunit;
@@ -8,7 +9,6 @@ namespace Blind75CSharpTest.Week04;
 public class Solution04Test
 {
    private readonly Solution04 _testObj = new();
-
 
    [Fact]
    public void AlienDictionary_When_BadLeetCodeTestCaseBugfixInDescription()

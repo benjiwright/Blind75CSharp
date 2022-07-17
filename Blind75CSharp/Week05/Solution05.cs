@@ -2,6 +2,29 @@
 
 public class Solution05
 {
+
+   public int LengthOfLIS(int[] nums)
+   {
+
+      var memo = new int[nums.Length];
+      Array.Fill(memo, 1);
+      
+      for(var i=0; i<nums.Length; i++)
+      {
+         var startNum = nums[i];
+         for (var j=0; j<i; j++)
+         {
+            if (startNum > nums[j])
+               memo[i] = Math.Max(memo[i], memo[j] + 1);
+         }         
+         
+      }
+
+      return memo.Max();
+   }
+   // Runtime: 175 ms, faster than 59.79% of C# online submissions for Longest Increasing Subsequence.
+   // Memory Usage: 38 MB, less than 55.58% of C# online submissions for Longest Increasing Subsequence.
+
    public int ClimbStairsDp(int n)
    {
       var one = 1;
