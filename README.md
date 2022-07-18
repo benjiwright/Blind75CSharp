@@ -118,9 +118,11 @@ Practically speaking the return of investment (ROI) on studying and practicing f
 | [LRU Cache](https://leetcode.com/problems/lru-cache/)                                           | Medium     |                 🤷🏻‍♂️                 | [LRUCache](./Blind75CSharp/week05/LRUCache.cs)           | LinkList |
 | [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/)               | Medium     |                 🤷🏻‍♂️                 | [RandomPick.cs](./Blind75CSharp/Week05/RandomPick.cs)    | Google   |
 | [Reorganize String](https://leetcode.com/problems/reorganize-string/)                           | Medium     | [🚀](https://youtu.be/2g_b1aYTHeg) | [ReorganizeString](./Blind75CSharp/Week05/Solution05.cs) | Space X  |
+| [Baseball Game](https://leetcode.com/problems/baseball-game/)                                   | EZ         | [🚀](https://youtu.be/Id_tqGdsZQI) | [CalPoints](./Blind75CSharp/Week05/Solution05.cs)        | SpeedRun |
+
 ---
 
-## Favorite Resources
+## 🧡 Favorite Resources
 
 ### Understanding Solutions
 

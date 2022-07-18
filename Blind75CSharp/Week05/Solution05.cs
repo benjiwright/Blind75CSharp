@@ -4,12 +4,42 @@ namespace Blind75CSharp.Week05;
 
 public class Solution05
 {
+   public int CalPoints(string[] ops)
+   {
+      var stack = new Stack<int>();
+      foreach (var op in ops)
+      {
+         switch (op.ToUpper())
+         {
+            case "+": // sum of previous 2
+               var prev2 = stack.Pop();
+               var prev1 = stack.Peek();
+               stack.Push(prev2);
+               stack.Push(prev1+prev2);
+               break;
+            case "D": // double previous
+               stack.Push(stack.Peek()*2);
+               break;
+            case "C": // invalidate previous
+               stack.Pop();
+               break;
+            default: // is int, add as score
+               stack.Push(int.Parse(op));
+               break;
+         }
+      }
+
+      return stack.Sum();
+   }
+   // Runtime: 128 ms, faster than 55.03% of C# online submissions for Baseball Game.
+   // Memory Usage: 39.2 MB, less than 6.71% of C# online submissions for Baseball Game.
+
    public string ReorganizeString(string s)
    {
       {
          if (string.IsNullOrEmpty(s))
             return string.Empty;
-         
+
          var frequencyMap = s.GroupBy(c => c)
             .ToDictionary(grp => grp.Key, grp => grp.Count());
 

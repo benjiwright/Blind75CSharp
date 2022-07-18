@@ -10,6 +10,14 @@ public class Solution05Test
    private readonly Solution05 _testObj = new();
 
    [Theory]
+   [InlineData(new[] {"5", "2", "C", "D", "+"}, 30)]
+   [InlineData(new[] {"5","-2","4","C","D","9","+","+"}, 27)]
+   public void CalPoints_When_BaseballGameIsWeird(string [] inputs, int expected)
+   {
+      _testObj.CalPoints(inputs).Should().Be(expected);
+   }
+   
+   [Theory]
    [InlineData("aab", "aba")]
    [InlineData("aaab", "")]
    [InlineData("bbbbbbaab", "")]
