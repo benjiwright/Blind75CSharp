@@ -1,7 +1,39 @@
-﻿namespace Blind75CSharp.Week05;
+﻿using System.Text;
+
+namespace Blind75CSharp.Week05;
 
 public class Solution05
 {
+   public string ReorganizeString(string s)
+   {
+      {
+         if (string.IsNullOrEmpty(s))
+            return string.Empty;
+         
+         var frequencyMap = s.GroupBy(c => c)
+            .ToDictionary(grp => grp.Key, grp => grp.Count());
+
+         var maxHeap = new PriorityQueue<char, int>(Comparer<int>.Create((a, b) => b.CompareTo(a)));
+         maxHeap.EnqueueRange(frequencyMap.Select(kv => (kv.Key, kv.Value)));
+
+         (char prevChar, int prevCharPriority) previous = ('\0', -1);
+         var result = new StringBuilder();
+         while (maxHeap.Count > 0)
+         {
+            if (!maxHeap.TryDequeue(out var currentChar, out var currentCharPriority)) continue;
+
+            result.Append(currentChar);
+            if (previous.prevChar != '\0' && previous.prevCharPriority > 0)
+               maxHeap.Enqueue(previous.prevChar, previous.prevCharPriority);
+            previous = (currentChar, currentCharPriority - 1);
+         }
+
+         return result.ToString().Length == s.Length ? result.ToString() : string.Empty;
+      }
+   }
+   // Runtime: 127 ms, faster than 44.26% of C# online submissions for Reorganize String.
+   // Memory Usage: 36.1 MB, less than 49.18% of C# online submissions for Reorganize String.
+
    public int LengthOfLIS(int[] nums)
    {
       var memo = new int[nums.Length];

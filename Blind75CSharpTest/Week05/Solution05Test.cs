@@ -1,4 +1,5 @@
-﻿using Blind75CSharp.Week05;
+﻿using System.Linq;
+using Blind75CSharp.Week05;
 using FluentAssertions;
 using Xunit;
 
@@ -7,6 +8,17 @@ namespace Blind75CSharpTest.Week05;
 public class Solution05Test
 {
    private readonly Solution05 _testObj = new();
+
+   [Theory]
+   [InlineData("aab", "aba")]
+   [InlineData("aaab", "")]
+   [InlineData("bbbbbbaab", "")]
+   [InlineData("bbbbbxbwhbbbbmsybtbbbbbkncyybnjbhxbbrxibcjybb", "bybybybybxbxbxbcbcbhbhbjbjbnbnbibkbmbrbsbtbwb")]
+   public void ReorganizeString_When_Valid(string input, string expected)
+   {
+      _testObj.ReorganizeString(input).ToArray().Should().BeEquivalentTo(expected.ToArray());
+   }
+
 
    [Fact]
    public void LengthOfLIS_DoThatDp()
