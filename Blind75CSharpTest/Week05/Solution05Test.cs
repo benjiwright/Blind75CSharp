@@ -9,14 +9,26 @@ public class Solution05Test
 {
    private readonly Solution05 _testObj = new();
 
+
+   [Theory]
+   [InlineData(new int[] {1, 3, 4, 5}, 7, 2)]
+   [InlineData(new int[] {2}, 3, -1)]
+   [InlineData(new int[] {1, 2, 3}, 0, 0)]
+   public void CoinChange_DpJourney(int[] coins, int target, int expected)
+   {
+      _testObj.CoinChangeRecursive(coins, target).Should().Be(expected);
+      _testObj.CoinChangeDp(coins, target).Should().Be(expected);
+   }
+
+
    [Theory]
    [InlineData(new[] {"5", "2", "C", "D", "+"}, 30)]
-   [InlineData(new[] {"5","-2","4","C","D","9","+","+"}, 27)]
-   public void CalPoints_When_BaseballGameIsWeird(string [] inputs, int expected)
+   [InlineData(new[] {"5", "-2", "4", "C", "D", "9", "+", "+"}, 27)]
+   public void CalPoints_When_BaseballGameIsWeird(string[] inputs, int expected)
    {
       _testObj.CalPoints(inputs).Should().Be(expected);
    }
-   
+
    [Theory]
    [InlineData("aab", "aba")]
    [InlineData("aaab", "")]

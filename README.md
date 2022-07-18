@@ -136,6 +136,7 @@ Practically speaking the return of investment (ROI) on studying and practicing f
 - [Topological Sort | Kahn's Algorithm](https://youtu.be/cIBFEhD77b4) | William
 - [Dijkstra's Shortest Path Algorithm](https://youtu.be/pSqmAO-m7Lk) | William
 - [Union Find Introduction](https://youtu.be/ibjEGG7ylHk) | William
+- More [DP Problems](https://docs.google.com/spreadsheets/d/1pEzcVLdj7T4fv5mrNhsOvffBnsUH07GZk7c2jD-adE0/edit?usp=sharing) | NeetCode
 
 ### Design
 

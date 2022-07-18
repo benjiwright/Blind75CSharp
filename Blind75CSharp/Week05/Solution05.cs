@@ -15,10 +15,10 @@ public class Solution05
                var prev2 = stack.Pop();
                var prev1 = stack.Peek();
                stack.Push(prev2);
-               stack.Push(prev1+prev2);
+               stack.Push(prev1 + prev2);
                break;
             case "D": // double previous
-               stack.Push(stack.Peek()*2);
+               stack.Push(stack.Peek() * 2);
                break;
             case "C": // invalidate previous
                stack.Pop();
@@ -138,7 +138,7 @@ public class Solution05
       return result;
    }
 
-   public int CoinChange(int[] coins, int amount)
+   public int CoinChangeRecursive(int[] coins, int amount)
    {
       return DfsMemoCoinChange(amount, coins, new Dictionary<int, int>());
    }
@@ -164,4 +164,26 @@ public class Solution05
       memo[target] = minCoin == int.MaxValue ? -1 : minCoin + 1;
       return memo[target];
    }
+
+   public int CoinChangeDp(int[] coins, int amount)
+   {
+      var dp = new int [amount + 1];
+      var initialValue = amount + 1;
+      Array.Fill(dp, initialValue);
+      dp[0] = 0;
+
+      for (var i = 1; i <= amount; i++)
+      {
+         foreach (var coin in coins)
+         {
+            if (i - coin < 0) continue;
+
+            dp[i] = Math.Min(dp[i], 1 + dp[i - coin]);
+         }
+      }
+
+      return dp[amount] == initialValue ? -1 : dp[amount];
+   }
+   // Runtime: 109 ms, faster than 90.05% of C# online submissions for Coin Change.
+   // Memory Usage: 39.6 MB, less than 64.07% of C# online submissions for Coin Change.
 }
