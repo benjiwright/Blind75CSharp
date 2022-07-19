@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using Blind75CSharp.Week02;
 using Blind75CSharp.Week05;
 using FluentAssertions;
 using Xunit;
@@ -8,6 +9,58 @@ namespace Blind75CSharpTest.Week05;
 public class Solution05Test
 {
    private readonly Solution05 _testObj = new();
+
+   [Fact]
+   public void MergeKLists_When_Valid()
+   {
+      var input = new ListNode[]
+      {
+         new(1)
+         {
+            next = new ListNode(4)
+            {
+               next = new ListNode(5)
+            }
+         },
+         new(1)
+         {
+            next = new ListNode(3)
+            {
+               next = new ListNode(4)
+            }
+         },
+         new(2)
+         {
+            next = new ListNode(6)
+         },
+      };
+
+      _testObj.MergeKLists(input).Should().NotBeNull();
+   }
+   
+   [Fact]
+   public void MergeKLists_When_OutOfMemoryError()
+   {
+      var input = new ListNode[]
+      {
+         new(1)
+         {
+            next = new ListNode(2)
+            {
+               next = new ListNode(2)
+            }
+         },
+         new(1)
+         {
+            next = new ListNode(1)
+            {
+               next = new ListNode(2)
+            }
+         },
+      };
+
+      _testObj.MergeKLists(input).Should().NotBeNull();
+   }
 
 
    [Theory]

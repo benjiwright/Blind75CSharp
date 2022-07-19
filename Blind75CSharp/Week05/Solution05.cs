@@ -1,9 +1,39 @@
 ﻿using System.Text;
+using Blind75CSharp.Week02;
 
 namespace Blind75CSharp.Week05;
 
 public class Solution05
 {
+   
+   public ListNode MergeKLists(ListNode[] lists)
+   {
+      var minHeap = new PriorityQueue<ListNode, int>();
+      foreach (var listNode in lists)
+      {
+         var current = listNode;
+         while (current != null)
+         {
+            minHeap.Enqueue(new ListNode(current.val), current.val);
+            current = current.next;
+         }
+      }
+
+      if (minHeap.Count == 0) return null;
+
+      var result = minHeap.Dequeue();
+      var pointer = result; 
+      while (minHeap.Count > 0)
+      {
+         pointer.next = minHeap.Dequeue();
+         pointer = pointer.next;
+      }
+
+      return result;
+   }
+   // Runtime: 158 ms, faster than 60.46% of C# online submissions for Merge k Sorted Lists.
+   // Memory Usage: 40 MB, less than 70.07% of C# online submissions for Merge k Sorted Lists.
+   
    public int CalPoints(string[] ops)
    {
       var stack = new Stack<int>();
