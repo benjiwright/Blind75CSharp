@@ -120,6 +120,7 @@ Practically speaking the return of investment (ROI) on studying and practicing f
 | [Reorganize String](https://leetcode.com/problems/reorganize-string/)                           | Medium     | [🚀](https://youtu.be/2g_b1aYTHeg) | [ReorganizeString](./Blind75CSharp/Week05/Solution05.cs) | Space X     |
 | [Baseball Game](https://leetcode.com/problems/baseball-game/)                                   | EZ         | [🚀](https://youtu.be/Id_tqGdsZQI) | [CalPoints](./Blind75CSharp/Week05/Solution05.cs)        | SpeedRun    |
 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)                     | Hard       |                 🤷🏻‍♂️                 | [MergeKLists](./Blind75CSharp/Week05/Solution05.cs)      | Competition |
+| [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)                         | EZ         | [🚀](https://youtu.be/P1Ic85RarKY) | [Merge(./Blind75CSharp/Week05/Solution05.cs)             | x2 ptr      |
 
 ---
 
@@ -128,7 +129,7 @@ Practically speaking the return of investment (ROI) on studying and practicing f
 ### Understanding Solutions
 
 - [LeetCode website](https://neetcode.io/)
-- [YouTube](https://www.youtube.com/c/NeetCode)
+- LeetCode [YouTube](https://www.youtube.com/c/NeetCode)
 
 ### Graphs
 

@@ -5,7 +5,35 @@ namespace Blind75CSharp.Week05;
 
 public class Solution05
 {
-   
+   public void Merge(int[] nums1, int m, int[] nums2, int n)
+   {
+      var curr = m + n - 1;
+
+      while (m > 0 && n > 0)
+      {
+         if (nums1[m-1] > nums2[n-1])
+         {
+            nums1[curr] = nums1[m-1];
+            m--;
+         }
+         else
+         {
+            nums1[curr] = nums2[n-1];
+            n--;
+         }
+         curr--;
+      }
+
+      while (n > 0)
+      {
+         nums1[curr] = nums2[n - 1];
+         n--;
+         curr--;
+      }
+   }
+   // Runtime: 244 ms, faster than 16.82% of C# online submissions for Merge Sorted Array.
+   // Memory Usage: 41.4 MB, less than 60.00% of C# online submissions for Merge Sorted Array.
+
    public ListNode MergeKLists(ListNode[] lists)
    {
       var minHeap = new PriorityQueue<ListNode, int>();
@@ -22,7 +50,7 @@ public class Solution05
       if (minHeap.Count == 0) return null;
 
       var result = minHeap.Dequeue();
-      var pointer = result; 
+      var pointer = result;
       while (minHeap.Count > 0)
       {
          pointer.next = minHeap.Dequeue();
@@ -33,7 +61,7 @@ public class Solution05
    }
    // Runtime: 158 ms, faster than 60.46% of C# online submissions for Merge k Sorted Lists.
    // Memory Usage: 40 MB, less than 70.07% of C# online submissions for Merge k Sorted Lists.
-   
+
    public int CalPoints(string[] ops)
    {
       var stack = new Stack<int>();

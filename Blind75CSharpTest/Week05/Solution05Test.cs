@@ -10,6 +10,17 @@ public class Solution05Test
 {
    private readonly Solution05 _testObj = new();
 
+   [Theory]
+   [InlineData(new[] {1, 2, 3, 0, 0, 0}, 3, new[] {2, 5, 6}, 3, new[] {1, 2, 2, 3, 5, 6})]
+   [InlineData(new[] {1}, 1, new int[] { }, 0, new[] {1})]
+   [InlineData(new[] {0}, 0, new int[] {1}, 1, new[] {1})]
+   [InlineData(new[] {4, 5, 6, 0, 0, 0}, 3, new int[] {1, 2, 3}, 3, new[] {1, 2, 3, 4, 5, 6})]
+   public void Merge_Into_FirstArray(int[] nums1, int n1, int[] nums2, int n2, int[] expected)
+   {
+      _testObj.Merge(nums1, n1, nums2, n2);
+      nums1.Should().BeEquivalentTo(expected, cfg => cfg.WithStrictOrdering());
+   }
+
    [Fact]
    public void MergeKLists_When_Valid()
    {
@@ -37,7 +48,7 @@ public class Solution05Test
 
       _testObj.MergeKLists(input).Should().NotBeNull();
    }
-   
+
    [Fact]
    public void MergeKLists_When_OutOfMemoryError()
    {
