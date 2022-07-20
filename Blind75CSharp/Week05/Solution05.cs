@@ -5,22 +5,88 @@ namespace Blind75CSharp.Week05;
 
 public class Solution05
 {
+   public ListNode SortList(ListNode head)
+   {
+      // base case(s)
+      if (head is null || head.next is null) return head;
+
+      var mid = GetMiddleOfList(head);
+      var left = SortList(head);
+      var right = SortList(mid);
+
+      return MergeLinkList(left, right);
+   }
+
+   private ListNode MergeLinkList(ListNode list1, ListNode list2)
+   {
+      var dummy = new ListNode();
+      var tail = dummy;
+
+      while (true)
+      {
+         if (list1 == null)
+         {
+            tail.next = list2;
+            break;
+         }
+         
+         if (list2 == null)
+         {
+            tail.next = list1;
+            break;
+         }
+
+         if (list1.val <= list2.val)
+         {
+            tail.next = list1;
+            list1 = list1.next;
+         }
+         else
+         {
+            tail.next = list2;
+            list2 = list2.next;
+         }
+         tail = tail.next;
+      }
+
+      return dummy.next;
+   }
+   // Runtime: 310 ms, faster than 10.34% of C# online submissions for Sort List. Holy SLOW for (n log n)
+   // Memory Usage: 49.6 MB, less than 35.42% of C# online submissions for Sort List. 
+
+   private ListNode GetMiddleOfList(ListNode head)
+   {
+      var fast = head.next;
+      var slow = head;
+
+      while (fast is not null && fast.next is not null)
+      {
+         slow = slow.next;
+         fast = fast.next.next;
+      }
+
+      var tmp = slow.next;
+      slow.next = null;
+      return tmp;
+   }
+
    public void Merge(int[] nums1, int m, int[] nums2, int n)
    {
       var curr = m + n - 1;
 
       while (m > 0 && n > 0)
       {
-         if (nums1[m-1] > nums2[n-1])
+         if (nums1[m - 1] > nums2[n - 1])
          {
-            nums1[curr] = nums1[m-1];
+            nums1[curr] = nums1[m - 1];
             m--;
          }
          else
          {
-            nums1[curr] = nums2[n-1];
+            nums1[curr] = nums2[n - 1];
             n--;
          }
+
          curr--;
       }
 

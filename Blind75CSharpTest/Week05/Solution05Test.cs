@@ -10,6 +10,37 @@ public class Solution05Test
 {
    private readonly Solution05 _testObj = new();
 
+   [Fact]
+   public void SortList_FourNodes()
+   {
+      var head = new ListNode(4)
+      {
+         next = new ListNode(2)
+         {
+            next = new ListNode(1)
+            {
+               next = new ListNode(3)
+            }
+         }
+      };
+
+      var newHead = _testObj.SortList(head);
+      newHead.Should().NotBeNull();
+      var nodeCount = 0;
+      var solutions = new[] {1, 2, 3, 4};
+
+      while (newHead is not null)
+      {
+         newHead.val.Should().Be(solutions[nodeCount]);
+         nodeCount++;
+         newHead = newHead.next;
+      }
+
+      nodeCount.Should().Be(4);
+      newHead.Should().BeNull();
+   }
+
+
    [Theory]
    [InlineData(new[] {1, 2, 3, 0, 0, 0}, 3, new[] {2, 5, 6}, 3, new[] {1, 2, 2, 3, 5, 6})]
    [InlineData(new[] {1}, 1, new int[] { }, 0, new[] {1})]
