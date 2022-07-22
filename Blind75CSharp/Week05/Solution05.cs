@@ -5,6 +5,34 @@ namespace Blind75CSharp.Week05;
 
 public class Solution05
 {
+   public int[] FindBuildings(int[] heights)
+   {
+      var maxHeight = int.MinValue;
+      var results = new List<int>();
+
+      for (var i = heights.Length - 1; i >= 0; i--)
+      {
+         var currentHeight = heights[i];
+         if (currentHeight <= maxHeight) continue;
+         results.Add(i);
+         maxHeight = Math.Max(currentHeight, maxHeight);
+      }
+
+      // a little faster:  324 ms (85.43%) 
+      results.Reverse();
+      return results.ToArray();
+
+      var answer = new int[results.Count];
+      for (var i = 0; i < results.Count; i++)
+      {
+         answer[i] = results[results.Count - 1 - i];
+      }
+
+      return answer;
+   }
+   // Runtime: 341 ms, faster than 82.41% of C# online submissions for Buildings With an Ocean View.
+   // Memory Usage: 54.7 MB, less than 83.42% of C# online submissions for Buildings With an Ocean View.
+
    public ListNode SortList(ListNode head)
    {
       // base case(s)
@@ -29,7 +57,7 @@ public class Solution05
             tail.next = list2;
             break;
          }
-         
+
          if (list2 == null)
          {
             tail.next = list1;
@@ -46,6 +74,7 @@ public class Solution05
             tail.next = list2;
             list2 = list2.next;
          }
+
          tail = tail.next;
       }
 
@@ -102,6 +131,7 @@ public class Solution05
 
    public ListNode MergeKLists(ListNode[] lists)
    {
+      // this uses space of (n) when this could be done with space of (1) using merge sort of link list
       var minHeap = new PriorityQueue<ListNode, int>();
       foreach (var listNode in lists)
       {
@@ -291,7 +321,7 @@ public class Solution05
 
    public int CoinChangeDp(int[] coins, int amount)
    {
-      var dp = new int [amount + 1];
+      var dp = new int[amount + 1];
       var initialValue = amount + 1;
       Array.Fill(dp, initialValue);
       dp[0] = 0;

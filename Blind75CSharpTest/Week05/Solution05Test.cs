@@ -11,6 +11,15 @@ public class Solution05Test
    private readonly Solution05 _testObj = new();
 
    [Fact]
+   public void FindMaxHeightToRight_When_Valid()
+   {
+      var input = new[] {4, 2, 3, 1};
+      _testObj.FindBuildings(input).Should()
+         .BeEquivalentTo(new[] {0, 2, 3},
+            cfg => cfg.WithStrictOrdering());
+   }
+
+   [Fact]
    public void SortList_FourNodes()
    {
       var head = new ListNode(4)
