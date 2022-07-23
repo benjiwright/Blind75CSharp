@@ -5,6 +5,34 @@ namespace Blind75CSharp.Week05;
 
 public class Solution05
 {
+   public long SubArrayRanges(int[] nums)
+   {
+     return SubArrayRangesNaive(nums);
+   }
+
+   private long SubArrayRangesNaive(int[] nums)
+   {
+      // Sadly, this takes too long and we are required to use a
+      // monotonic stack. This becomes a rather difficult math problem.
+      // Are places looking for software engineers or mathematicians?
+      // Yes, I'm a little salty 
+      var result = 0L;
+
+      for (var i = 0; i < nums.Length; i++)
+      {
+         var j = i + 1;
+         for (; j < nums.Length; j++)
+         {
+            var subArray = nums.Skip(i).Take(j - i + 1).ToArray();
+            var max = subArray.Max();
+            var min = subArray.Min();
+            result += max - min;
+         }
+      }
+
+      return result;
+   }
+
    public int[] FindBuildings(int[] heights)
    {
       var maxHeight = int.MinValue;

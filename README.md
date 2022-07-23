@@ -123,7 +123,7 @@ Practically speaking the return of investment (ROI) on studying and practicing f
 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)                         | EZ         | [🚀](https://youtu.be/P1Ic85RarKY) | [Merge](./Blind75CSharp/Week05/Solution05.cs)            | x2 ptr      |
 | [Sort List](https://leetcode.com/problems/sort-list/)                                           | Medium     | [🚀](https://youtu.be/TGveA1oFhrc) | [SortList](./Blind75CSharp/Week05/Solution05.cs)         | MergeSort   |
 | [Buildings With an Ocean View](https://leetcode.com/problems/buildings-with-an-ocean-view/)     | Med        |                 🤷🏻‍♂️                 | [FindBuildings](./Blind75CSharp/Week05/Solution05.cs)    | FaceBook    |
-
+| [Sum of Subarray Ranges](https://leetcode.com/problems/sum-of-subarray-ranges/)                 | Med/Hard   |                 🤷🏻‍♂️                 | [SubArrayRanges](./Blind75CSharp/Week05/Solution05.cs)   | MonoStack   |
 ---
 
 ## 🧡 Favorite Resources

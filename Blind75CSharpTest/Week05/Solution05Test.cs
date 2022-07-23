@@ -10,6 +10,15 @@ public class Solution05Test
 {
    private readonly Solution05 _testObj = new();
 
+
+   [Theory]
+   [InlineData(new[] {1, 2, 3}, 4L)]
+   [InlineData(new[] {4, -2, -3, 4, 1}, 59)]
+   public void SubArrayRanges_DpIsHard(int[] inputs, long expected)
+   {
+      _testObj.SubArrayRanges(inputs).Should().Be(expected);
+   }
+
    [Fact]
    public void FindMaxHeightToRight_When_Valid()
    {
