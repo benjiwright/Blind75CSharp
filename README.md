@@ -112,8 +112,6 @@ Practically speaking the return of investment (ROI) on studying and practicing f
 | [Jump Game](https://leetcode.com/problems/jump-game/)                                           | Medium     |                 🤷🏻‍♂️                 |                                                          |             |
 | [Word Break](https://leetcode.com/problems/word-break/)                                         | Medium     |                 🤷🏻‍♂️                 |                                                          |             |
 | **BONUS**                                                                                       | **---**    |               **🙌🏻**               | **---**                                                  | **---**     |
-| [Swim in Rising Water](https://leetcode.com/problems/swim-in-rising-water/)                     | Hard       | [🚀](https://youtu.be/amvrKlMLuGY) |                                                          | Dj          |
-| [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/) | Medium     | [🚀](https://youtu.be/f7JOBJIC-NA) |                                                          | Prim        |
 | [The Maze](https://leetcode.com/problems/the-maze/)                                             | Medium     |                 🤷🏻‍♂️                 | [SlidingMaze.cs](./Blind75CSharp/Week05/SlidingMaze.cs)  | SquareUp    |
 | [LRU Cache](https://leetcode.com/problems/lru-cache/)                                           | Medium     |                 🤷🏻‍♂️                 | [LRUCache](./Blind75CSharp/week05/LRUCache.cs)           | LinkList    |
 | [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/)               | Medium     |                 🤷🏻‍♂️                 | [RandomPick.cs](./Blind75CSharp/Week05/RandomPick.cs)    | Google      |
@@ -123,7 +121,23 @@ Practically speaking the return of investment (ROI) on studying and practicing f
 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)                         | EZ         | [🚀](https://youtu.be/P1Ic85RarKY) | [Merge](./Blind75CSharp/Week05/Solution05.cs)            | x2 ptr      |
 | [Sort List](https://leetcode.com/problems/sort-list/)                                           | Medium     | [🚀](https://youtu.be/TGveA1oFhrc) | [SortList](./Blind75CSharp/Week05/Solution05.cs)         | MergeSort   |
 | [Buildings With an Ocean View](https://leetcode.com/problems/buildings-with-an-ocean-view/)     | Med        |                 🤷🏻‍♂️                 | [FindBuildings](./Blind75CSharp/Week05/Solution05.cs)    | FaceBook    |
-| [Sum of Subarray Ranges](https://leetcode.com/problems/sum-of-subarray-ranges/)                 | Med/Hard   |                 🤷🏻‍♂️                 | [SubArrayRanges](./Blind75CSharp/Week05/Solution05.cs)   | MonoStack   |
+| [Sum of Subarray Ranges](https://leetcode.com/problems/sum-of-subarray-ranges/)                 | EZ/Hard+   |                 🤷🏻‍♂️                 | [SubArrayRanges](./Blind75CSharp/Week05/Solution05.cs)   | MonoStack   |
+
+---
+
+### Week 6 - Just keep grinding problems
+
+| Question                                                                                        | Difficulty | [NeetCode](https://neetcode.io/)  | Solution                                          | Category     |
+| ----------------------------------------------------------------------------------------------- | ---------- | :-------------------------------: | ------------------------------------------------- | ------------ |
+| [Word Break](https://leetcode.com/problems/word-break/)                                         | Med        |                 🤷🏻‍♂️                 | [WordBreak](./Blind75CSharp/Week06/Solution06.cs) | Recursion/DP |
+| [Swim in Rising Water](https://leetcode.com/problems/swim-in-rising-water/)                     | Hard       | [🚀](https://youtu.be/amvrKlMLuGY) |                                                   | Dj           |
+| [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/) | Medium     | [🚀](https://youtu.be/f7JOBJIC-NA) |                                                   | Prim         |
+|                                                                                                 |            |                                   |                                                   |              |
+|                                                                                                 |            |                                   |                                                   |              |
+|                                                                                                 |            |                                   |                                                   |              |
+|                                                                                                 |            |                                   |                                                   |              |
+|                                                                                                 |            |                                   |                                                   |              |
+
 ---
 
 ## 🧡 Favorite Resources
