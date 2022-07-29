@@ -9,6 +9,46 @@ public class Solution06Test
 {
    private readonly Solution06 _testObj = new();
 
+
+   [Fact]
+   public void MostVisitedPattern_When_LcExample()
+   {
+      var usernames = new[] {"joe", "joe", "joe", "james", "james", "james", "james", "mary", "mary", "mary"};
+      var timestamps = new[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+      var websites = new[] {"home", "about", "career", "home", "cart", "maps", "home", "home", "about", "career"};
+
+      var actual = _testObj.MostVisitedPattern(usernames, timestamps, websites);
+
+      var expected = new[] {"home", "about", "career"};
+      actual.Should().BeEquivalentTo(expected, cfg => cfg.WithStrictOrdering());
+   }
+
+   [Fact]
+   public void MostVisitedPattern_When_MultipleVisits()
+   {
+      var usernames = new[] {"ua","ua","ua","ub","ub","ub"};
+      var timestamps = new[] {1, 2, 3, 4, 5, 6};
+      var websites = new[] {"a","b","c","a","b","a"};
+
+      var actual = _testObj.MostVisitedPattern(usernames, timestamps, websites);
+
+      var expected = new[] {"a","b","a"};
+      actual.Should().BeEquivalentTo(expected, cfg => cfg.WithStrictOrdering());
+   }
+   
+   [Fact]
+   public void MostVisitedPattern_When_TimeMattersNonConsecutive()
+   {
+      var usernames = new[] {"zkiikgv","zkiikgv","zkiikgv","zkiikgv"};
+      var timestamps = new[] {436363475,710406388,386655081,797150921};
+      var websites = new[] {"wnaaxbfhxp","mryxsjc","oz","wlarkzzqht"};
+
+      var actual = _testObj.MostVisitedPattern(usernames, timestamps, websites);
+
+      var expected = new[] {"oz","mryxsjc","wlarkzzqht"};
+      actual.Should().BeEquivalentTo(expected, cfg => cfg.WithStrictOrdering());
+   }
+
    [Theory]
    [InlineData("catsandog", new[] {"cats", "dog", "sand", "and", "cat"}, false)]
    [InlineData("catsanddog", new[] {"cats", "dog", "sand", "and", "cat"}, true)]
