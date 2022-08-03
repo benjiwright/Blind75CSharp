@@ -9,20 +9,6 @@ public class Solution06Test
 {
    private readonly Solution06 _testObj = new();
 
-
-   [Fact]
-   public void MostVisitedPattern_When_LcExample()
-   {
-      var usernames = new[] {"joe", "joe", "joe", "james", "james", "james", "james", "mary", "mary", "mary"};
-      var timestamps = new[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-      var websites = new[] {"home", "about", "career", "home", "cart", "maps", "home", "home", "about", "career"};
-
-      var actual = _testObj.MostVisitedPattern(usernames, timestamps, websites);
-
-      var expected = new[] {"home", "about", "career"};
-      actual.Should().BeEquivalentTo(expected, cfg => cfg.WithStrictOrdering());
-   }
-
    [Fact]
    public void MostVisitedPattern_When_MultipleVisits()
    {
