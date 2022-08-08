@@ -133,10 +133,8 @@ Practically speaking the return of investment (ROI) on studying and practicing f
 | [Swim in Rising Water](https://leetcode.com/problems/swim-in-rising-water/)                             | Hard       | [🚀](https://youtu.be/amvrKlMLuGY) |                                                            | Dj           |
 | [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/)         | Med        | [🚀](https://youtu.be/f7JOBJIC-NA) |                                                            | Prim         |
 | [Analyze User Website Visit Pattern](https://leetcode.com/problems/analyze-user-website-visit-pattern/) | Med        |                 🤷🏻‍♂️                 | [MostVisitedPattern](./Blind75CSharp/Week06/Solution06.cs) | Amazon       |
-| [Reorder Data in Log Files](https://leetcode.com/problems/reorder-data-in-log-files/)                   | Med        |                 🤷🏻‍♂️                 | [ReorderLogFiles](./Blind75CSharp/Week06/DataLog.cs)       | Amazon       |
-|                                                                                                         |            |                                   |                                                            |              |
-|                                                                                                         |            |                                   |                                                            |              |
-|                                                                                                         |            |                                   |                                                            |              |
+| [Reorder Data in Log Files](https://leetcode.com/problems/reorder-data-in-log-files/)                   | Med        |                 🤷🏻‍♂️                 | [DataLog.cs](./Blind75CSharp/Week06/DataLog.cs)            | Amazon       |
+| [Maximum Units on a Truck](https://leetcode.com/problems/maximum-units-on-a-truck/)                     | Ez         |                 🤷🏻‍♂️                 | [MaximumUnits](./Blind75CSharp/Week06/Solution06.cs)       | Amazon       |
 
 ---
 

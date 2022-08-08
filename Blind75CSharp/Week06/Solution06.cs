@@ -2,6 +2,38 @@
 
 public class Solution06
 {
+   public int MaximumUnits(int[][] boxTypes, int truckSize)
+   {
+      //  [[1,3],[2,2],[3,1]], truckSize = 4
+      // 1 box that holds 3
+      // 2 boxes that hold 2
+      // 3 boxes that hold 1
+
+      if (boxTypes.Length == 0) return 0;
+
+      var result = 0;
+      var boxesOnTruck = 0;
+
+      boxTypes = boxTypes.OrderByDescending(x => x[1]).ToArray();
+
+      foreach (var current in boxTypes)
+      {
+                  
+         while (current[0] > 0)
+         {
+            result += current[1];
+            current[0]--;
+            boxesOnTruck++;
+
+            if (truckSize == boxesOnTruck) return result;
+         }
+      }
+
+      return result;
+   }
+   // Runtime: 199 ms, faster than 30.44% of C# online submissions for Maximum Units on a Truck.
+   // Memory Usage: 41.4 MB, less than 25.47% of C# online submissions for Maximum Units on a Truck.
+   
    private record Visit(string UserName, int TimeStamp, string Website);
 
    public IList<string> MostVisitedPattern(string[] username, int[] timestamp, string[] website)
