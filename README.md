@@ -136,6 +136,7 @@ Practically speaking the return of investment (ROI) on studying and practicing f
 | [Reorder Data in Log Files](https://leetcode.com/problems/reorder-data-in-log-files/)                   | Med        |                 🤷🏻‍♂️                 | [DataLog.cs](./Blind75CSharp/Week06/DataLog.cs)               | Amazon       |
 | [Maximum Units on a Truck](https://leetcode.com/problems/maximum-units-on-a-truck/)                     | Ez         |                 🤷🏻‍♂️                 | [MaximumUnits](./Blind75CSharp/Week06/Solution06.cs)          | Amazon       |
 | [Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation/)                       | Ez         |                 🤷🏻‍♂️                 | [ValidWordAbbreviation](./Blind75CSharp/Week06/Solution06.cs) | Meta         |
+| [ValidPalindrome](https://leetcode.com/problems/valid-palindrome-ii/)                                   | Ez         |                 🤷🏻‍♂️                 | [ValidPalindrome](./Blind75CSharp/Week06/Solution06.cs)       | Meta         |
 
 ---
 

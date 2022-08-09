@@ -10,6 +10,15 @@ public class Solution06Test
    private readonly Solution06 _testObj = new();
 
    [Theory]
+   [InlineData("abca", true)]
+   [InlineData("deeee", true)]
+   public void ValidPalindrome_When_Lc(string s, bool expected)
+   {
+       _testObj.ValidPalindrome(s).Should().Be(expected);
+   }
+   
+   
+   [Theory]
    [InlineData("substitution","s10n", true)]
    [InlineData("substitution","sub4u4", true)]
    [InlineData("substitution","12", true)]

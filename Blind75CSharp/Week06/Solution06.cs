@@ -4,6 +4,43 @@ namespace Blind75CSharp.Week06;
 
 public class Solution06
 {
+   public bool ValidPalindrome(string s)
+   {
+      if (s is null) return false;
+      if (s.Length < 3) return true;
+
+      var left = 0;
+      var right = s.Length - 1;
+
+      while (left < right)
+      {
+         if (s[left] != s[right])
+         {
+            return CheckPalindrome(s, left + 1, right) || CheckPalindrome(s, left, right - 1);
+         }
+
+         left++;
+         right--;
+      }
+
+      return true;
+   }
+   // Runtime: 111 ms, faster than 76.78% of C# online submissions for Valid Palindrome II.
+   // Memory Usage: 41.9 MB, less than 37.16% of C# online submissions for Valid Palindrome II.
+
+   private bool CheckPalindrome(string s, int left, int right)
+   {
+      while (left < right)
+      {
+         if (s[left] != s[right]) return false;
+         left++;
+         right--;
+      }
+
+      return true;
+   }
+
+
    public bool ValidWordAbbreviation(string word, string abbr)
    {
       var abbrIdx = 0;
@@ -32,8 +69,8 @@ public class Solution06
 
       return wordIdx == word.Length && abbrIdx == abbr.Length;
    }
-   // Runtime: 98 ms, faster than 61.68% of C# online submissions for Valid Word Abbreviation.
-   // Memory Usage: 37.7 MB, less than 40.19% of C# online submissions for Valid Word Abbreviation.
+// Runtime: 98 ms, faster than 61.68% of C# online submissions for Valid Word Abbreviation.
+// Memory Usage: 37.7 MB, less than 40.19% of C# online submissions for Valid Word Abbreviation.
 
    public int MaximumUnits(int[][] boxTypes, int truckSize)
    {
@@ -63,8 +100,8 @@ public class Solution06
 
       return result;
    }
-   // Runtime: 199 ms, faster than 30.44% of C# online submissions for Maximum Units on a Truck.
-   // Memory Usage: 41.4 MB, less than 25.47% of C# online submissions for Maximum Units on a Truck.
+// Runtime: 199 ms, faster than 30.44% of C# online submissions for Maximum Units on a Truck.
+// Memory Usage: 41.4 MB, less than 25.47% of C# online submissions for Maximum Units on a Truck.
 
    private record Visit(string UserName, int TimeStamp, string Website);
 
@@ -120,8 +157,8 @@ public class Solution06
          .Take(1)
          .ToArray()[0]];
    }
-   // Runtime: 239 ms, faster than 64.15% of C# online submissions for Analyze User Website Visit Pattern.
-   // Memory Usage: 48.1 MB, less than 34.59% of C# online submissions for Analyze User Website Visit Pattern.
+// Runtime: 239 ms, faster than 64.15% of C# online submissions for Analyze User Website Visit Pattern.
+// Memory Usage: 48.1 MB, less than 34.59% of C# online submissions for Analyze User Website Visit Pattern.
 
    public IList<string> MostVisitedPatternConsecutive(string[] username, int[] timestamp, string[] website)
    {
@@ -212,7 +249,7 @@ public class Solution06
       return WordBreakMemo(s, wordDict, new Dictionary<string, bool>());
    }
 
-   // According to LeetCode, this is too slow and we have to use DP
+// According to LeetCode, this is too slow and we have to use DP
    private bool WordBreakMemo(string s, IList<string> wordDict, Dictionary<string, bool> memo)
    {
       if (s.Length == 0) return true;
