@@ -1,7 +1,40 @@
-﻿namespace Blind75CSharp.Week06;
+﻿using System.Text;
+
+namespace Blind75CSharp.Week06;
 
 public class Solution06
 {
+   public bool ValidWordAbbreviation(string word, string abbr)
+   {
+      var abbrIdx = 0;
+      var wordIdx = 0;
+      while (wordIdx < word.Length && abbrIdx < abbr.Length)
+      {
+         if (word[wordIdx] == abbr[abbrIdx])
+         {
+            abbrIdx++;
+            wordIdx++;
+            continue;
+         }
+
+         var sb = new StringBuilder();
+         while (abbrIdx < abbr.Length && char.IsDigit(abbr[abbrIdx]))
+         {
+            sb.Append(abbr[abbrIdx]);
+            abbrIdx++;
+         }
+
+         if (sb.Length == 0 || sb[0] == '0') return false;
+
+         var skipCharCount = int.Parse(sb.ToString());
+         wordIdx += skipCharCount;
+      }
+
+      return wordIdx == word.Length && abbrIdx == abbr.Length;
+   }
+   // Runtime: 98 ms, faster than 61.68% of C# online submissions for Valid Word Abbreviation.
+   // Memory Usage: 37.7 MB, less than 40.19% of C# online submissions for Valid Word Abbreviation.
+
    public int MaximumUnits(int[][] boxTypes, int truckSize)
    {
       //  [[1,3],[2,2],[3,1]], truckSize = 4
@@ -18,7 +51,6 @@ public class Solution06
 
       foreach (var current in boxTypes)
       {
-                  
          while (current[0] > 0)
          {
             result += current[1];
@@ -33,7 +65,7 @@ public class Solution06
    }
    // Runtime: 199 ms, faster than 30.44% of C# online submissions for Maximum Units on a Truck.
    // Memory Usage: 41.4 MB, less than 25.47% of C# online submissions for Maximum Units on a Truck.
-   
+
    private record Visit(string UserName, int TimeStamp, string Website);
 
    public IList<string> MostVisitedPattern(string[] username, int[] timestamp, string[] website)

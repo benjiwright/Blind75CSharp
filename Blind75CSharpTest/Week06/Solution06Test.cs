@@ -9,6 +9,22 @@ public class Solution06Test
 {
    private readonly Solution06 _testObj = new();
 
+   [Theory]
+   [InlineData("substitution","s10n", true)]
+   [InlineData("substitution","sub4u4", true)]
+   [InlineData("substitution","12", true)]
+   [InlineData("substitution","su3i1u2on", true)]
+   [InlineData("substitution","substitution", true)]
+   [InlineData("substitution","s55n", false)]
+   [InlineData("substitution","s010n", false)]
+   [InlineData("substitution","s0ubstitution", false)]
+   [InlineData("apple","a2e", false)]
+   public void ValidWordAbbreviation_When_AllLcExamples(string word, string abbr, bool expected)
+   {
+      _testObj.ValidWordAbbreviation(word, abbr).Should().Be(expected);
+   }
+   
+   
    [Fact]
    public void MostVisitedPattern_When_MultipleVisits()
    {
