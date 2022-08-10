@@ -138,6 +138,7 @@ Practically speaking the return of investment (ROI) on studying and practicing f
 | [Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation/)                       | Ez         |                 🤷🏻‍♂️                 | [ValidWordAbbreviation](./Blind75CSharp/Week06/Solution06.cs) | Meta         |
 | [ValidPalindrome](https://leetcode.com/problems/valid-palindrome-ii/)                                   | Ez         |                 🤷🏻‍♂️                 | [ValidPalindrome](./Blind75CSharp/Week06/Solution06.cs)       | Meta         |
 | [MovingAverage](https://leetcode.com/problems/moving-average-from-data-stream/)                         | Ez         |                 🤷🏻‍♂️                 | [MovingAverage](./Blind75CSharp/Week06/MovingAverage.cs)      | Meta         |
+| [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/)                                   | Med        |                 🤷🏻‍♂️                 | [ZigZag](./Blind75CSharp/Week06/ZigZag.cs)                    | Popular      |
 
 ---
 
