@@ -4,36 +4,76 @@ namespace Blind75CSharp.Week06;
 
 public class Solution06
 {
-    public int ThreeSumClosest(int[] nums, int target) {
-        
-        var delta = int.MaxValue;
-        Array.Sort(nums);
-        
-        for(var i=0; i<nums.Length && delta !=0; i++){
-            
-            var left = i+1;
-            var right = nums.Length-1;
-            
-            while(left<right){
-                var sum = nums[i] + nums[left] + nums[right];
-               
-                if(Math.Abs(target-sum) < Math.Abs(delta)){
-                    delta = target - sum;
-                }
-                
-                if(sum < target){
-                    left++;
-                }
-                else {
-                    right--;
-                }
+   public int RomanToInt(string s)
+   {
+      var map = new Dictionary<char, int>
+      {
+         {'I', 1},
+         {'V', 5},
+         {'X', 10},
+         {'L', 50},
+         {'C', 100},
+         {'D', 500},
+         {'M', 1000}
+      };
+
+      var result = 0;
+      for (var i = 0; i < s.Length; i++)
+      {
+         var next = int.MinValue;
+         if (i < s.Length - 1) next = map[s[i + 1]];
+
+         var val = map[s[i]];
+         if (next > val)
+         {
+            result += next - val;
+            i++;
+         }
+         else
+         {
+            result += val;
+         }
+      }
+
+      return result;
+   }
+   // Runtime: 90 ms, faster than 78.29% of C# online submissions for Roman to Integer.
+   // Memory Usage: 36.8 MB, less than 64.78% of C# online submissions for Roman to Integer.
+
+   public int ThreeSumClosest(int[] nums, int target)
+   {
+      var delta = int.MaxValue;
+      Array.Sort(nums);
+
+      for (var i = 0; i < nums.Length && delta != 0; i++)
+      {
+         var left = i + 1;
+         var right = nums.Length - 1;
+
+         while (left < right)
+         {
+            var sum = nums[i] + nums[left] + nums[right];
+
+            if (Math.Abs(target - sum) < Math.Abs(delta))
+            {
+               delta = target - sum;
             }
-        }
-        
-        return target - delta;
-    }
-    //Runtime: 256 ms, faster than 51.35% of C# online submissions for 3Sum Closest.
-    //Memory Usage: 39.4 MB, less than 74.82% of C# online submissions for 3Sum Closest.
+
+            if (sum < target)
+            {
+               left++;
+            }
+            else
+            {
+               right--;
+            }
+         }
+      }
+
+      return target - delta;
+   }
+   //Runtime: 256 ms, faster than 51.35% of C# online submissions for 3Sum Closest.
+   //Memory Usage: 39.4 MB, less than 74.82% of C# online submissions for 3Sum Closest.
 
 
    public bool ValidPalindrome(string s)

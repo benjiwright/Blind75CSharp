@@ -9,54 +9,61 @@ public class Solution06Test
 {
    private readonly Solution06 _testObj = new();
 
+   [Fact]
+   public void RomanToInt_When_Lc()
+   {
+      _testObj.RomanToInt("III").Should().Be(3);
+      _testObj.RomanToInt("MCMXCIV").Should().Be(1994);
+   }
+
    [Theory]
    [InlineData("abca", true)]
    [InlineData("deeee", true)]
    public void ValidPalindrome_When_Lc(string s, bool expected)
    {
-       _testObj.ValidPalindrome(s).Should().Be(expected);
+      _testObj.ValidPalindrome(s).Should().Be(expected);
    }
-   
-   
+
+
    [Theory]
-   [InlineData("substitution","s10n", true)]
-   [InlineData("substitution","sub4u4", true)]
-   [InlineData("substitution","12", true)]
-   [InlineData("substitution","su3i1u2on", true)]
-   [InlineData("substitution","substitution", true)]
-   [InlineData("substitution","s55n", false)]
-   [InlineData("substitution","s010n", false)]
-   [InlineData("substitution","s0ubstitution", false)]
-   [InlineData("apple","a2e", false)]
+   [InlineData("substitution", "s10n", true)]
+   [InlineData("substitution", "sub4u4", true)]
+   [InlineData("substitution", "12", true)]
+   [InlineData("substitution", "su3i1u2on", true)]
+   [InlineData("substitution", "substitution", true)]
+   [InlineData("substitution", "s55n", false)]
+   [InlineData("substitution", "s010n", false)]
+   [InlineData("substitution", "s0ubstitution", false)]
+   [InlineData("apple", "a2e", false)]
    public void ValidWordAbbreviation_When_AllLcExamples(string word, string abbr, bool expected)
    {
       _testObj.ValidWordAbbreviation(word, abbr).Should().Be(expected);
    }
-   
-   
+
+
    [Fact]
    public void MostVisitedPattern_When_MultipleVisits()
    {
-      var usernames = new[] {"ua","ua","ua","ub","ub","ub"};
+      var usernames = new[] {"ua", "ua", "ua", "ub", "ub", "ub"};
       var timestamps = new[] {1, 2, 3, 4, 5, 6};
-      var websites = new[] {"a","b","c","a","b","a"};
+      var websites = new[] {"a", "b", "c", "a", "b", "a"};
 
       var actual = _testObj.MostVisitedPattern(usernames, timestamps, websites);
 
-      var expected = new[] {"a","b","a"};
+      var expected = new[] {"a", "b", "a"};
       actual.Should().BeEquivalentTo(expected, cfg => cfg.WithStrictOrdering());
    }
-   
+
    [Fact]
    public void MostVisitedPattern_When_TimeMattersNonConsecutive()
    {
-      var usernames = new[] {"zkiikgv","zkiikgv","zkiikgv","zkiikgv"};
-      var timestamps = new[] {436363475,710406388,386655081,797150921};
-      var websites = new[] {"wnaaxbfhxp","mryxsjc","oz","wlarkzzqht"};
+      var usernames = new[] {"zkiikgv", "zkiikgv", "zkiikgv", "zkiikgv"};
+      var timestamps = new[] {436363475, 710406388, 386655081, 797150921};
+      var websites = new[] {"wnaaxbfhxp", "mryxsjc", "oz", "wlarkzzqht"};
 
       var actual = _testObj.MostVisitedPattern(usernames, timestamps, websites);
 
-      var expected = new[] {"oz","mryxsjc","wlarkzzqht"};
+      var expected = new[] {"oz", "mryxsjc", "wlarkzzqht"};
       actual.Should().BeEquivalentTo(expected, cfg => cfg.WithStrictOrdering());
    }
 
