@@ -4,6 +4,38 @@ namespace Blind75CSharp.Week06;
 
 public class Solution06
 {
+    public int ThreeSumClosest(int[] nums, int target) {
+        
+        var delta = int.MaxValue;
+        Array.Sort(nums);
+        
+        for(var i=0; i<nums.Length && delta !=0; i++){
+            
+            var left = i+1;
+            var right = nums.Length-1;
+            
+            while(left<right){
+                var sum = nums[i] + nums[left] + nums[right];
+               
+                if(Math.Abs(target-sum) < Math.Abs(delta)){
+                    delta = target - sum;
+                }
+                
+                if(sum < target){
+                    left++;
+                }
+                else {
+                    right--;
+                }
+            }
+        }
+        
+        return target - delta;
+    }
+    //Runtime: 256 ms, faster than 51.35% of C# online submissions for 3Sum Closest.
+    //Memory Usage: 39.4 MB, less than 74.82% of C# online submissions for 3Sum Closest.
+
+
    public bool ValidPalindrome(string s)
    {
       if (s is null) return false;

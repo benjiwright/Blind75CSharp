@@ -139,15 +139,15 @@ Practically speaking the return of investment (ROI) on studying and practicing f
 | [ValidPalindrome](https://leetcode.com/problems/valid-palindrome-ii/)                                   | Ez         |                 🤷🏻‍♂️                 | [ValidPalindrome](./Blind75CSharp/Week06/Solution06.cs)       | Meta         |
 | [MovingAverage](https://leetcode.com/problems/moving-average-from-data-stream/)                         | Ez         |                 🤷🏻‍♂️                 | [MovingAverage](./Blind75CSharp/Week06/MovingAverage.cs)      | Meta         |
 | [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/)                                   | Med        |                 🤷🏻‍♂️                 | [ZigZag](./Blind75CSharp/Week06/ZigZag.cs)                    | Popular      |
-
+| [x](https://leetcode.com/problems/3sum-closest/)                                                        | Med        |                 🤷🏻‍♂️                 | [ThreeSumClosest](./Blind75CSharp/Week06/MovingAverage.cs)    | Popular      |
 ---
 
 ## 🧡 Favorite Resources
 
 ### Understanding Solutions
 
-- [LeetCode website](https://neetcode.io/)
-- LeetCode [YouTube](https://www.youtube.com/c/NeetCode)
+- [NeetCode website](https://neetcode.io/)
+- NeetCode [YouTube](https://www.youtube.com/c/NeetCode)
 
 ### Graphs
 
