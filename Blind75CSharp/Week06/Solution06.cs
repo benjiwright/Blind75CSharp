@@ -4,6 +4,42 @@ namespace Blind75CSharp.Week06;
 
 public class Solution06
 {
+   public int Trap(int[] height)
+   {
+      var maxLeft = new int [height.Length];
+      var maxRight = new int [height.Length];
+
+      var max = 0;
+      maxLeft[0] = max;
+      for (var i = 0; i < height.Length-1; i++)
+      {
+         var val = height[i];
+         max = Math.Max(val, max);
+         maxLeft[i+1] = max;
+      }
+
+      max = 0;
+      maxRight[height.Length - 1] = max;
+      for (var i = height.Length - 1; i > 0; i--)
+      {
+         var val = height[i];
+         max = Math.Max(val, max);
+         maxRight[i-1] = max;
+      }
+
+      var result = 0;
+      for (var i = 0; i < height.Length; i++)
+      {
+         var heldWater = Math.Min(maxLeft[i], maxRight[i]) - height[i];
+         if (heldWater > 0)
+            result += heldWater;
+      }
+
+      return result;
+   }
+   // Runtime: 106 ms, faster than 89.09% of C# online submissions for Trapping Rain Water.
+   // Memory Usage: 40.1 MB, less than 31.74% of C# online submissions for Trapping Rain Water.
+
    public int NumUniqueEmails(string[] emails)
    {
       var uniqueEmail = new HashSet<string>();

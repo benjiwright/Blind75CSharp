@@ -37,7 +37,7 @@ public class ShortestBridgeTest
       testObj.ShortestBridge(grid).Should().Be(1);
    }
 
-   [Fact]
+   [Fact(Skip = "Melting my CPU")]
    public void ShortestBridge_Massive()
    {
       var grid = new[]

@@ -145,6 +145,7 @@ Practically speaking the return of investment (ROI) on studying and practicing f
 | [Shortest Bridge](https://leetcode.com/problems/shortest-bridge/)                                       | Med        | [🚀](https://youtu.be/gkINMhbbIbU) | [ShortestBridge](./Blind75CSharp/week06/../GoogleTop100/ShortestBridge.cs) | Google       |
 | [Making A Large Island](https://leetcode.com/problems/making-a-large-island/)                           | Hard       |                 🤷🏻‍♂️                 | [Island](./Blind75CSharp/Week06/../GoogleTop100/Island.cs)                 | Google       |
 | [Maximum Points](https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/)               | Med        | [🚀](https://youtu.be/TsA4vbtfCvo) | [MaxScore](./Blind75CSharp/Week06/../GoogleTop100/Cards.cs)                | Google       |
+| [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)                               | Hard       |                 🤷🏻‍♂️                 | [Trap](./Blind75CSharp/Week06/Solution06.cs)                               | Popular      |
 
 ---
 
