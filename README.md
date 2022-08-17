@@ -146,6 +146,7 @@ Practically speaking the return of investment (ROI) on studying and practicing f
 | [Making A Large Island](https://leetcode.com/problems/making-a-large-island/)                           | Hard       |                 🤷🏻‍♂️                 | [Island](./Blind75CSharp/Week06/../GoogleTop100/Island.cs)                 | Google       |
 | [Maximum Points](https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/)               | Med        | [🚀](https://youtu.be/TsA4vbtfCvo) | [MaxScore](./Blind75CSharp/Week06/../GoogleTop100/Cards.cs)                | Google       |
 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)                               | Hard       |                 🤷🏻‍♂️                 | [Trap](./Blind75CSharp/Week06/Solution06.cs)                               | Popular      |
+| [Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system/)             | Hard       |                 🤷🏻‍♂️                 | [FileSystem](./Blind75CSharp/Week06/FileSystem.cs)                         | Popular      |
 
 ---
 
