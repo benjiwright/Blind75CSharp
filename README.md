@@ -148,6 +148,7 @@ Practically speaking the return of investment (ROI) on studying and practicing f
 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)                               | Hard       |                 🤷🏻‍♂️                 | [Trap](./Blind75CSharp/Week06/Solution06.cs)                               | Popular      |
 | [Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system/)             | Hard       |                 🤷🏻‍♂️                 | [FileSystem](./Blind75CSharp/Week06/FileSystem.cs)                         | Popular      |
 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)                                 | Med        | [🚀](https://youtu.be/9z2BunfoZ5Y) | [Surround](./Blind75CSharp/Week06/Surround.cs)                             | NC           |
+| [Longest Happy String](https://leetcode.com/problems/longest-happy-string/submissions/)                 | Med        | [🚀](https://youtu.be/8u-H6O_XQKE) | [HappyString](./Blind75CSharp/Week06/HappyString.cs)                       | NC           |
 
 ---
 
