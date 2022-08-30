@@ -150,6 +150,7 @@ Practically speaking the return of investment (ROI) on studying and practicing f
 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)                                 | Med        | [🚀](https://youtu.be/9z2BunfoZ5Y) | [Surround](./Blind75CSharp/Week06/Surround.cs)                             | NC           |
 | [Longest Happy String](https://leetcode.com/problems/longest-happy-string/submissions/)                 | Med        | [🚀](https://youtu.be/8u-H6O_XQKE) | [HappyString](./Blind75CSharp/Week06/HappyString.cs)                       | NC           |
 | [Count Vowels Permutation](https://leetcode.com/problems/count-vowels-permutation/)                     | Hard       | [🚀](https://youtu.be/VUVpTZVa7Ls) | [CountVowel](./Blind75CSharp/week06/CountVowel.cs)                         | NC           |
+| [Largest Number](https://leetcode.com/problems/largest-number/)                                         | Med        | [🚀](https://youtu.be/WDx6Y4i4xJ8) | [LargestNumber](./Blind75CSharp/Week06/LargestNum.cs)                      | NC           |
 
 ---
 
