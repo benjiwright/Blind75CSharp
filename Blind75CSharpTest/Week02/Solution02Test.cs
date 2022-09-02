@@ -20,6 +20,18 @@ public class Solution02Test
       var actual = testObj.MinWindow(s1, s2);
       actual.Should().Be(expected);
    }
+   
+   [Theory]
+   [InlineData("ADOBECODEBANC", "ABC", "BANC")]
+   [InlineData("a", "a", "a")]
+   [InlineData("a", "aa", "")]
+   [InlineData("cabwefgewcwaefgcf", "cae", "cwae")]
+   public void MinWindowOptimized_When_Valids(string s1, string s2, string expected)
+   {
+      var testObj = new Solution02();
+      var actual = testObj.MinWindowOptimized(s1, s2);
+      actual.Should().Be(expected);
+   }
 
 
    [Theory]
