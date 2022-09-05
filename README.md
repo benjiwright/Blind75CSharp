@@ -151,8 +151,14 @@ Practically speaking the return of investment (ROI) on studying and practicing f
 | [Longest Happy String](https://leetcode.com/problems/longest-happy-string/submissions/)                 | Med        | [🚀](https://youtu.be/8u-H6O_XQKE) | [HappyString](./Blind75CSharp/Week06/HappyString.cs)                       | NC           |
 | [Count Vowels Permutation](https://leetcode.com/problems/count-vowels-permutation/)                     | Hard       | [🚀](https://youtu.be/VUVpTZVa7Ls) | [CountVowel](./Blind75CSharp/week06/CountVowel.cs)                         | NC           |
 | [Largest Number](https://leetcode.com/problems/largest-number/)                                         | Med        | [🚀](https://youtu.be/WDx6Y4i4xJ8) | [LargestNumber](./Blind75CSharp/Week06/LargestNum.cs)                      | NC           |
-| [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/)                   | Med        |                 🤷🏻‍♂️                 | [Codec](./Blind75CSharp/Week01/EncodeDecode.cs)                            | NC PR        |
-| [Permutation in String](https://leetcode.com/problems/permutation-in-string/)                           | Med        | [🚀](https://youtu.be/UbyhOgBN834) | [PermutationInString](./Blind75CSharp/Week06/PermutationInString.cs)       | NC PR        |
+
+### Helping [neetcode.io](https://github.com/neetcode-gh/leetcode) with code completion for csharp solutions
+
+| Question                                                                              | Difficulty | [NeetCode](https://neetcode.io/)  | Solution                                                             |
+| ------------------------------------------------------------------------------------- | ---------- | :-------------------------------: | -------------------------------------------------------------------- |
+| [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) | Med        | [🚀](https://youtu.be/B1k_sxOSgv8) | [Codec](./Blind75CSharp/Week01/EncodeDecode.cs)                      |
+| [Permutation in String](https://leetcode.com/problems/permutation-in-string/)         | Med        | [🚀](https://youtu.be/UbyhOgBN834) | [PermutationInString](./Blind75CSharp/Week06/PermutationInString.cs) |
+| [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)       | Hard       | [🚀](https://youtu.be/DfljaUwZsOk) | [SlidingWindowMax](./Blind75CSharp/Week06/SlidingWindowMax.cs)       |
 
 ---
 
