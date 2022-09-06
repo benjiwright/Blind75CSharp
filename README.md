@@ -159,6 +159,7 @@ Practically speaking the return of investment (ROI) on studying and practicing f
 | [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) | Med        | [🚀](https://youtu.be/B1k_sxOSgv8) | [Codec](./Blind75CSharp/Week01/EncodeDecode.cs)                      |
 | [Permutation in String](https://leetcode.com/problems/permutation-in-string/)         | Med        | [🚀](https://youtu.be/UbyhOgBN834) | [PermutationInString](./Blind75CSharp/Week06/PermutationInString.cs) |
 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)       | Hard       | [🚀](https://youtu.be/DfljaUwZsOk) | [SlidingWindowMax](./Blind75CSharp/Week06/SlidingWindowMax.cs)       |
+| [Min Stack](https://leetcode.com/problems/min-stack/)                                 | Med        | [🚀](https://youtu.be/qkLl7nAwDPo) | [MinStack](./Blind75CSharp/Week06/MinStack.cs)                       |
 
 ---
 
