@@ -4,6 +4,30 @@ namespace Blind75CSharp.Week06;
 
 public class Solution06
 {
+   public int[] DailyTemperatures(int[] temperatures)
+   {
+      var result = new int[temperatures.Length];
+      Array.Fill(result, 0);
+
+      var stack = new Stack<int>();
+
+      for (var i = 0; i < temperatures.Length; i++)
+      {
+         var t = temperatures[i];
+
+         while (stack.Any() && temperatures[stack.Peek()] < t)
+         {
+            var prev = stack.Pop();
+            result[prev] = i - prev;
+         }
+         stack.Push(i);
+      }
+
+      return result;
+   }
+   // Runtime: 604 ms, faster than 27.07% of C# online submissions for Daily Temperatures.
+   // Memory Usage: 49.4 MB, less than 78.89% of C# online submissions for Daily Temperatures.
+
    public int Trap(int[] height)
    {
       var maxLeft = new int [height.Length];
@@ -11,11 +35,11 @@ public class Solution06
 
       var max = 0;
       maxLeft[0] = max;
-      for (var i = 0; i < height.Length-1; i++)
+      for (var i = 0; i < height.Length - 1; i++)
       {
          var val = height[i];
          max = Math.Max(val, max);
-         maxLeft[i+1] = max;
+         maxLeft[i + 1] = max;
       }
 
       max = 0;
@@ -24,7 +48,7 @@ public class Solution06
       {
          var val = height[i];
          max = Math.Max(val, max);
-         maxRight[i-1] = max;
+         maxRight[i - 1] = max;
       }
 
       var result = 0;

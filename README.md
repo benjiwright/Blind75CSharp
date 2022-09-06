@@ -160,6 +160,7 @@ Practically speaking the return of investment (ROI) on studying and practicing f
 | [Permutation in String](https://leetcode.com/problems/permutation-in-string/)         | Med        | [🚀](https://youtu.be/UbyhOgBN834) | [PermutationInString](./Blind75CSharp/Week06/PermutationInString.cs) |
 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)       | Hard       | [🚀](https://youtu.be/DfljaUwZsOk) | [SlidingWindowMax](./Blind75CSharp/Week06/SlidingWindowMax.cs)       |
 | [Min Stack](https://leetcode.com/problems/min-stack/)                                 | Med        | [🚀](https://youtu.be/qkLl7nAwDPo) | [MinStack](./Blind75CSharp/Week06/MinStack.cs)                       |
+| [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)               |            | [🚀](https://youtu.be/cTBiBSnjO3c) | [DailyTemperatures](./Blind75CSharp/Week06/Solution06.cs)            |
 
 ---
 
