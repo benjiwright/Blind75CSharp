@@ -23,6 +23,7 @@ public class Solution06
          stack.Push(i);
       }
 
+      // 
       return result;
    }
    // Runtime: 604 ms, faster than 27.07% of C# online submissions for Daily Temperatures.
