@@ -2,7 +2,7 @@
 using FluentAssertions;
 using Xunit;
 
-namespace Blind75CSharpTest;
+namespace Blind75CSharpTest.Week06;
 
 public class BananasTest
 {

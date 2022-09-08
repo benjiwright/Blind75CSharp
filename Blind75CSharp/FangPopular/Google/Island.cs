@@ -1,4 +1,4 @@
-﻿namespace Blind75CSharp.GoogleTop100;
+﻿namespace Blind75CSharp.FangPopular.Google;
 
 // 827. Making A Large Island
 // https://leetcode.com/problems/making-a-large-island/

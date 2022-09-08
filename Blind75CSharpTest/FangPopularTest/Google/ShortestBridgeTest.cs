@@ -1,8 +1,8 @@
-﻿using Blind75CSharp.GoogleTop100;
+﻿using Blind75CSharp.FangPopular.Google;
 using FluentAssertions;
 using Xunit;
 
-namespace Blind75CSharpTest.GoogleTop100;
+namespace Blind75CSharpTest.FangPopularTest.Google;
 
 public class ShortestBridgeTest
 {

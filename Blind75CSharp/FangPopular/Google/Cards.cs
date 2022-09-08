@@ -1,4 +1,4 @@
-﻿namespace Blind75CSharp.GoogleTop100;
+﻿namespace Blind75CSharp.FangPopular.Google;
 
 public class Cards
 {
