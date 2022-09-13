@@ -1,9 +1,42 @@
-﻿using System.Text;
+﻿using System.Collections;
+using System.Text;
 
 namespace Blind75CSharp.Week06;
 
 public class Solution06
 {
+   public int LargestRectangleArea(int[] heights)
+   {
+      var result = 0;
+      var stack = new Stack<int>();
+      stack.Push(-1);
+
+      for (var i = 0; i < heights.Length; i++)
+      {
+         // keep monotonic increasing
+         while (stack.Count > 1 && heights[stack.Peek()] >= heights[i])
+         {
+            var height = heights[stack.Pop()];
+            var width = i - stack.Peek() - 1;
+            result = Math.Max(result, height * width);
+         }
+
+         stack.Push(i);
+      }
+
+      // burn off remaining in stacks
+      while (stack.Count > 1)
+      {
+         var height = heights[stack.Pop()];
+         var width = heights.Length - stack.Peek() - 1;
+         result = Math.Max(result, height * width);
+      }
+
+      return result;
+   }
+   // Runtime: 436 ms, faster than 25.37% of C# online submissions for Largest Rectangle in Histogram.
+   // Memory Usage: 47.4 MB, less than 58.51% of C# online submissions for Largest Rectangle in Histogram.
+
    public int[] DailyTemperatures(int[] temperatures)
    {
       var result = new int[temperatures.Length];
@@ -20,14 +53,15 @@ public class Solution06
             var prev = stack.Pop();
             result[prev] = i - prev;
          }
+
          stack.Push(i);
       }
 
       // 
       return result;
    }
-   // Runtime: 604 ms, faster than 27.07% of C# online submissions for Daily Temperatures.
-   // Memory Usage: 49.4 MB, less than 78.89% of C# online submissions for Daily Temperatures.
+// Runtime: 604 ms, faster than 27.07% of C# online submissions for Daily Temperatures.
+// Memory Usage: 49.4 MB, less than 78.89% of C# online submissions for Daily Temperatures.
 
    public int Trap(int[] height)
    {
@@ -62,8 +96,8 @@ public class Solution06
 
       return result;
    }
-   // Runtime: 106 ms, faster than 89.09% of C# online submissions for Trapping Rain Water.
-   // Memory Usage: 40.1 MB, less than 31.74% of C# online submissions for Trapping Rain Water.
+// Runtime: 106 ms, faster than 89.09% of C# online submissions for Trapping Rain Water.
+// Memory Usage: 40.1 MB, less than 31.74% of C# online submissions for Trapping Rain Water.
 
    public int NumUniqueEmails(string[] emails)
    {
@@ -103,8 +137,8 @@ public class Solution06
 
       return uniqueEmail.Count;
    }
-   // Runtime: 139 ms, faster than 53.54% of C# online submissions for Unique Email Addresses.
-   // Memory Usage: 39.4 MB, less than 88.33% of C# online submissions for Unique Email Addresses.
+// Runtime: 139 ms, faster than 53.54% of C# online submissions for Unique Email Addresses.
+// Memory Usage: 39.4 MB, less than 88.33% of C# online submissions for Unique Email Addresses.
 
    public IList<string> LetterCombinations(string digits)
    {
@@ -177,8 +211,8 @@ public class Solution06
 
       return result;
    }
-   // Runtime: 90 ms, faster than 78.29% of C# online submissions for Roman to Integer.
-   // Memory Usage: 36.8 MB, less than 64.78% of C# online submissions for Roman to Integer.
+// Runtime: 90 ms, faster than 78.29% of C# online submissions for Roman to Integer.
+// Memory Usage: 36.8 MB, less than 64.78% of C# online submissions for Roman to Integer.
 
    public int ThreeSumClosest(int[] nums, int target)
    {
@@ -212,8 +246,8 @@ public class Solution06
 
       return target - delta;
    }
-   //Runtime: 256 ms, faster than 51.35% of C# online submissions for 3Sum Closest.
-   //Memory Usage: 39.4 MB, less than 74.82% of C# online submissions for 3Sum Closest.
+//Runtime: 256 ms, faster than 51.35% of C# online submissions for 3Sum Closest.
+//Memory Usage: 39.4 MB, less than 74.82% of C# online submissions for 3Sum Closest.
 
 
    public bool ValidPalindrome(string s)
@@ -237,8 +271,8 @@ public class Solution06
 
       return true;
    }
-   // Runtime: 111 ms, faster than 76.78% of C# online submissions for Valid Palindrome II.
-   // Memory Usage: 41.9 MB, less than 37.16% of C# online submissions for Valid Palindrome II.
+// Runtime: 111 ms, faster than 76.78% of C# online submissions for Valid Palindrome II.
+// Memory Usage: 41.9 MB, less than 37.16% of C# online submissions for Valid Palindrome II.
 
    private bool CheckPalindrome(string s, int left, int right)
    {
