@@ -164,6 +164,16 @@ Practically speaking the return of investment (ROI) on studying and practicing f
 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)               | Med        | [🚀](https://youtu.be/cTBiBSnjO3c) | [DailyTemperatures](./Blind75CSharp/Week06/Solution06.cs)            |
 | [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)             | Med        | [🚀](https://youtu.be/U2SozAs9RzA) | [Bananas](./Blind75CSharp/Week06/Bananas.cs)                         |
 
+### DP Challenge
+
+* What are you the worst at? DP
+* What is the most challenging type of problem? DP
+* What are you going to practice? DP
+
+| Question                                                              | Difficulty | Solution                                                |
+| --------------------------------------------------------------------- | ---------- | ------------------------------------------------------- |
+| [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | Easy       | [ClimbStairs](./Blind75CSharp/DpBootcamp/NeetCodeDp.cs) |
+
 ---
 
 ## 🧡 Favorite Resources
