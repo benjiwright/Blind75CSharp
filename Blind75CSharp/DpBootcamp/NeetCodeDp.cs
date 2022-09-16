@@ -27,6 +27,25 @@ public class NeetCodeDp
       return memo[n];
    }
 
+   // https://leetcode.com/problems/min-cost-climbing-stairs/
+   // Runtime: 158 ms, faster than 19.20% of C# online submissions for Min Cost Climbing Stairs.
+   // Memory Usage: 38.1 MB, less than 29.95% of C# online submissions for Min Cost Climbing Stairs.
+   public int MinCostClimbingStairs(int[] cost)
+   {
+      var n = cost.Length;
+      var memo = new int[n + 1];
+      Array.Fill(memo, 0);
+
+      for (var i = 2; i < n + 1; i++)
+      {
+         var singleJump = memo[i - 1] + cost[i - 1];
+         var doubleJump = memo[i - 2] + cost[i - 2];
+         memo[i] = Math.Min(singleJump, doubleJump);
+      }
+
+      return memo[n];
+   }
+
    #endregion
 
    #endregion

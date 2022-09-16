@@ -170,9 +170,10 @@ Practically speaking the return of investment (ROI) on studying and practicing f
 * What is the most challenging type of problem? DP
 * What are you going to practice? DP
 
-| Question                                                              | Difficulty | Solution                                                |
-| --------------------------------------------------------------------- | ---------- | ------------------------------------------------------- |
-| [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | Easy       | [ClimbStairs](./Blind75CSharp/DpBootcamp/NeetCodeDp.cs) |
+| Question                                                                                 | Difficulty | Solution                                                          |
+| ---------------------------------------------------------------------------------------- | ---------- | ----------------------------------------------------------------- |
+| [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)                    | Easy       | [ClimbStairs](./Blind75CSharp/DpBootcamp/NeetCodeDp.cs)           |
+| [746. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) | Easy       | [MinCostClimbingStairs](./Blind75CSharp/DpBootcamp/NeetCodeDp.cs) |
 
 ---
 

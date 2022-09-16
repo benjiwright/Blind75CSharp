@@ -17,4 +17,14 @@ public class NeetCodeDpTest
       var testObj = new NeetCodeDp();
       testObj.ClimbStairs(stairs).Should().Be(expected);
    }
+
+
+   [Theory]
+   [InlineData(new[] {10, 15, 20}, 15)]
+   [InlineData(new[] {1, 100, 1, 1, 1, 100, 1, 1, 100, 1}, 6)]
+   public void MinCostClimbingStairs_When_Many(int[] costs, int expected)
+   {
+      var testObj = new NeetCodeDp();
+      testObj.MinCostClimbingStairs(costs).Should().Be(expected);
+   }
 }
