@@ -67,7 +67,37 @@ public class NeetCodeDp
    }
    // Runtime: 146 ms, faster than 23.08% of C# online submissions for House Robber.
    // Memory Usage: 36.9 MB, less than 32.95% of C# online submissions for House Robber.
-   
+
+
+   // 213. House Robber II
+   // https://leetcode.com/problems/house-robber-ii/
+   public int Rob(int[] nums)
+   {
+      if (nums.Length == 1) return nums[0];
+
+      // think the "nums" is circular street
+      int RobHelper(int[] nums)
+      {
+         var rob1 = 0;
+         var rob2 = 0;
+
+         for (var i = 0; i < nums.Length; i++)
+         {
+            var newRob = Math.Max(rob1 + nums[i], rob2);
+            rob1 = rob2;
+            rob2 = newRob;
+         }
+
+         return rob2;
+      }
+
+      var skipFirstHouse = nums.Skip(1).ToArray();
+      var skipLastHouse = new int[nums.Length - 1];
+      Array.Copy(nums, skipLastHouse, nums.Length - 1);
+      return Math.Max(RobHelper(skipFirstHouse), RobHelper(skipLastHouse));
+   }
+   // Runtime: 141 ms, faster than 28.09% of C# online submissions for House Robber II.
+   // Memory Usage: 36.7 MB, less than 62.61% of C# online submissions for House Robber II.
 
    #endregion
 

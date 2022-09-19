@@ -27,4 +27,13 @@ public class NeetCodeDpTest
       var testObj = new NeetCodeDp();
       testObj.MinCostClimbingStairs(costs).Should().Be(expected);
    }
+   
+   [Theory]
+   [InlineData(new[] {1,2,3}, 3)]
+   [InlineData(new[] {1,2,1,1}, 3)]
+   public void HouseRobber_When_Many(int[] costs, int expected)
+   {
+      var testObj = new NeetCodeDp();
+      testObj.Rob(costs).Should().Be(expected);
+   }
 }

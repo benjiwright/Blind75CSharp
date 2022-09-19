@@ -175,6 +175,8 @@ Practically speaking the return of investment (ROI) on studying and practicing f
 | [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)                    | Easy       | [ClimbStairs](./Blind75CSharp/DpBootcamp/NeetCodeDp.cs)           |
 | [746. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) | Easy       | [MinCostClimbingStairs](./Blind75CSharp/DpBootcamp/NeetCodeDp.cs) |
 | [198. House Robber](https://leetcode.com/problems/house-robber/)                         | Med        | [Robber1](./Blind75CSharp/DpBootcamp/NeetCodeDp.cs)               |
+| [213. House Robber II](https://leetcode.com/problems/house-robber-ii/)                   | Med        | [Rob](./Blind75CSharp/DpBootcamp/NeetCodeDp.cs)                   |
+
 
 ---
 
