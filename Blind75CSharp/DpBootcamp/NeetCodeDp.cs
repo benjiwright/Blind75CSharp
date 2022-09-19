@@ -46,6 +46,29 @@ public class NeetCodeDp
       return memo[n];
    }
 
+   // 198. House Robber
+   // https://leetcode.com/problems/house-robber/
+   public int Robber1(int[] nums)
+   {
+      if (nums.Length == 0) return 0;
+
+      var memo = new int[nums.Length + 1];
+      memo[0] = 0;
+      memo[1] = nums[0];
+
+      for (var i = 1; i < nums.Length; i++)
+      {
+         var robHere = nums[i];
+         var robAllThingsPrevious = memo[i - 1] + robHere;
+         memo[i + 1] = Math.Max(memo[i], robAllThingsPrevious);
+      }
+
+      return memo[nums.Length];
+   }
+   // Runtime: 146 ms, faster than 23.08% of C# online submissions for House Robber.
+   // Memory Usage: 36.9 MB, less than 32.95% of C# online submissions for House Robber.
+   
+
    #endregion
 
    #endregion
