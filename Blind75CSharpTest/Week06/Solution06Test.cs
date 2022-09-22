@@ -10,6 +10,16 @@ public class Solution06Test
 {
    private readonly Solution06 _testObj = new();
 
+
+   [Theory]
+   [InlineData(new int[] {10, 8, 0, 5, 3}, new int[] {2, 4, 1, 1, 3}, 12, 3)]
+   [InlineData(new int[] {0, 2, 4}, new int[] {4, 2, 1}, 100, 1)]
+   public void CarFleet_When_We_Ride(int[] position, int[] speed, int target, int expected)
+   {
+      _testObj.CarFleet(target, position, speed).Should().Be(expected);
+   }
+
+
    [Theory]
    [InlineData(new[] {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1}, 6)]
    [InlineData(new[] {4, 2, 0, 3, 2, 5}, 9)]

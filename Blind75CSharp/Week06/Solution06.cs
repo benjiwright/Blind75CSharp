@@ -1,10 +1,32 @@
-﻿using System.Collections;
-using System.Text;
+﻿using System.Text;
 
 namespace Blind75CSharp.Week06;
 
 public class Solution06
 {
+   public int CarFleet(int target, int[] position, int[] speed)
+   {
+      var pair = new (int, int) [position.Length];
+      for (var i = 0; i < position.Length; i++)
+      {
+         pair[i] = (position[i], speed[i]);
+      }
+
+      var stack = new Stack<double>();
+      foreach (var (p, s) in pair.OrderByDescending(i => i.Item1))
+      {
+         stack.Push((target - p) / (double) s);
+         if (stack.Count >= 2 && stack.Peek() <= stack.Skip(1).First())
+         {
+            stack.Pop();
+         }
+      }
+
+      return stack.Count;
+   }
+   // Runtime: 389 ms, faster than 82.18% of C# online submissions for Car Fleet.
+   // Memory Usage: 59.8 MB, less than 9.77% of C# online submissions for Car Fleet.
+
    public int LargestRectangleArea(int[] heights)
    {
       var result = 0;

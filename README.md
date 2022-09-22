@@ -163,6 +163,7 @@ Practically speaking the return of investment (ROI) on studying and practicing f
 | [Min Stack](https://leetcode.com/problems/min-stack/)                                 | Med        | [🚀](https://youtu.be/qkLl7nAwDPo) | [MinStack](./Blind75CSharp/Week06/MinStack.cs)                       |
 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)               | Med        | [🚀](https://youtu.be/cTBiBSnjO3c) | [DailyTemperatures](./Blind75CSharp/Week06/Solution06.cs)            |
 | [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)             | Med        | [🚀](https://youtu.be/U2SozAs9RzA) | [Bananas](./Blind75CSharp/Week06/Bananas.cs)                         |
+| [Car Fleet](https://leetcode.com/problems/car-fleet/)                                 | Med        | [🚀](https://youtu.be/Pr6T-3yB9RM) | [CarFleet](./Blind75CSharp/Week06/Solution06.cs)                     |
 
 ### DP Challenge
 
@@ -176,7 +177,6 @@ Practically speaking the return of investment (ROI) on studying and practicing f
 | [746. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) | Easy       | [MinCostClimbingStairs](./Blind75CSharp/DpBootcamp/NeetCodeDp.cs) |
 | [198. House Robber](https://leetcode.com/problems/house-robber/)                         | Med        | [Robber1](./Blind75CSharp/DpBootcamp/NeetCodeDp.cs)               |
 | [213. House Robber II](https://leetcode.com/problems/house-robber-ii/)                   | Med        | [Rob](./Blind75CSharp/DpBootcamp/NeetCodeDp.cs)                   |
-
 
 ---
 
