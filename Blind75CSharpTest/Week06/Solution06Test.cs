@@ -11,6 +11,13 @@ public class Solution06Test
    private readonly Solution06 _testObj = new();
 
 
+   [Fact]
+   public void Generate_Pascals()
+   {
+      _testObj.Generate(5);
+   }
+   
+   
    [Theory]
    [InlineData(new int[] {10, 8, 0, 5, 3}, new int[] {2, 4, 1, 1, 3}, 12, 3)]
    [InlineData(new int[] {0, 2, 4}, new int[] {4, 2, 1}, 100, 1)]

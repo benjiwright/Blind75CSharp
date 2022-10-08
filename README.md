@@ -167,6 +167,7 @@ Practically speaking the return of investment (ROI) on studying and practicing f
 | [Car Fleet](https://leetcode.com/problems/car-fleet/)                                 | Med        | [🚀](https://youtu.be/Pr6T-3yB9RM) | [CarFleet](./Blind75CSharp/Week06/Solution06.cs)                     |
 | [Permutations](https://leetcode.com/problems/permutations/)                           | Med        | [🚀](https://youtu.be/g0npyaQtAQM) | [Permute](./Blind75CSharp/Week06/Solution06.cs)                      |
 | [Target Sum](https://leetcode.com/problems/target-sum/)                               | Med        | [🚀](https://youtu.be/g0npyaQtAQM) | [FindTargetSumWays](./Blind75CSharp/Week06/Solution06.cs)            |
+| [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)           | Med        |                 ❓                 | [Generate](./Blind75CSharp/Week06/Solution06.cs)                     |
 
 ### DP Challenge
 

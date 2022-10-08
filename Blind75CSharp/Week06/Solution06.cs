@@ -4,6 +4,73 @@ namespace Blind75CSharp.Week06;
 
 public class Solution06
 {
+   public IList<IList<int>> Generate(int numRows)
+   {
+      var result = new List<IList<int>> {new List<int> {1}};
+
+      for (var currRow = 2; currRow <= numRows; currRow++)
+      {
+         var nextRow = new int [currRow];
+         nextRow[0] = 1;
+         nextRow[currRow - 1] = 1;
+
+         var previousRow = result.Last();
+
+         for (var j = 1; j < currRow - 1; j++)
+         {
+            nextRow[j] = previousRow[j - 1] + previousRow[j];
+         }
+
+         result.Add(nextRow);
+      }
+
+      return result;
+   }
+
+
+   public int FindTargetSumWays(int[] nums, int target)
+   {
+      return Dp(nums, target, nums.Length - 1, 0, new Dictionary<(int, int), int>());
+   }
+
+   private int Dp(int[] nums, int target, int index, int sum, Dictionary<(int, int), int> memo)
+   {
+      if (memo.ContainsKey((index, sum))) return memo[(index, sum)];
+      if (index < 0 && sum == target) return 1;
+      if (index < 0) return 0;
+
+      var positive = Dp(nums, target, index - 1, sum + nums[index], memo);
+      var negative = Dp(nums, target, index - 1, sum + -1 * nums[index], memo);
+
+      memo.Add((index, sum), positive + negative);
+      return memo[(index, sum)];
+   }
+
+   public IList<IList<int>> Permute(int[] nums)
+   {
+      var result = new List<IList<int>>();
+      PermuteRecurse(result, nums, 0);
+      return result;
+   }
+
+   private void PermuteRecurse(List<IList<int>> res, int[] arr, int start)
+   {
+      if (start == arr.Length)
+      {
+         var list = arr.Select(t => (t)).ToList();
+         res.Add(list);
+         return;
+      }
+
+      for (var i = start; i < arr.Length; i++)
+      {
+         (arr[start], arr[i]) = (arr[i], arr[start]);
+         PermuteRecurse(res, arr, start + 1);
+         (arr[start], arr[i]) = (arr[i], arr[start]);
+      }
+   }
+
+
    public int CarFleet(int target, int[] position, int[] speed)
    {
       var pair = new (int, int) [position.Length];
@@ -24,8 +91,8 @@ public class Solution06
 
       return stack.Count;
    }
-   // Runtime: 389 ms, faster than 82.18% of C# online submissions for Car Fleet.
-   // Memory Usage: 59.8 MB, less than 9.77% of C# online submissions for Car Fleet.
+// Runtime: 389 ms, faster than 82.18% of C# online submissions for Car Fleet.
+// Memory Usage: 59.8 MB, less than 9.77% of C# online submissions for Car Fleet.
 
    public int LargestRectangleArea(int[] heights)
    {
@@ -56,8 +123,8 @@ public class Solution06
 
       return result;
    }
-   // Runtime: 436 ms, faster than 25.37% of C# online submissions for Largest Rectangle in Histogram.
-   // Memory Usage: 47.4 MB, less than 58.51% of C# online submissions for Largest Rectangle in Histogram.
+// Runtime: 436 ms, faster than 25.37% of C# online submissions for Largest Rectangle in Histogram.
+// Memory Usage: 47.4 MB, less than 58.51% of C# online submissions for Largest Rectangle in Histogram.
 
    public int[] DailyTemperatures(int[] temperatures)
    {
