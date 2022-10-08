@@ -151,9 +151,10 @@ Practically speaking the return of investment (ROI) on studying and practicing f
 | [Longest Happy String](https://leetcode.com/problems/longest-happy-string/submissions/)                 | Med        | [🚀](https://youtu.be/8u-H6O_XQKE) | [HappyString](./Blind75CSharp/Week06/HappyString.cs)                       | NC           |
 | [Count Vowels Permutation](https://leetcode.com/problems/count-vowels-permutation/)                     | Hard       | [🚀](https://youtu.be/VUVpTZVa7Ls) | [CountVowel](./Blind75CSharp/week06/CountVowel.cs)                         | NC           |
 | [Largest Number](https://leetcode.com/problems/largest-number/)                                         | Med        | [🚀](https://youtu.be/WDx6Y4i4xJ8) | [LargestNumber](./Blind75CSharp/Week06/LargestNum.cs)                      | NC           |
-| [x](https://leetcode.com/problems/largest-rectangle-in-histogram/)                                      | Hard       | [🚀](https://youtu.be/zx5Sw9130L0) | [LargestRectangleArea](./Blind75CSharp/Week06/Solution06.cs)               | NC           |
+| [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)         | Hard       | [🚀](https://youtu.be/zx5Sw9130L0) | [LargestRectangleArea](./Blind75CSharp/Week06/Solution06.cs)               | NC           |
+| [Maximum Frequency Stack](https://leetcode.com/problems/maximum-frequency-stack/description/)           | Hard       | [🚀](https://youtu.be/Z6idIicFDOE) | [FreqStack](./Blind75CSharp/Week06/FreqStack.cs)                           | NC           |
 
-### Helping [neetcode.io](https://github.com/neetcode-gh/leetcode) with code completion for csharp solutions
+### Helping [neetcode.io](https://github.com/neetcode-gh/leetcode) on code completion for csharp solutions with PR's
 
 | Question                                                                              | Difficulty | [NeetCode](https://neetcode.io/)  | Solution                                                             |
 | ------------------------------------------------------------------------------------- | ---------- | :-------------------------------: | -------------------------------------------------------------------- |
@@ -164,6 +165,8 @@ Practically speaking the return of investment (ROI) on studying and practicing f
 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)               | Med        | [🚀](https://youtu.be/cTBiBSnjO3c) | [DailyTemperatures](./Blind75CSharp/Week06/Solution06.cs)            |
 | [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)             | Med        | [🚀](https://youtu.be/U2SozAs9RzA) | [Bananas](./Blind75CSharp/Week06/Bananas.cs)                         |
 | [Car Fleet](https://leetcode.com/problems/car-fleet/)                                 | Med        | [🚀](https://youtu.be/Pr6T-3yB9RM) | [CarFleet](./Blind75CSharp/Week06/Solution06.cs)                     |
+| [Permutations](https://leetcode.com/problems/permutations/)                           | Med        | [🚀](https://youtu.be/g0npyaQtAQM) | [Permute](./Blind75CSharp/Week06/Solution06.cs)                      |
+| [Target Sum](https://leetcode.com/problems/target-sum/)                               | Med        | [🚀](https://youtu.be/g0npyaQtAQM) | [FindTargetSumWays](./Blind75CSharp/Week06/Solution06.cs)            |
 
 ### DP Challenge
 
