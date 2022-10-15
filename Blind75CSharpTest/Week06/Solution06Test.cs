@@ -11,6 +11,15 @@ public class Solution06Test
    private readonly Solution06 _testObj = new();
 
 
+   
+   [Theory]
+   [InlineData(new int[] {1,3,4,2,2},2)]
+   [InlineData(new int[] {3,1,3,4,2},3)]
+   public void FindDuplicate_WhenValid(int[] nums, int expected)
+   {
+      _testObj.FindDuplicate(nums).Should().Be(expected);
+   }
+   
    [Fact]
    public void Generate_Pascals()
    {

@@ -4,6 +4,39 @@ namespace Blind75CSharp.Week06;
 
 public class Solution06
 {
+   public int FindDuplicate(int[] nums)
+   {
+      if (nums is null || nums.Length == 0) return -1;
+
+      int slow = 0, fast = 0;
+      
+      // 0 1 2 3 4
+      // 3,1,3,4,2
+      while (true)
+      {
+         slow = nums[slow]; // move 1
+         var tmp = nums[fast]; // move 2
+         fast = nums[tmp];
+         
+         // detected a cycle
+         if(slow == fast) break;
+      }
+
+      // slow walk
+      var slow2 = 0;
+      while (true)
+      {
+         if (slow == slow2) return slow;
+
+         slow = nums[slow];
+         slow2 = nums[slow2];
+
+      }
+      
+      
+      return -1;
+   }
+
    public IList<IList<int>> Generate(int numRows)
    {
       var result = new List<IList<int>> {new List<int> {1}};
