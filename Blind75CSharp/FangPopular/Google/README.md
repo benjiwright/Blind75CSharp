@@ -5,7 +5,7 @@
 |  818 | Race Car                                                   | 43.6%  | Hard   |
 | 2096 | Step-By-Step Directions From a Binary Tree Node to Another | 48.8%  | Medium |
 | 1293 | Shortest Path in a Grid with Obstacles Elimination         | 43.6%  | Hard   |
-|  366 | Find Leaves of Binary Tree                                 | 80.0%  | Medium |
+| *366 | Find Leaves of Binary Tree                                 | 80.0%  | Medium |
 | 2034 | Stock Price Fluctuation                                    | 49.3%  | Medium |
 |  359 | Logger Rate Limiter                                        | 75.4%  | Easy   |
 | 2158 | Amount of New Area Painted Each Day                        | 56.5%  | Hard   |
