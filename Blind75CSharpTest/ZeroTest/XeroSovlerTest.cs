@@ -12,4 +12,13 @@ public class XeroSovlerTest
    {
       var testObj = new XeroSolver();
    }
+
+
+   [Theory]
+   [InlineData(new string[] {"apple", "app"}, "abcdefghijklmnopqrstuvwxyz", false)]
+   public void IsAlienSortedTest(string[] words, string order, bool expected)
+   {
+      var testObj = new XeroSolver();
+      testObj.IsAlienSorted(words, order).Should().Be(expected);
+   }
 }

@@ -2,6 +2,50 @@
 
 public class XeroSolver
 {
+   public bool IsAlienSorted(string[] words, string order)
+   {
+      if (words.Length < 2) return true;
+      if (order.Length != 26) return false;
+
+      Dictionary<char, int> orders = new();
+      var counter = 0;
+      foreach (var c in order)
+      {
+         orders.TryAdd(c, counter);
+         counter++;
+      }
+
+      for (var i = 0; i < words.Length - 1; i++)
+      {
+         if (!CompareTwoWordsInOrder(words[i], words[i + 1], orders))
+            return false;
+      }
+
+
+      return true;
+   }
+
+   private bool CompareTwoWordsInOrder(string first, string second, IDictionary<char, int> order)
+   {
+      for (var i = 0; i < first.Length; i++)
+      {
+         if (i == second.Length) return false;
+
+         if (order[first[i]] < order[second[i]])
+         {
+            return true;
+         }
+
+         if (order[first[i]] > order[second[i]])
+         {
+            return false;
+         }
+      }
+
+      return true;
+   }
+
+
    // Runtime 348 ms Beats 93.89%
    // Memory 58.1 MB Beats 15.2%
    // https://leetcode.com/problems/k-closest-points-to-origin/submissions/859405986/
