@@ -3,6 +3,32 @@
 public class XeroSolver
 {
    
+   // Runtime 295 ms  Beats 5.26%
+   // Memory  46.8 MB Beats 32.98%
+   public int MinSubArrayLen(int target, int[] nums)
+   {
+      var left = 0;
+      var right = 0;
+      var sum = 0;
+      var result = int.MaxValue;
+
+      while (right < nums.Length)
+      {
+         sum += nums[right];
+
+         while (sum >= target)
+         {
+            result = Math.Min(result, right + 1 - left);
+            sum -= nums[left++];
+         }
+
+         right++;
+      }
+
+      return result == int.MaxValue ? 0 : result;
+   }
+
+
    // Runtime 233 ms Beats 60.31%
    // Memory 44.9 MB Beats 61.60%
    public int RemoveDuplicates(int[] nums)
