@@ -2,6 +2,26 @@
 
 public class XeroSolver
 {
+   
+   // Runtime: 137 ms. Beats 93.53%
+   // Memory:  42.5 MB Beats 29.91%
+   public int RemoveElement(int[] nums, int val) {
+      
+      var ptr = 0;
+      for(var idx = 0; idx < nums.Length; idx++){
+         var current = nums[idx];
+
+         if(current != val) {
+            nums[ptr] = nums[idx];
+            ptr++;
+         }
+      }
+
+      return ptr;
+
+   }
+   
+   
    public bool IsAlienSorted(string[] words, string order)
    {
       if (words.Length < 2) return true;

@@ -16,9 +16,19 @@ public class XeroSovlerTest
 
    [Theory]
    [InlineData(new string[] {"apple", "app"}, "abcdefghijklmnopqrstuvwxyz", false)]
-   public void IsAlienSortedTest(string[] words, string order, bool expected)
+   public void IsAlienSortedTester(string[] words, string order, bool expected)
    {
       var testObj = new XeroSolver();
       testObj.IsAlienSorted(words, order).Should().Be(expected);
+   }
+
+
+   [Theory]
+   [InlineData(new int[] {0,1,2,2,3,0,4,2}, 2, 5)]
+   public void RemoveElementTester(int[] input, int val, int expected)
+   {
+      var testObj = new XeroSolver();
+      testObj.RemoveElement(input, val).Should().Be(expected);
+
    }
 }
