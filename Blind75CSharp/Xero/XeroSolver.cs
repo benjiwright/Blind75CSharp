@@ -3,25 +3,54 @@
 public class XeroSolver
 {
    
+   // Runtime 233 ms Beats 60.31%
+   // Memory 44.9 MB Beats 61.60%
+   public int RemoveDuplicates(int[] nums)
+   {
+      if (nums.Length == 1) return 1;
+
+      var ptr = 0;
+      for (var idx = 1; idx < nums.Length; idx++)
+      {
+         var current = nums[idx];
+         var previous = nums[ptr];
+
+         if (current != previous)
+         {
+            ptr++;
+            nums[ptr] = nums[idx];
+         }
+      }
+
+      // i:                   |
+      //    0,1,2,3,4,2,2,3,3,4
+      // p:         |
+      //    0,1,2,3,4
+
+      return ptr + 1;
+   }
+
+
    // Runtime: 137 ms. Beats 93.53%
    // Memory:  42.5 MB Beats 29.91%
-   public int RemoveElement(int[] nums, int val) {
-      
+   public int RemoveElement(int[] nums, int val)
+   {
       var ptr = 0;
-      for(var idx = 0; idx < nums.Length; idx++){
+      for (var idx = 0; idx < nums.Length; idx++)
+      {
          var current = nums[idx];
 
-         if(current != val) {
+         if (current != val)
+         {
             nums[ptr] = nums[idx];
             ptr++;
          }
       }
 
       return ptr;
-
    }
-   
-   
+
+
    public bool IsAlienSorted(string[] words, string order)
    {
       if (words.Length < 2) return true;
