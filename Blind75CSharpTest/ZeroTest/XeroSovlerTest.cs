@@ -6,6 +6,23 @@ namespace Blind75CSharpTest.ZeroTest;
 
 public class XeroSovlerTest
 {
+   // Input: 
+   // Output: 2
+   [Fact]
+   public void ShortestBridgeTest()
+   {
+      var testObj = new XeroSolver();
+
+      var map = new[]
+      {
+         new[] {0, 1, 0},
+         new[] {0, 0, 2},
+         new[] {0, 0, 1},
+         new[] {0, 0, 1}
+      };
+      testObj.ShortestBridge(map).Should().Be(2);
+   }
+
    [Theory]
    [InlineData(new int[] {2, 1, 2}, 5)]
    public void FindDistanceToOrigin(int[] input, int expected)

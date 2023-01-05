@@ -3,6 +3,64 @@
 public class XeroSolver
 {
    
+   // 934. Shortest Bridge
+   // TODO: https://leetcode.com/problems/shortest-bridge/description/
+   public int ShortestBridge(int[][] grid)
+   {
+      // find first land on first island
+      var startOfIsland = FindFirstCordinateThatIsLand(grid);
+
+      // up,down,left,right
+      var directions = new List<int[]>
+      {
+         new int[] {1, 0},
+         new int[] {-1, 0},
+         new int[] {0, 1},
+         new int[] {0, -1},
+      };
+
+      var queue = new Queue<(int row, int col)>();
+      var visited = new HashSet<(int row, int col)>();
+
+      void ExploreIsland(int row, int col)
+      {
+         if (row < 0 || row >= grid.Length) return;
+         if (col < 0 || col >= grid[0].Length) return;
+         if (visited.Contains((row, col))) return;
+
+         if (grid[row][col] == 1)
+         {
+            queue.Enqueue((row, col));
+            visited.Add((row, col));
+            foreach (var dir in directions)
+            {
+               ExploreIsland(row + dir[0], col + dir[1]);
+               // TODO: stopped here. I am hating using nested functions. I tried it. It's messy
+            }
+         }
+      }
+
+
+      ExploreIsland(startOfIsland.row, startOfIsland.col);
+      // bfs away from island until we hit the next island
+
+
+      return -1;
+   }
+
+
+   private (int row, int col) FindFirstCordinateThatIsLand(int[][] grid)
+   {
+      for (var row = 0; row < grid.Length; row++)
+      for (var col = 0; col < grid[0].Length; col++)
+      {
+         if (grid[row][col] == 1)
+            return (row, col);
+      }
+
+      throw new Exception("No land exists on this map");
+   }
+
    // Runtime 295 ms  Beats 5.26%
    // Memory  46.8 MB Beats 32.98%
    public int MinSubArrayLen(int target, int[] nums)
