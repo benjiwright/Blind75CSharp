@@ -1,8 +1,9 @@
-﻿namespace Blind75CSharp.Xero;
+﻿using Blind75CSharp.Week03;
+
+namespace Blind75CSharp.Xero;
 
 public class XeroSolver
 {
-   
    // 934. Shortest Bridge
    // TODO: https://leetcode.com/problems/shortest-bridge/description/
    public int ShortestBridge(int[][] grid)
@@ -204,8 +205,101 @@ public class XeroSolver
       return result.ToArray();
    }
 
+   public int[] PlusOne(int[] digits)
+   {
+      var num = ExtractNumber(digits);
+
+      return ConvertNumToArray(num + 1);
+   }
+
+   private int ExtractNumber(int[] digits)
+   {
+      // 0 1 2 3
+      // 4 5 6 7
+
+      // pow = 4-3-1=2    10^2 = 10
+      var num = 0;
+      for (var idx = 0; idx < digits.Length; idx++)
+      {
+         var powerTen = (int) Math.Pow(10, digits.Length - idx - 1);
+         num += digits[idx] * powerTen;
+      }
+
+      return num;
+   }
+
+   private int[] ConvertNumToArray(int number)
+   {
+      var result = new List<int>();
+      while (number > 0)
+      {
+         result.Add(number % 10);
+         number /= 10;
+      }
+
+      result.Reverse();
+
+      return result.ToArray();
+   }
+
    private static double FindDistanceToOrigin(int x, int y)
    {
       return Math.Sqrt(x * x + y * y);
+   }
+
+   public IList<bool> KidsWithCandies(int[] candies, int extraCandies)
+   {
+      var max = candies.Max();
+
+
+      return candies.Select(num => num + extraCandies >= max).ToList();
+   }
+
+   private Dictionary<TreeNode, int> dict = new();
+
+   public int DeepestLeavesSum(TreeNode root)
+   {
+      // 1) find the depth of the tree
+      // 2) calc only those nodes
+
+      BfsDepth(root, 0);
+      var maxDepth = dict.Values.Max();
+
+      return dict.Where(kp => kp.Value == maxDepth)
+         .Sum(kp => kp.Key.val);
+   }
+
+   private void BfsDepth(TreeNode node, int depth)
+   {
+      if (node is null) return;
+
+      dict.Add(node, depth);
+
+      BfsDepth(node.left, depth + 1);
+      BfsDepth(node.right, depth + 1);
+   }
+
+   public int MaxIncreaseKeepingSkyline(int[][] grid)
+   {
+      var n = grid.Length;
+
+      var rowMax = new int[n];
+      var colMax = new int[n];
+
+      for (var r = 0; r < n; r++)
+      for (var c = 0; c < n; c++)
+      {
+         rowMax[r] = Math.Max(rowMax[r], grid[r][c]);
+         colMax[c] = Math.Max(colMax[c], grid[r][c]);
+      }
+
+      var result = 0;
+      for (var r = 0; r < n; r++)
+      for (var c = 0; c < n; c++)
+      {
+         result += Math.Min(rowMax[r], colMax[c] - grid[r][c]);
+      }
+
+      return result;
    }
 }
