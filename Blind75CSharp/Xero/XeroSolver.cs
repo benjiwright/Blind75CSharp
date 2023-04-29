@@ -4,6 +4,23 @@ namespace Blind75CSharp.Xero;
 
 public class XeroSolver
 {
+   // Runtime 237 ms  Beats 45.93%
+   // Memory  45.7 MB Beats 50.84%
+   public int[] GetConcatenation(int[] nums)
+   {
+      var result = new int [nums.Length * 2];
+      for (var i = 0; i < nums.Length; i++)
+      {
+         //  0 1 2 3  4 5 6 7
+         // [1,3,2,1][1,3,2,1]
+         result[i] = nums[i];
+         result[nums.Length + i] = nums[i];
+      }
+
+      return result;
+   }
+
+
    // 934. Shortest Bridge
    // TODO: https://leetcode.com/problems/shortest-bridge/description/
    public int ShortestBridge(int[][] grid)
@@ -246,6 +263,7 @@ public class XeroSolver
    {
       return Math.Sqrt(x * x + y * y);
    }
+
 
    public IList<bool> KidsWithCandies(int[] candies, int extraCandies)
    {
