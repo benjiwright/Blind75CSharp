@@ -35,4 +35,42 @@ public class SolverTests
       sut.PlayGame(lines).Should().Be(14_416);
    }
    
+   [Fact]
+   public void Day03_WarmUp()
+   {
+      var fileName = @"Year2022\inputs\Day03-WarmUp.txt";
+      var lines = FileReader.ReadAllLines(fileName);
+      AoC2022Day03 sut = new(lines);
+      // 16 (p), 38 (L), 42 (P), 22 (v), 20 (t), and 19 (s)
+      sut.Part01().Should().Be(157);
+   }
+   
+   [Fact]
+   public void Day03_WarmUpLarge()
+   {
+      var fileName = @"Year2022\inputs\Day03-WarmUpLarge.txt";
+      var lines = FileReader.ReadAllLines(fileName);
+      AoC2022Day03 sut = new(lines);
+      sut.Part01().Should().Be(7428);
+   }
+   
+   [Fact]
+   public void Day03_Part02WarmUp()
+   {
+      var fileName = @"Year2022\inputs\Day03-Part02-WarmUp.txt";
+      var lines = FileReader.ReadAllLines(fileName);
+      AoC2022Day03 sut = new(lines);
+      sut.Part02().Should().Be(70);
+   }
+   
+   [Fact]
+   public void Day03_Part02_Large()
+   {
+      var fileName = @"Year2022\inputs\Day03-WarmUpLarge.txt";
+      var lines = FileReader.ReadAllLines(fileName);
+      AoC2022Day03 sut = new(lines);
+      sut.Part02().Should().Be(2650);
+   }
+
+   
 }
