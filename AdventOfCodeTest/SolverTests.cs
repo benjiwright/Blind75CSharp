@@ -7,6 +7,32 @@ namespace AdventOfCodeTest;
 public class SolverTests
 {
 
+   [Fact (Skip = "copy/paste boiler plate")]
+   public void Dayxx_Part01()
+   {
+      const string day = "xx";
+      const string part = "01";
+      const int expected = 123;
+      
+      var fileName = @$"Year2022\inputs\Day{day}-Part{part}.txt";
+      var lines = FileReader.ReadAllLines(fileName);
+      AoC2022Day04 sut = new();
+      sut.Part01(lines).Should().Be(expected);
+   }
+   
+   [Fact (Skip = "copy/paste boiler plate")]
+   public void Dayxx_Part02()
+   {
+      const string day = "xx";
+      const string part = "02";
+      const int expected = 123;
+      
+      var fileName = @$"Year2022\inputs\Day{day}-Part{part}.txt";
+      var lines = FileReader.ReadAllLines(fileName);
+      AoC2022Day04 sut = new();
+      sut.Part02(lines).Should().Be(expected);
+   }
+   
    [Fact]
    public void Day01()
    {
@@ -71,6 +97,30 @@ public class SolverTests
       AoC2022Day03 sut = new(lines);
       sut.Part02().Should().Be(2650);
    }
-
    
+   [Fact]
+   public void Day04_Part01()
+   {
+      const string day = "04";
+      const string part = "01";
+      const int expected = 526;
+      
+      var fileName = @$"Year2022\inputs\Day{day}-Part{part}.txt";
+      var lines = FileReader.ReadAllLines(fileName);
+      AoC2022Day04 sut = new();
+      sut.Part01(lines).Should().Be(expected);
+   }
+   
+   [Fact]
+   public void Day04_Part02()
+   {
+      const string day = "04";
+      const string part = "02";
+      const int expected = 886;
+      
+      var fileName = @$"Year2022\inputs\Day{day}-Part{part}.txt";
+      var lines = FileReader.ReadAllLines(fileName);
+      AoC2022Day04 sut = new();
+      sut.Part02(lines).Should().Be(expected);
+   }
 }
