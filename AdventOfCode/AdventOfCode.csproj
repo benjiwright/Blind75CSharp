@@ -44,6 +44,18 @@
         <Content Include="Year2022\Inputs\Day01-Real.txt">
           <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </Content>
+        <None Remove="Year2022\Inputs\Day05-Part01.txt" />
+        <Content Include="Year2022\Inputs\Day05-Part01.txt">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+        <None Remove="Year2022\Inputs\Day05-Part02.txt" />
+        <Content Include="Year2022\Inputs\Day05-Part02.txt">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+        <None Remove="Year2022\Inputs\NewFile1.txt" />
+        <Content Include="Year2022\Inputs\Day05-Part01a.txt">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
     </ItemGroup>
 
     <ItemGroup>

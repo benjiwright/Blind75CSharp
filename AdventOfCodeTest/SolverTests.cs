@@ -6,33 +6,32 @@ namespace AdventOfCodeTest;
 
 public class SolverTests
 {
-
-   [Fact (Skip = "copy/paste boiler plate")]
+   [Fact(Skip = "copy/paste boiler plate")]
    public void Dayxx_Part01()
    {
       const string day = "xx";
       const string part = "01";
       const int expected = 123;
-      
+
       var fileName = @$"Year2022\inputs\Day{day}-Part{part}.txt";
       var lines = FileReader.ReadAllLines(fileName);
       AoC2022Day04 sut = new();
       sut.Part01(lines).Should().Be(expected);
    }
-   
-   [Fact (Skip = "copy/paste boiler plate")]
+
+   [Fact(Skip = "copy/paste boiler plate")]
    public void Dayxx_Part02()
    {
       const string day = "xx";
       const string part = "02";
       const int expected = 123;
-      
+
       var fileName = @$"Year2022\inputs\Day{day}-Part{part}.txt";
       var lines = FileReader.ReadAllLines(fileName);
       AoC2022Day04 sut = new();
       sut.Part02(lines).Should().Be(expected);
    }
-   
+
    [Fact]
    public void Day01()
    {
@@ -41,8 +40,8 @@ public class SolverTests
       AoC2022Day01 sut = new();
       sut.Day01(fileName).Should().Be(208_180);
    }
-   
-   
+
+
    [Fact]
    public void Day02()
    {
@@ -51,7 +50,7 @@ public class SolverTests
       var lines = FileReader.ReadAllLines(fileName);
       sut.PlayGame(lines).Should().Be(12); // 4 + 1 + 7
    }
-   
+
    [Fact]
    public void Day02_Real()
    {
@@ -60,7 +59,7 @@ public class SolverTests
       var lines = FileReader.ReadAllLines(fileName);
       sut.PlayGame(lines).Should().Be(14_416);
    }
-   
+
    [Fact]
    public void Day03_WarmUp()
    {
@@ -70,7 +69,7 @@ public class SolverTests
       // 16 (p), 38 (L), 42 (P), 22 (v), 20 (t), and 19 (s)
       sut.Part01().Should().Be(157);
    }
-   
+
    [Fact]
    public void Day03_WarmUpLarge()
    {
@@ -79,7 +78,7 @@ public class SolverTests
       AoC2022Day03 sut = new(lines);
       sut.Part01().Should().Be(7428);
    }
-   
+
    [Fact]
    public void Day03_Part02WarmUp()
    {
@@ -88,7 +87,7 @@ public class SolverTests
       AoC2022Day03 sut = new(lines);
       sut.Part02().Should().Be(70);
    }
-   
+
    [Fact]
    public void Day03_Part02_Large()
    {
@@ -97,30 +96,72 @@ public class SolverTests
       AoC2022Day03 sut = new(lines);
       sut.Part02().Should().Be(2650);
    }
-   
+
    [Fact]
    public void Day04_Part01()
    {
       const string day = "04";
       const string part = "01";
       const int expected = 526;
-      
+
       var fileName = @$"Year2022\inputs\Day{day}-Part{part}.txt";
       var lines = FileReader.ReadAllLines(fileName);
       AoC2022Day04 sut = new();
       sut.Part01(lines).Should().Be(expected);
    }
-   
+
    [Fact]
    public void Day04_Part02()
    {
       const string day = "04";
       const string part = "02";
       const int expected = 886;
-      
+
       var fileName = @$"Year2022\inputs\Day{day}-Part{part}.txt";
       var lines = FileReader.ReadAllLines(fileName);
       AoC2022Day04 sut = new();
       sut.Part02(lines).Should().Be(expected);
+   }
+
+   [Fact]
+   public void Day05_Part01_WarmUp()
+   {
+      const string day = "05";
+      const string part = "01a";
+      const string expected = "CMZ";
+
+      var fileName = @$"Year2022\inputs\Day{day}-Part{part}.txt";
+      var lines = FileReader.ReadAllLines(fileName);
+      AoC2022Day05 sut = new();
+      var actual = sut.Part01(lines);
+      actual.Should().Be(expected);
+   }
+   
+   [Fact]
+   public void Day05_Part01()
+   {
+      const string day = "05";
+      const string part = "01";
+      const string expected = "RLFNRTNFB";
+
+      var fileName = @$"Year2022\inputs\Day{day}-Part{part}.txt";
+      var lines = FileReader.ReadAllLines(fileName);
+      AoC2022Day05 sut = new();
+      var actual = sut.Part01(lines);
+      actual.Should().Be(expected);
+   }
+   
+   [Fact]
+   public void Day05_Part02()
+   {
+      const string day = "05";
+      const string part = "02";
+      const string expected = "MHQTLJRLB";
+
+      var fileName = @$"Year2022\inputs\Day{day}-Part{part}.txt";
+      var lines = FileReader.ReadAllLines(fileName);
+      AoC2022Day05 sut = new();
+      var actual = sut.Part02(lines);
+      actual.Should().Be(expected);
    }
 }
