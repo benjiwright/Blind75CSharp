@@ -14,4 +14,11 @@
         </Content>
     </ItemGroup>
 
+    <ItemGroup>
+        <None Remove="Year2023\Inputs\*.txt"/>
+        <Content Include="Year2023\Inputs\*.txt">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+
 </Project>
