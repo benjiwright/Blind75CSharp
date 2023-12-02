@@ -320,4 +320,51 @@ public class XeroSolver
 
       return result;
    }
+
+   // https://leetcode.com/problems/parallel-courses-iii/
+   // hard!
+   public int MinimumTime(int n, int[][] relations, int[] time)
+   {
+      // build adjacency list
+      var adjList = new Dictionary<int, List<int>>();
+      foreach (var array in relations)
+      {
+         var src = array[0];
+         var dest = array[1];
+         if (!adjList.ContainsKey(src))
+         {
+            adjList.Add(src, new List<int>());
+         }
+
+         adjList[src].Add(dest);
+      }
+
+
+      var maxTime = new Dictionary<int, int>();
+      int Dfs(int node)
+      {
+         // base case
+         if (maxTime.TryGetValue(node, out var value))
+            return value;
+
+         var result = time[node - 1];
+
+         foreach (var neighbor in adjList[node])
+         {
+            result = Math.Max(result, time[node - 1] + Dfs(neighbor));
+         }
+
+         // cache
+         maxTime[node] = result;
+         return maxTime[node];
+      }
+
+      // perform dfs with 1 based offset
+      for (var i = 1; i < n + 1; i++)
+      {
+         Dfs(i);
+      }
+
+      return maxTime.Values.Max();
+   }
 }
