@@ -45,16 +45,14 @@ public class AoC2023Day01
 
          if (char.IsLetter(c))
          {
-            try
+            for (int numSize = 3; numSize <= 5; numSize++)
             {
-               for (int numSize = 3; numSize <= 5; numSize++)
+               var startIndex = i - numSize + 1;
+               if (startIndex > 0)
                {
-                  var comparing = line.Substring(i - numSize + 1, numSize);
+                  var comparing = line.Substring(startIndex, numSize);
                   if (numbers.TryGetValue(comparing, out var value)) return value;
                }
-            }
-            catch (Exception e)
-            {
             }
          }
       }
@@ -71,16 +69,13 @@ public class AoC2023Day01
 
          if (char.IsLetter(c))
          {
-            try
+            for (int numSize = 3; numSize <= 5; numSize++)
             {
-               for (int numSize = 3; numSize <= 5; numSize++)
+               if (i + numSize < line.Length)
                {
                   var comparing = line.Substring(i, numSize);
                   if (numbers.TryGetValue(comparing, out var value)) return value;
                }
-            }
-            catch (Exception e)
-            {
             }
          }
       }
