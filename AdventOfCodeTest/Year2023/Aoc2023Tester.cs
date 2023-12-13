@@ -136,4 +136,29 @@ public class Aoc2023Tester
       AoC2023Day04 sut = new();
       sut.Part02(lines).Should().Be(expected);
    }
+   
+   [Fact]
+   public void Day06_Part01()
+   {
+      const string day = "06";
+      const string part = "01";
+      const int expected = 505_494;
+      var fileName = @$"Year2023\inputs\Day{day}-Part{part}.txt";
+      var lines = FileReader.ReadAllLines(fileName);
+      AoC2023Day06 sut = new();
+      sut.Part01(lines).Should().Be(expected);
+   }
+   
+   [Fact]
+   public void Day06_Part02()
+   {
+      const string day = "06";
+      const string part = "01"; //repeated
+      var expected = 23632299L;
+      var fileName = @$"Year2023\inputs\Day{day}-Part{part}.txt";
+      var lines = FileReader.ReadAllLines(fileName);
+      AoC2023Day06 sut = new();
+      sut.Part02(lines).Should().Be(expected);
+   }
+   
 }
