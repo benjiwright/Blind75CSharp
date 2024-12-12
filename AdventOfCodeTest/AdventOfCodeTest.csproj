@@ -27,4 +27,10 @@
       <ProjectReference Include="..\AdventOfCode\AdventOfCode.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+        <None Include="Year2024\Data\**">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
 </Project>
